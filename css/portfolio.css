@@ -58,9 +58,24 @@ background-color: rgb(56, 56, 56);
   color: white;
 }
 
+@media screen and (min-width: 601px) 
+{
+  div.top-left 
+  {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) 
+{
+  div.top-left 
+  {
+    font-size: 30px;
+  }
+}
+
 .top-left {
   font-family: 'Nunito', sans-serif;
-  font-size: 2em;
   position: absolute;
   top: 20px;
   left: 40px;
@@ -150,7 +165,8 @@ header{
 
 .menu{
 	text-align: center;
-	background-color: rgb(0, 0, 0);
+	background-color: #000000;
+	font-size:1em;
 	width: 96%;
 	color:rgb(255, 255, 255);
 	margin: .75em 2%;
@@ -159,7 +175,7 @@ header{
 }
 
 article{
-	background-color: rgb(0, 0, 0);
+	background-color: #000000;
 	width: 96%;
 	margin: .75em 2%;
 	box-sizing: border-box;
@@ -171,7 +187,7 @@ article{
 }
 
 .full-row{
-	background-color: rgb(56, 56, 56);
+	background-color: #383838;
 	width: 96%;
 	margin: .75em 2%;
 	margin-bottom: 20px;
@@ -191,7 +207,7 @@ article{
 
 .full-row-bottom{
 	text-align: center;
-	background-color: rgb(0, 0, 0);
+	background-color: #000000;
 	width: 96%;
 	margin: .75em 2%;
 	box-sizing: border-box;
@@ -200,7 +216,7 @@ article{
 .blog-header
 {
 	font-size:2em;
-	color:rgb(255, 252, 252);
+	color: #DDDBDB;
 	font-family: 'Nunito', sans-serif;
 	margin-left: 0px;
 	margin-top: 0px;
@@ -210,9 +226,10 @@ article{
 
 h1{
 	font-size:2em;
-	color:rgb(255, 252, 252);
+	color: #BAB9B9;
 	font-family: 'Nunito', sans-serif;
 	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
@@ -234,23 +251,23 @@ h3{
 
 p{
 	font-size:1em;
-	color:rgb(255,245,238);
+	color: #DDDBDB;
 	font-family: 'Nunito', sans-serif;
 	margin: 5px;
 	padding: 5px;
 	margin-left: 0px;
 }
 
-.centered-text{
-	text-align:center;
-	margin-right: 50px;
-	margin-left: 50px;
+.block-quote{
+	text-align:left;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
 a{
 	text-decoration: none;
 	font-size:1em;
-	color:rgb(255, 230, 8);
+	color: #FFE000;
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -273,7 +290,7 @@ img{
 	display:block;
 }
 
-.centered{
+.centered-image{
   display: block;
   margin-left: auto;
   margin-right: auto;
