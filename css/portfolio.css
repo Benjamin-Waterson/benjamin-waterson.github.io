@@ -257,8 +257,8 @@ font-family: 'Open Sans', sans-serif;
 
 .block-quote{
 	text-align:left;
-	margin-right: 100px;
-	margin-left: 100px;
+	margin-right: 3em;
+	margin-left: 3em;
 }
 
 a{
