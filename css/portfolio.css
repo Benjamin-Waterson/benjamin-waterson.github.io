@@ -78,10 +78,11 @@ font-family: 'Open Sans', sans-serif;
   	position: absolute;
 }
 
-#grid-container{
+.grid-container{
 display: grid;
 grid-template-columns: repeat(2, 1fr); 
 grid-template-rows: repeat(3, 400px);
+
 }
 
 .js-sort-table{
@@ -241,8 +242,8 @@ font-family: 'Open Sans', sans-serif;
 h3{
 	font-size:1.5em;
 	color:rgb(255, 252, 252);
-font-family: 'Open Sans', sans-serif;
-	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 	margin-left: 5px;
 }
 
@@ -302,6 +303,7 @@ img{
 .video-responsive iframe{
     left:0;
     top:0;
+    bottom: 0;
     height:100%;
     width:100%;
     position:absolute;
