@@ -250,10 +250,14 @@ h3{
 p{
 	font-size:1em;
 	color: #DDDBDB;
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 5px;
 	padding: 5px;
 	margin-left: 0px;
+}
+
+b{
+	font-family: 'Open Sans Bold', sans-serif;
 }
 
 .block-quote{
