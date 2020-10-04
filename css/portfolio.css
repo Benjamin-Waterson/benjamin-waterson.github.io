@@ -125,6 +125,7 @@ border:2.5px solid grey;
 padding: 15px;
   text-align: center;
 }
+
 td
 {
 border-collapse: collapse;
@@ -258,6 +259,7 @@ p{
 
 b{
 	font-family: 'Open Sans Bold', sans-serif;
+	color: #DDDBDB;
 }
 
 .block-quote{
