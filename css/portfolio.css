@@ -152,7 +152,8 @@ th
 iframe
 {
 	border: 0;
-	scroll
+	scroll;
+	display:block;
 }
 
 header{
@@ -248,6 +249,15 @@ h3{
 	margin-left: 5px;
 }
 
+h4{
+	font-size:1.25em;
+	color:rgb(255, 252, 252);
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-left: 5px
+}
+
 p{
 	font-size:1em;
 	color: #DDDBDB;
@@ -314,3 +324,52 @@ img{
     width:100%;
     position:absolute;
 }
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+	
+
+}
+.gallery-poster{
+    margin-bottom: 100px;
+    text-align: center;
+    width: 350px; 
+   	height: 546px;
+
+}
+
+.gallery-portrait
+{
+    margin-bottom: 100px;
+    text-align: center;
+    width: 350px; 
+   	height: 466px;
+
+}
+
+.gallery-landscape
+{
+    margin-bottom: 100px;
+    text-align: center;
+    width: 350px; 
+   	height: 262px;
+
+}
+
+.gallery-landscape img {
+   height: 100%;
+   width: 100%;
+}
+
+
