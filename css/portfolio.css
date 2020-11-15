@@ -93,6 +93,10 @@ grid-template-rows: repeat(3, 400px);
   	margin-right: auto;
 }
 
+.table{
+	overflow-x:auto;
+}
+
 #load{
 display: block;
 max-width: 300px;
