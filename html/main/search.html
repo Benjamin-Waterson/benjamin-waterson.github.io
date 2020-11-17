@@ -3,7 +3,7 @@
 	
 <html lang="en">
 
-<link rel="icon" type="image/png" href="images/main/favicon.png">
+<link rel="icon" type="image/png" href="../../images/main/favicon.png">
 
 <title>
 	Search
@@ -21,6 +21,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../../js/search.js"type="text/javascript" defer></script>
+
+<script async src="https://cse.google.com/cse.js?cx=25d8b607b60f0155b"></script>
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -65,6 +68,15 @@
 	<article>
 		<h1>Search</h1>
 		<div class="full-row">
+
+
+		<form id="cse-search-box-form-id">
+  <!-- This is the input searc box -->
+  <input type="text" id="cse-search-input-box-id" size="25" autocomplete="off" placeholder="Search Site..." style="background-color: rgb(255, 255, 255); text-indent: 0px; background-position: initial initial; background-repeat: initial initial;">
+  <!-- This is the search button -->
+  <input type="submit" value="Search">
+
+<input name="siteurl" type="hidden" value="programmablesearchengine.google.com/docs/element/results-only_form.html"><input name="ref" type="hidden" value=""><input name="ss" type="hidden" value="418j71394j4"></form>
 		<input id="input" type="text" placeholder="Search Site..."><button id="search-button" onclick="validate()"><i class="fa fa-search"></i></button>
 		</div>
 	</article>
@@ -77,7 +89,7 @@
 		</p>
 		</section>
 		
-		</article>
+	</article>
 </div>
 
 </body>
