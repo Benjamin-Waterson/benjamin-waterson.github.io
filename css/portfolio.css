@@ -40,6 +40,12 @@ font-family: 'Open Sans', sans-serif;
 	margin-right: 0px;
 }
 
+#search-results
+{
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
 #quote{
 	margin-left: 0px;
 	margin-right: 0px;
@@ -258,7 +264,7 @@ h1{
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
 	margin-left: 20px;
-	margin-right: 0px;
+	margin-right: 20px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
