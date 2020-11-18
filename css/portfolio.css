@@ -195,7 +195,7 @@ header{
 .menu{
 	text-align: center;
 	background-color: #000000;
-	font-size:1.1em;
+	font-size:1.2em;
 	width: 96%;
 	color:rgb(255, 255, 255);
 	margin: .75em 2%;
@@ -300,6 +300,7 @@ p{
 	margin: 5px;
 	padding: 5px;
 	margin-left: 0px;
+	margin-top: 0px;
 }
 
 b{
