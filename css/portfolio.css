@@ -20,10 +20,29 @@ font-family: 'Open Sans', sans-serif;
 	vertical-align: middle;
 }
 
+input{
+	margin-left: 0px;
+}
+
+form{
+	margin-left: 0px;
+}
+
 button
 {
 font-family: 'Open Sans', sans-serif;
 	text-align: center;
+}
+
+#title
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#quote{
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 #search-button
@@ -236,9 +255,9 @@ article{
 h1{
 	font-size:2.2em;
 	color: #BAB9B9;
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin-left: 20px;
-	margin-right: 15px;
+	margin-right: 0px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }

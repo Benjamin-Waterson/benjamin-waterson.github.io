@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" href="../../images/main/favicon.png">
 
 <title>
-	Search
+	Results
 </title>
 
 <meta charset="utf-8">
@@ -19,9 +19,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <script src="../../js/results.js" type="text/javascript"></script>
+
+<script async src="https://cse.google.com/cse.js?cx=25d8b607b60f0155b"></script>
 
 <script type="text/javascript">
   function store() {
@@ -40,7 +40,7 @@
 
   gtag('config', 'UA-171694271-1');
 </script>
-
+<!-- 
 <meta property="og:site_name" content="Benjamin Wateson" />
 <meta property="og:title" content="Search" />
 <meta property="og:description" content="Search." />
@@ -52,7 +52,7 @@
 <meta property="og:image:height" content="640" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://benjaminwaterson.com/imagesmain/antero-hall-banner.jpg" />
-<meta name="twitter:site" content="@H2O_drums" />
+<meta name="twitter:site" content="@H2O_drums" /> -->
 
 </head>
 
@@ -72,12 +72,18 @@
 	</div>
 
 	<article>
-		<h1>Search</h1>
+		<h1>Search Results For: "</h1><h1 id="title"></h1><h1 id="quote">"</h1>
 		<div class="full-row">
+
+		<script type="text/javascript">
+		  var text = document.cookie.split(";")[0].split("=")[1];
+		  document.getElementById("title").innerHTML = text;
+		</script>
 
 		<form onsubmit="store()" action="results.html">
 			<input id="my_text" name="q" type="text" value="" placeholder="Search..."><button id="search-button"><i class="fa fa-search" type="submit"></i></button>
 		</form>
+		<br>
 		<div class="gcse-searchresults-only">
 
 		</div>
@@ -87,7 +93,7 @@
 		
 		<section class="full-row-bottom">
 			<p>
-				<a href="../../index.html">Home</a> | <a href="search.html"><u>Search</u></a>
+				<a href="../../index.html">Home</a> | <a href="search.html">Search</a>
 		</p>
 		</section>
 		
