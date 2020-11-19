@@ -272,8 +272,9 @@ h1{
 h2{
 	font-size:2em;
 	color:rgb(255, 252, 252);
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	font-weight: 700;
 }
 
 h3{
@@ -282,6 +283,7 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-left: 5px;
+	font-weight: 600;
 }
 
 h4{
@@ -326,6 +328,7 @@ font-family: 'Open Sans', sans-serif;
 figure{
 	max-width:100%;
 	display:block;
+	vertical-align: top;
 }
 
 figcaption{
