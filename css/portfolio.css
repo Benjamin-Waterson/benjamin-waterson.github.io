@@ -443,7 +443,7 @@ justify-content: space-around;
 
 .selected{
 	text-decoration: none;
-	font-size:1em;
+	font-size: 1em;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	border-bottom: 2px solid;
