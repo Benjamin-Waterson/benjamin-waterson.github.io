@@ -81,6 +81,11 @@ a{
 	font-family: 'Open Sans', sans-serif;
 }
 
+sup{
+	font-variant: small-caps;
+	font-size: .5em;
+}
+
 
 figure{
 	max-width:100%;
