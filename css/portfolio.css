@@ -382,6 +382,11 @@ button
 	margin-top: 0px;
 }
 
+.small-caps{
+	font-variant: small-caps;
+	display: inline;
+}
+
 .video-responsive{
 	overflow:hidden;
 	padding-bottom:56.25%;
