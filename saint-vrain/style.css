@@ -1,0 +1,255 @@
+body{
+	background-color: black;
+/*	background-image: url('mountains-inverted.jpeg');
+*/	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1{
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 5vw;
+	margin-bottom: 0px;
+	color: white;
+	
+}
+
+h2{
+	font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	
+}
+
+h3{
+	font-family: 'Merriweather', serif;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+h4{
+	font-family: 'Merriweather', serif;
+	font-size: 1.50em;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 1em;
+}
+
+h5{
+	font-family: 'Merriweather', serif;
+	font-size: 1.00em;
+	text-align: left;
+	margin-top: 1em;
+	margin-bottom: .2em;
+	margin-left: 0px;
+}
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+.about-text{
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+
+.about-section{
+	margin-top: 7em;
+	clear: both;
+}
+
+.gallery-photo{
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 3em;
+}
+
+.gallery-photo{
+	display: block;
+  	text-align: center;
+  	width: 100%;
+  	max-width:600px;
+	}
+
+.lazy 
+{
+  background: #F1F1FA;
+  display: block;
+  border: 0;
+}
+
+.credits{
+	margin-left: .5em;
+	margin: .5em;
+}
+
+.lyrics{
+	margin-left: .6em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.centered-text{
+	text-align: center;
+}
+
+.menu {
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 50px;
+	
+}
+
+.menu p {
+	text-decoration: none;
+	color: white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1.3em;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1.35em;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.scroll-div
+{
+	background-color: black;
+	width: 96%;
+	max-height: 50em;
+	margin: .75em 2%;
+	margin-bottom: 20px;
+	padding:1em;
+	box-sizing: border-box;
+	width:100%;
+	max-width:40em;
+	margin-left:auto;
+	margin-right:auto;
+	border-style: solid;
+	border-color: white;
+	overflow: scroll;
+	color: white;
+}
+
+
+.center-page{
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+
+}
+
+.about-photo{
+	float: left;
+	width:100%;
+    max-width:250px;
+    margin-right: 1em;
+    margin-bottom: .25em;
+}
+
+.album-art{
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-bottom: 15px;
+ 	margin-top: 15px;
+  	max-width: 500px;
+  	width: 100%;
+}
+
+.more-info
+{
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+.socials
+{
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  	grid-row-gap: 10px;
+  	justify-content: space-around;
+  	justify-items: center;
+}
+
+.music-links
+{
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  	grid-row-gap: 10px;
+  	justify-content: space-around;
+  	justify-items: center;
+  	margin-bottom: 1em;
+  	margin-left: 2em;
+  	margin-right: 2em;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube, .fa-soundcloud, .fa-spotify, .fa-google-play, .fa-bandcamp
+{
+	color: white;
+  	font-size: 50px;
+  	text-decoration: none;
+}
+
+.apple-music{
+	max-width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-photo {
+    display: block;
+  	text-align: center;
+  	width: 100%;
+  	max-width:600px;
+  }
+
+    .about-section {
+    margin-top: 1em;
+	clear: both;
+  }
+
+  
+}
