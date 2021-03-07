@@ -17,6 +17,7 @@ article{
 	align-items: stretch;
 	flex-wrap: wrap;
 	align-content: left;
+	overflow-x: auto;
 }
 
 h1{
@@ -142,8 +143,10 @@ table
 {
 	border-collapse: collapse;
 	border:2.5px solid grey;
-	padding: 20px;
+/*	padding: 20px;
+*/	margin:0px;
 	text-align: center;
+	table-layout: fixed;
 }
 
 td
@@ -253,41 +256,6 @@ button
 	align-content: left;
 }
 
-.img-text {
-	position: relative;
-	text-align: center;
-	color: white;
-}
-
-
-.top-left 
-{
-	font-size: 2.8em;
-	top: 20px;
-	left: 40px;
-	font-family: 'Open Sans', sans-serif;
-	position: absolute;
-}
-
-.grid-container{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); 
-	grid-template-rows: repeat(3, 400px);
-
-}
-
-.js-sort-table{
-	font-size:1.2em;
-	color:rgb(255, 252, 252);
-	font-family: 'Open Sans', sans-serif;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.table{
-	overflow-x:auto;
-}
-
 #load{
 	display: block;
 	max-width: 300px;
@@ -310,6 +278,41 @@ button
 
 }
 
+.img-text {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+
+.top-left 
+{
+	font-size: 2.8em;
+	top: 20px;
+	left: 40px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+}
+
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-template-rows: repeat(3, 400px);
+
+}
+
+.js-sort-table{
+	font-size:1.2em;
+	color:rgb(255, 252, 252);
+	font-family: 'Open Sans', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table{
+	overflow-x:scroll;
+}
 
 .menu{
 	text-align: center;
@@ -325,7 +328,7 @@ button
 .full-row{
 	background-color: #383838;
 	width: 96%;
-	margin: .75em 2%;
+	margin: 20px;
 	margin-bottom: 20px;
 	padding:1em;
 	box-sizing: border-box;
@@ -334,7 +337,7 @@ button
 .full-row-blog{
 	background-color: rgb(56, 56, 56);
 	width: 96%;
-	margin: .75em 2%;
+	margin: 20px;
 	margin-bottom: 20px;
 	padding:1em;
 	box-sizing: border-box;
@@ -352,6 +355,12 @@ button
 .full-row-bottom p{
 	text-align: center;
 	margin-left: .6em;
+}
+
+.copyright
+{
+	color: white;
+	margin-bottom: 0px;
 }
 
 .blog-header
@@ -551,11 +560,48 @@ button
 		left: 1em;
 	}
 
-	.block-quote{
+	.block-quote
+	{
 	text-align:left;
 	margin-right: 1em;
 	margin-left: 1em;
-}
+	}
+
+	/*.full-row
+	{
+	background-color: #383838;
+	width: 96%;
+	margin: .75em 5%;
+	margin-bottom: 20px;
+	padding:1em;
+	box-sizing: border-box;
+	max-width: 357px;
+	}
+
+	.full-row-blog
+	{
+	background-color: rgb(56, 56, 56);
+	width: 96%;
+	margin: .75em 5%;
+	margin-bottom: 20px;
+	padding:1em;
+	box-sizing: border-box;
+	display:none;
+	}*/
+
+	/*#title
+	{
+	margin-left: 0px;
+	margin-right: 0px;
+	display: inline;
+	}
+
+	#quote
+	{
+	margin-left: 0px;
+	margin-right: 0px;
+	}*/
+
 }
 
 /*testing*/
