@@ -1,10 +1,14 @@
 body{
 	background-image: url('../images/main/snare.jpeg');
-	background-size: cover;
+	background-position: 50% 51%;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 	margin:0px;
 	padding: 0;
 	font-size:1em;
+	padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
 }
 
 article{
@@ -29,6 +33,7 @@ h1{
 	margin-right: 20px;
 	margin-top: 15px;
 	margin-bottom: 0px;
+	
 }
 
 h2{
@@ -78,6 +83,7 @@ p{
 	padding: 5px;
 	margin-left: 0px;
 	margin-top: 0px;
+	
 }
 
 b{
@@ -335,7 +341,7 @@ button
 	margin: 20px;
 	margin-bottom: 20px;
 	padding:1em;
-	box-sizing: border-box;
+
 }
 
 .full-row-blog{
@@ -375,6 +381,7 @@ button
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 5px;
+	
 
 }
 
@@ -409,6 +416,11 @@ button
 .small-caps{
 	font-variant: small-caps;
 	display: inline;
+}
+
+.word-break
+{
+	word-break: break-all;
 }
 
 .video-responsive{
