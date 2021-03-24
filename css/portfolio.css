@@ -90,7 +90,7 @@ p{
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 0em;
 	padding: 0px;
 	line-height: 1.6;
 	
@@ -107,6 +107,10 @@ a{
 	font-size:1em;
 	color: #FFE000;
 	font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+	margin-top: 1em;
 }
 
 sup{
@@ -378,7 +382,7 @@ button
 	text-align: center;
 	background-color: #000000;
 	width: 100%;
-	margin: 2%;
+	margin: 0%;
 	box-sizing: border-box;
 }
 
@@ -418,6 +422,7 @@ button
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 1em;
 }
 
 .centered-text{
