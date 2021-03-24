@@ -1,4 +1,4 @@
-body{
+html{
 	background-image: url('../images/main/snare.jpeg');
 	background-position: 50% 51%;
 	background-repeat: no-repeat;
@@ -14,7 +14,9 @@ body{
 article{
 	background-color: #000000;
 	width: 100%;
-	margin: .75em 2%;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: flex-start;
@@ -29,10 +31,10 @@ h1{
 	font-weight: normal;
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 15px;
-	margin-bottom: 0px;
+	margin: 2%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	padding:0px;
 	
 }
 
@@ -182,8 +184,10 @@ iframe
 
 header{
 	background-color: rgb(0, 0, 0);
-	width: 96%;
-	margin: .75em 2%;
+	width: 100%;
+	margin: 0%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	box-sizing: border-box;
 }
 
@@ -280,6 +284,9 @@ button
 }
 
 .img-text {
+	width: 100%;
+	padding:0%;
+	margin: 0%;
 	position: relative;
 	text-align: center;
 	color: white;
@@ -289,8 +296,8 @@ button
 .top-left 
 {
 	font-size: 2.8em;
-	top: 20px;
-	left: 40px;
+	top: 40px;
+	left: 20px;
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 }
@@ -328,28 +335,32 @@ button
 	text-align: center;
 	background-color: #000000;
 	font-size:1.2em;
-	width: 96%;
+	width: 100%;
 	color:rgb(255, 255, 255);
-	margin: .75em 2%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 3%;
 	padding:1em;
 	box-sizing: border-box;
 }
 
 .full-row{
 	background-color: #383838;
-	width: 96%;
-	margin: 20px;
+	width: 100%;
+	margin: 2%;
+	margin-top: 1%;
 	margin-bottom: 20px;
-	padding:1em;
+	padding: 2%;
 
 }
 
 .full-row-blog{
 	background-color: rgb(56, 56, 56);
 	width: 96%;
-	margin: 20px;
+	margin: 2%;
+	margin-top: 1%;
 	margin-bottom: 20px;
-	padding:1em;
+	padding: 2%;
 	box-sizing: border-box;
 	display:none;
 }
@@ -357,8 +368,8 @@ button
 .full-row-bottom{
 	text-align: center;
 	background-color: #000000;
-	width: 96%;
-	margin: .75em 2%;
+	width: 100%;
+	margin: 2%;
 	box-sizing: border-box;
 }
 
@@ -378,9 +389,7 @@ button
 	font-size:2.2em;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 5px;
+	margin:0px;
 	
 
 }
@@ -571,7 +580,7 @@ button
 {
 	div.top-left 
 	{
-		font-size: 5vw;
+		font-size: 5.5vw;
 		top: 1em;
 		left: 1em;
 	}
