@@ -6,7 +6,7 @@ body, html {
 
 h1{
 	font-family: 'Carrois Gothic SC', sans-serif;
-	font-size: clamp(40px, 5vw, 70px);
+	font-size: 8em;
 	margin-bottom: 0px;
 	color: black;
 	
@@ -150,10 +150,9 @@ hr{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 50px;
-	
-}
+	}
 
-.menu-top p {
+.menu-top p, a {
 	text-decoration: none;
 	color: black;
 	font-family: 'Merriweather', serif;
@@ -164,16 +163,6 @@ hr{
 	font-weight: bold;
 }
 
-.menu-top a {
-
-	text-decoration: none;
-	color: black;
-	font-family: 'Merriweather', serif;
-	text-align: center;
-	font-size: 1.35em;
-	margin-left: 10px;
-	margin-right: 10px;
-}
 
 .menu-scroll {
 	transition: background-color 1s ease;
@@ -327,15 +316,58 @@ hr{
 	max-width: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  .about-photo {
+@media only screen and (max-width: 600px) 
+{
+	h1
+	{
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 4em;
+	margin-bottom: 0px;
+	color: black;
+	
+	}
+
+.menu-top p, a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.menu-scroll p {
+	transition: background-color 1s ease;
+	text-decoration: none;
+	color: white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.menu-scroll a {
+
+	text-decoration: none;
+	color: white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0px;
+}
+
+  .about-photo 
+  {
     display: block;
   	text-align: center;
   	width: 100%;
   	max-width:600px;
   }
 
-    .about-section {
+    .about-section 
+  {
     margin-top: 1em;
 	clear: both;
   }
