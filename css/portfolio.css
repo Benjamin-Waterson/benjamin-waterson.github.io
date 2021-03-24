@@ -33,7 +33,7 @@ article{
 }
 
 h1{
-	font-size: 250%;
+	font-size: 2.5em;
 	font-weight: normal;
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
@@ -403,6 +403,8 @@ button
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin:0px;
+	margin-top: 0px;
+	padding: 0px;
 	
 
 }
@@ -416,6 +418,10 @@ button
 .socials{
 	display: grid;
 	justify-items: center;
+}
+
+#summary-image{
+	margin-top: 1%;
 }
 
 .centered-image{
@@ -594,9 +600,9 @@ button
 {
 	div.top-left 
 	{
-		font-size: 5.5vw;
-		top: 1em;
-		left: 1em;
+		font-size: 6vw;
+		top: .5em;
+		left: .5em;
 	}
 
 	.block-quote
