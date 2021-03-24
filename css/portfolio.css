@@ -85,7 +85,7 @@ h5{
 
 
 p{
-	font-size:1.2em;
+	font-size:1.3em;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -228,6 +228,18 @@ button
 {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+}
+
+.welcome-text{
+	font-size:1.3em;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+
 }
 
 #title
