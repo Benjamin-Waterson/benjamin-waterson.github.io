@@ -1,4 +1,11 @@
-html{
+html {
+  height: 100%;
+  margin: 0em;
+  padding: 0em;
+
+}
+
+body{
 	background-image: url('../images/main/snare.jpeg');
 	background-position: 50% 51%;
 	background-repeat: no-repeat;
@@ -26,7 +33,7 @@ article{
 }
 
 h1{
-	font-size:2.2em;
+	font-size: 250%;
 	font-weight: normal;
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
@@ -60,7 +67,8 @@ h4{
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
 	margin-bottom: 0px;
-	margin-left: 5px;
+	margin-left: 0px;
+	padding:0px;
 	font-weight: 600;
 }
 
@@ -254,6 +262,7 @@ button
 	margin-top:0px;
 	margin-left:auto;
 	margin-right:auto;
+	padding: 0em;
 	display:flex;
 	justify-content: flex-start;
 	align-items: stretch;
@@ -359,7 +368,7 @@ button
 	width: 96%;
 	margin: 2%;
 	margin-top: 1%;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	padding: 2%;
 	box-sizing: border-box;
 	display:none;
