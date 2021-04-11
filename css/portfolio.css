@@ -7,7 +7,7 @@ html {
 
 body{
 	background-image: url('../images/main/snare.jpeg');
-	background-position: 50% 51%;
+	background-position: 50% 53%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -38,6 +38,7 @@ h1{
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
 	margin-left: 12px;
+	margin-right: 12px;
 	margin-bottom: 0px;
 	margin-top: 10px;
 	padding: 0px;
@@ -90,8 +91,8 @@ p{
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
-	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 0em;
 	padding: 0px;
 	line-height: 1.6;
 	
@@ -111,8 +112,8 @@ a{
 }
 
 hr{
-	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-top: 1em;
+	margin-bottom: 0px;
 }
 
 sup{
@@ -142,11 +143,17 @@ img{
 }
 
 video {
+	margin-top: 1em;
 	max-width: 100%;
 	height: auto;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 thead {
@@ -230,6 +237,10 @@ button
 {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+}
+
+audio{
+	margin-top: 25px;
 }
 
 #wrapper{
@@ -335,7 +346,7 @@ button
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
-	margin-top: .5%;
+	margin-top: -5px;
 	margin-bottom: 0em;
 	padding: 0px;
 	line-height: 1.6;
@@ -384,7 +395,7 @@ button
 .menu{
 	text-align: center;
 	background-color: #000000;
-	font-size:1.2em;
+	font-size:1.3em;
 	width: 100%;
 	color:rgb(255, 255, 255);
 	margin-left: 0px;
@@ -404,7 +415,7 @@ button
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
-	padding-bottom: 0px;
+	padding-bottom: 5px;
 
 }
 
@@ -417,7 +428,7 @@ button
 	padding-top: 5px;
 	padding-right: 15px;
 	padding-left: 15px;
-	padding-bottom: 0px;
+	padding-bottom: 15px;
 	box-sizing: border-box;
 	display:none;
 }
@@ -455,10 +466,21 @@ button
 
 }
 
+.date{
+	font-size:1.3em;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	padding: 0px;
+	line-height: 1.6;
+}
+
 .block-quote{
 	text-align:left;
-	margin-right: 3em;
-	margin-left: 3em;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .socials{
@@ -467,26 +489,27 @@ button
 }
 
 #summary-image{
-	margin-bottom: 5px;
+	margin-bottom: -10px;
 }
 
 .centered-image{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-top: .5em;
+	margin-bottom: -1em;
 }
 
 .centered-text{
 	text-align: center;
-	font-size:1.2em;
+	font-size:1.3em;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
-	margin: 5px;
-	padding: 5px;
-	margin-left: 0px;
-	margin-top: 0px;
+	margin: 0%;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
 }
 
 .small-caps{
@@ -500,6 +523,8 @@ button
 }
 
 .video-responsive{
+	margin-top: .5em;
+	margin-bottom: -0.5em;
 	overflow:hidden;
 	padding-bottom:56.25%;
 	position:relative;
@@ -549,7 +574,7 @@ button
 
 }
 .gallery-poster{
-	margin-bottom: 100px;
+	margin-bottom: 350px;
 	text-align: left;
 	width: 350px; 
 	height: 546px;
@@ -651,15 +676,94 @@ button
 		top: .5em;
 		left: .5em;
 	}
+}
 
-	.block-quote
-	{
-	text-align:left;
-	margin-right: 1em;
-	margin-left: 1em;
-	};
+@media screen and (max-width: 500px) {
+
+	h1{
+	font-size: 8vw;
+	font-weight: normal;
+	color: #BAB9B9;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	padding: 0px;
+	
+}
+
+p{
+	font-size: 4.8vw;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+	
+}
+.menu{
+	text-align: center;
+	background-color: #000000;
+	font-size: 4.8vw;
+	width: 100%;
+	color:rgb(255, 255, 255);
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 3%;
+	padding: .8em;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+.blog-header
+{
+	font-size: 8vw;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin:0px;
+	margin-top: 3px;
+	padding: 0px;
+	
 
 }
 
-/*testing*/
+.date{
+	font-size: 4.8vw;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	padding: 0px;
+	line-height: 1.6;
+}
+
+.top-paragraph{
+	font-size: 4.8vw;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: -5px;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+	}
+
+.centered-text{
+	text-align: center;
+	font-size: 4.8vw;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+}
+
+}
+
 
