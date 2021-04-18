@@ -68,7 +68,7 @@ h4{
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
-	margin-bottom: 0px;
+	margin-bottom: -.8em;
 	margin-left: 0px;
 	padding:0px;
 	font-weight: 600;
@@ -484,6 +484,7 @@ audio{
 }
 
 .socials{
+	margin-top: 1em;
 	display: grid;
 	justify-items: center;
 }
