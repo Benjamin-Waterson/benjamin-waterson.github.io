@@ -2,6 +2,7 @@ html {
   height: 100%;
   margin: 0em;
   padding: 0em;
+ font-size: 16px;
 
 }
 
@@ -33,7 +34,7 @@ article{
 }
 
 h1{
-	font-size: 2.3em;
+	font-size: 2.3rem;
 	font-weight: normal;
 	color: #BAB9B9;
 	font-family: 'Open Sans', sans-serif;
@@ -46,7 +47,7 @@ h1{
 }
 
 h2{
-	font-size:2em;
+	font-size:2rem;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -55,7 +56,7 @@ h2{
 }
 
 h3{
-	font-size:1.75em;
+	font-size:1.75rem;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -64,7 +65,7 @@ h3{
 }
 
 h4{
-	font-size:1.50em;
+	font-size:1.50rem;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
@@ -75,7 +76,7 @@ h4{
 }
 
 h5{
-	font-size:1.50em;
+	font-size: 1.50rem;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
@@ -87,7 +88,7 @@ h5{
 
 
 p{
-	font-size:1.3em;
+	font-size: 1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -106,7 +107,7 @@ b{
 
 a{
 	text-decoration: none;
-	font-size:1em;
+	font-size: 1.3rem;
 	color: #FFE000;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -131,7 +132,7 @@ figure{
 figcaption{
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	font-style: italic;
 	text-align: center;
 	padding: 1em;
@@ -175,6 +176,7 @@ width: 100%;
 
 td
 {
+	font-size: 1.3rem;
 	border-collapse: collapse;
 	border:2.5px solid grey;
 	padding: 15px;
@@ -189,6 +191,7 @@ th:hover{
 
 th
 {
+	font-size: 1.3rem;
 	font-weight: bold;
 	border-collapse: collapse;
 	border:2.5px solid grey;
@@ -213,7 +216,7 @@ header{
 }
 
 li{
-	font-size:1.2em;
+	font-size:1.2rem;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
 }
@@ -259,7 +262,7 @@ audio{
 
 
 .welcome-text{
-	font-size:1.3em;
+	font-size:1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -334,7 +337,7 @@ audio{
 
 .top-left 
 {
-	font-size: 2.8em;
+	font-size: 2.8rem;
 	top: 40px;
 	left: 20px;
 	font-family: 'Open Sans', sans-serif;
@@ -342,7 +345,7 @@ audio{
 }
 
 .top-paragraph{
-	font-size:1.3em;
+	font-size: 1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -354,7 +357,7 @@ audio{
 }
 
 .tags{
-	font-size:1.3em;
+	font-size: 1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -389,13 +392,14 @@ audio{
 
 
 .table{
+	margin-top: 3em;
   	overflow-x: auto;
 }
 
 .menu{
 	text-align: center;
 	background-color: #000000;
-	font-size:1.3em;
+	font-size: 1.3rem;
 	width: 100%;
 	color:rgb(255, 255, 255);
 	margin-left: 0px;
@@ -467,7 +471,7 @@ audio{
 }
 
 .date{
-	font-size:1.3em;
+	font-size:1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -490,6 +494,8 @@ audio{
 }
 
 #summary-image{
+	text-align: center;
+	margin-right: 0px;
 	margin-bottom: -10px;
 }
 
@@ -503,7 +509,7 @@ audio{
 
 .centered-text{
 	text-align: center;
-	font-size:1.3em;
+	font-size: 1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -558,56 +564,73 @@ audio{
 }
 
 
-.container {
-	margin: auto;
-	max-width: 1200px;
-}
 
 .responsive-image {
 	max-width: 100%;
 }
 
 .container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
-
-}
-.gallery-poster{
-	margin-bottom: 350px;
-	text-align: left;
-	width: 350px; 
-	height: 546px;
-
-}
-
-.gallery-portrait
-{
-	margin-bottom: 100px;
 	text-align: center;
-	width: 350px; 
-	height: 466px;
+	display: block;
+
+}
+
+.gallery-poster {
+	display:inline-block;
+	margin-bottom: 0em;
+	max-width: 500px; 
+	width: 100%;
+}
+
+figcaption.poster-caption {
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	font-style: normal;
+	text-align: left;
+	padding:0em;
+	margin-top: .2em;
+	margin-bottom: .5em;
 
 }
 
 .gallery-landscape
 {
-	margin-bottom: 100px;
-	text-align: center;
-	width: 350px; 
-	height: 262px;
+	display:inline-block;
+	margin-bottom: 25px;
+	max-width: 500px; 
 
 }
+
+.gallery-portrait
+{
+	display:inline-block;
+	margin-bottom: 15px;
+	max-width: 500px; 
+
+}
+
 
 .gallery-landscape img {
 	height: 100%;
 	width: 100%;
 }
 
+figcaption.gallery-caption{
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	font-style: normal;
+	text-align: center;
+	padding:0em;
+	margin-top: .2em;
+	margin-bottom: .5em;
+
+}
+
 .selected{
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.3rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	border-bottom: 2px solid;
@@ -623,9 +646,11 @@ audio{
 
 .socials
 {
+	margin-top: 2%;
+	margin-bottom: 2%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	grid-row-gap: 10px;
+	grid-row-gap: 25px;
 	justify-content: space-around;
 }
 
@@ -681,69 +706,104 @@ audio{
 
 @media screen and (max-width: 500px) {
 
+	html{
+		font-size: 1vw;
+	}
+
 	h1{
-	font-size: 8vw;
-	font-weight: normal;
-	color: #BAB9B9;
-	font-family: 'Open Sans', sans-serif;
-	margin-left: 12px;
-	margin-right: 12px;
-	margin-bottom: 0px;
-	margin-top: 10px;
-	padding: 0px;
+	font-size: 7.2rem;
+
 	
 }
 
-p{
-	font-size: 4.8vw;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0%;
-	margin-top: 1em;
-	margin-bottom: 0em;
-	padding: 0px;
-	line-height: 1.6;
+h2{
+	font-size:7rem;
+}
+
+h3{
+	font-size:5rem;
+
+}
+
+h4{
+	font-size: 5rem;
 	
 }
+
+h5{
+	font-size: 1.50rem;
+}
+
+a{
+	font-size: 4rem;
+	
+}
+
+
+p{
+	font-size: 4rem;
+	
+}
+
+hr{
+	margin-top: 3em;
+	margin-bottom: 0px;
+}
+
+td
+{
+	font-size: 4rem;
+}
+
+th
+{
+	font-size: 4rem;
+}
+
 .menu{
-	text-align: center;
-	background-color: #000000;
-	font-size: 4.8vw;
-	width: 100%;
-	color:rgb(255, 255, 255);
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 3%;
-	padding: .8em;
-	line-height: 1.6;
-	box-sizing: border-box;
+	font-size: 4rem;
+
+	
+}
+
+.welcome-text{
+	font-size: 4.5rem;
+	margin-top: -.5em;
+	margin-bottom: 1em;
+
+
+}
+
+.selected{
+	font-size: 4rem;
+
+}
+
+.tooltip .tooltiptext {
+	font-size:4em;
+
 }
 
 .blog-header
 {
-	font-size: 8vw;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin:0px;
-	margin-top: 3px;
-	padding: 0px;
+	font-size: 7rem;
 	
 
 }
 
 .date{
-	font-size: 4.8vw;
+	font-size: 4rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
-	margin-top: 1em;
-	margin-bottom: .5em;
+	margin-top: 0em;
+	margin-bottom: 1em;
 	padding: 0px;
 	line-height: 1.6;
 }
 
 .top-paragraph{
-	font-size: 4.8vw;
+	font-size: 4rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -755,7 +815,7 @@ p{
 
 .centered-text{
 	text-align: center;
-	font-size: 4.8vw;
+	font-size: 4.8rem;
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
@@ -764,6 +824,21 @@ p{
 	padding: 0px;
 	line-height: 1.6;
 }
+
+figcaption.poster-caption {
+	font-size: 4rem;
+
+
+}
+
+figcaption.gallery-caption{
+
+
+	font-size: 4rem;
+
+
+}
+
 
 }
 
