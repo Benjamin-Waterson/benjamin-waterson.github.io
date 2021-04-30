@@ -127,15 +127,17 @@ figure{
 	max-width:100%;
 	display:block;
 	vertical-align: top;
+	padding: 0em;
+	margin:5%;
 }
 
 figcaption{
 	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-style: italic;
 	text-align: center;
-	padding: 1em;
+	padding: .5em;
 }
 
 img{
@@ -157,21 +159,28 @@ ul{
 	margin-bottom: 0px;
 }
 
+
+
 thead {
 	color:white;
 }
 
 tbody {
 	color:white;
+
 }
 
-tfoot {
-	color:red;
-}
 
 table
 {
-width: 100%;
+	table-layout: auto;
+	width: 100%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
 }
 
 td
@@ -368,32 +377,18 @@ audio{
 }
 
 
-.grid-container{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); 
-	grid-template-rows: repeat(3, 400px);
-
-}
-
 .js-sort-table{
-	display: block;
-	block-size: fit-content;
-	width: fit-content;
-  	max-width: 100%;
-	border-collapse: collapse;
-	text-align: center;
-	table-layout: fixed;
+	border-collapse: collapse;	
 	font-size: 1.2em;
 	color:rgb(255, 252, 252);
 	font-family: 'Open Sans', sans-serif;
-	margin: auto;
-    white-space: normal;
 }
 
 
 .table{
-	margin-top: 3em;
-  	overflow-x: auto;
+  	overflow-x: scroll;
+  	text-align: center;
+
 }
 
 .menu{
@@ -420,6 +415,7 @@ audio{
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: 5px;
+	overflow-x: auto;
 
 }
 
@@ -466,7 +462,6 @@ audio{
 	margin:0px;
 	margin-top: 3px;
 	padding: 0px;
-	
 
 }
 
@@ -707,7 +702,7 @@ figcaption.gallery-caption{
 @media screen and (max-width: 500px) {
 
 	html{
-		font-size: 1vw;
+		font-size: 1.2vw;
 	}
 
 	h1{

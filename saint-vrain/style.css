@@ -72,23 +72,13 @@ hr{
 	margin-bottom: 10px;
 }
 
-.welcome-photo
-{
-	content: url("DSC_0979_4.JPG");
-	display:block;
-	position: relative;
-	width:100%; height:100%;
-	object-fit: cover;
 
-}
-
-.welcome-photo::after
+body.welcome-photo
 {
-	content: url("DSC_0979_4.JPG") / " Saint Vrain ";
-	display:block;
-	position: relative;
-	width:100%; height:100%;
-	object-fit: cover;
+	background-image: url("DSC_0979_4.JPG");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 }
 
@@ -113,6 +103,7 @@ hr{
 }
 
 .center-page{
+	position: fixed;
 	align-items: center;
 	text-align: center;
 	position: absolute;
@@ -256,9 +247,11 @@ hr{
 
 .header-photo
 {
-	content: url(DSC_0979_4_copy.JPG);
+	background-image: url(DSC_0979_4_copy.JPG);
+	background-size: cover;
+	background-position: 50%;
 	width:100%; height:50%;
-	object-fit: cover;
+	
 
 }
 
