@@ -10,18 +10,21 @@ body::after{
 	content: "";
 	position: fixed;
 	top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    height:100vh;
     left:0;
     right:0;
     z-index:-1;
 	background-image: url('../images/main/snare.jpeg');
-	background-repeat: no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	margin: 0px;
+	background-position: 50% 55%;
+	background-repeat: no-repeat;
+	margin:0px;
 	padding: 0px;
+	padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
 }
 
 article{
