@@ -274,11 +274,6 @@ audio{
 	padding-bottom: env(safe-area-inset-bottom, 20px);	
 	padding-right: env(safe-area-inset-right, 20px);	
 	padding-left: env(safe-area-inset-left, 20px);
-	display:flex;
-	justify-content: flex-start;
-	align-items: stretch;
-	flex-wrap: wrap;
-	align-content: left;
 }
 
 
