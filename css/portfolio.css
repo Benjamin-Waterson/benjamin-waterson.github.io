@@ -19,7 +19,9 @@ body::after{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	background-position: 50% 55%;
+    background-position: 50% 55%;
+	background-position-x: 50%;
+	background-position-y: 55%;
 	background-repeat: no-repeat;
 	margin:0px;
 	padding: 0px;
