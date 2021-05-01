@@ -1,8 +1,8 @@
 html {
   	height: 100%;
   	margin: 0em;
-  	padding: 0em;
  	font-size: 16px;
+ 	padding-bottom: .2em env(safe-area-inset-bottom);
 
 }
 
@@ -267,7 +267,7 @@ audio{
 	margin-top:0px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-bottom: .2em env(safe-area-inset-bottom);
+	padding-bottom: .2em;
 }
 
 
@@ -410,8 +410,6 @@ audio{
 	background-color: #383838;
 	width: 100%;
 	margin: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -424,8 +422,6 @@ audio{
 	background-color: rgb(56, 56, 56);
 	width: 100%;
 	margin: 15px;
-	margin-top: 10px;
-	margin-bottom: 15px;
 	padding-top: 5px;
 	padding-right: 15px;
 	padding-left: 15px;
