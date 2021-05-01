@@ -2,8 +2,6 @@ html {
   	height: 100%;
   	margin: 0em;
  	font-size: 16px;
- 	padding-right: max(5px, env(safe-area-inset-right));
- 	padding-left: max(5px, env(safe-area-inset-left));
  	padding-top: max(5px, env(safe-area-inset-top));
  	padding-bottom: max(5px, env(safe-area-inset-bottom));
 
@@ -684,6 +682,17 @@ figcaption.gallery-caption{
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
+}
+
+@media (orientation: landscape)
+{
+	html
+	{
+	padding-right: max(5px, env(safe-area-inset-right));
+ 	padding-left: max(5px, env(safe-area-inset-left));
+	padding-top: max(5px, env(safe-area-inset-top));
+ 	padding-bottom: max(5px, env(safe-area-inset-bottom));
+ 	}
 }
 
 @media screen and (max-width: 750px) 
