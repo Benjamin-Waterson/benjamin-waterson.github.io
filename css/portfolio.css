@@ -2,7 +2,10 @@ html {
   	height: 100%;
   	margin: 0em;
  	font-size: 16px;
- 	padding-bottom: .2em env(safe-area-inset-bottom);
+ 	padding-right: max(12px, env(safe-area-inset-right));
+ 	padding-left: max(12px, env(safe-area-inset-left));
+ 	padding-top: max(12px, env(safe-area-inset-top));
+ 	padding-bottom: max(12px, env(safe-area-inset-bottom));
 
 }
 
