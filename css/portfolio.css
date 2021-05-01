@@ -2,8 +2,6 @@ html {
   	height: 100%;
   	margin: 0em;
  	font-size: 16px;
- 	padding-top: max(5px, env(safe-area-inset-top));
- 	padding-bottom: max(5px, env(safe-area-inset-bottom));
 
 }
 
@@ -683,6 +681,14 @@ figcaption.gallery-caption{
 	visibility: visible;
 	opacity: 1;
 }
+@media screen and (orientation: portrait)
+{
+	html
+	{
+ 	padding-top: max(5px, env(safe-area-inset-top));
+ 	padding-bottom: max(5px, env(safe-area-inset-bottom));
+ 	}
+}
 
 @media screen and (orientation: landscape)
 {
@@ -758,6 +764,10 @@ td
 
 th
 {
+	font-size: 4rem;
+}
+
+#load{
 	font-size: 4rem;
 }
 
