@@ -266,7 +266,7 @@ audio{
 	margin-top:0px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-bottom: .2em;
+	padding-bottom: .5em;
 }
 
 #title
@@ -278,7 +278,7 @@ audio{
 #summary-image{
 	text-align: center;
 	margin-right: 0px;
-	margin-bottom: -.8em;
+	margin-bottom: -12px;
 }
 
 
@@ -491,8 +491,8 @@ audio{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: .5em;
-	margin-bottom: -.8em;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 .centered-text{
