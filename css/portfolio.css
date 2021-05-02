@@ -269,24 +269,18 @@ audio{
 	padding-bottom: .2em;
 }
 
-
-.welcome-text{
-	font-size:1.3rem;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0%;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	padding: 0px;
-	line-height: 1.6;
-
-}
-
 #title
 {
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
+#summary-image{
+	text-align: center;
+	margin-right: 0px;
+	margin-bottom: -.8em;
+}
+
 
 #search-results
 {
@@ -353,6 +347,18 @@ audio{
 	position: absolute;
 }
 
+.welcome-text{
+	font-size:1.3rem;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+
+}
+
 .top-paragraph{
 	font-size: 1.3rem;
 	color: #DDDBDB;
@@ -412,7 +418,7 @@ audio{
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
-	padding-bottom: 5px;
+	padding-bottom: .8em;
 	overflow-x: auto;
 
 }
@@ -481,18 +487,12 @@ audio{
 	justify-items: center;
 }
 
-#summary-image{
-	text-align: center;
-	margin-right: 0px;
-	margin-bottom: -10px;
-}
-
 .centered-image{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: .5em;
-	margin-bottom: -1em;
+	margin-bottom: -.8em;
 }
 
 .centered-text{
@@ -518,7 +518,7 @@ audio{
 }
 
 .video-responsive{
-	margin-top: .5em;
+	margin-top: .8em;
 	margin-bottom: -0.5em;
 	overflow:hidden;
 	padding-bottom:56.25%;
@@ -681,6 +681,7 @@ figcaption.gallery-caption{
 	visibility: visible;
 	opacity: 1;
 }
+
 @media screen and (orientation: portrait)
 {
 	html
