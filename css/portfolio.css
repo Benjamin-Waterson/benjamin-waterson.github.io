@@ -447,9 +447,10 @@ audio{
 	margin-top: 1em;
 }
 
-.copyright
+.copyright::after
 {
-	color: white;
+	content: "\00A9 2021 Benjamin Waterson";
+	color: #DDDBDB;
 	margin-bottom: 0px;
 }
 
