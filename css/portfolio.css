@@ -35,7 +35,6 @@ article{
 	align-items: stretch;
 	flex-wrap: wrap;
 	align-content: left;
-	overflow-x: scroll;
 }
 
 h1{
@@ -147,7 +146,7 @@ figcaption{
 
 img{
 	max-width:100%;
-	display:block;
+	height: auto;
 }
 
 video {
@@ -419,13 +418,13 @@ audio{
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: .8em;
-	overflow-x: auto;
 
 }
 
 .full-row-blog{
 	background-color: rgb(56, 56, 56);
 	width: 100%;
+	height: auto;
 	margin: 15px;
 	padding-top: 5px;
 	padding-right: 15px;
@@ -433,6 +432,7 @@ audio{
 	padding-bottom: 15px;
 	box-sizing: border-box;
 	display:none;
+	overflow: auto;
 }
 
 .full-row-bottom{
@@ -494,6 +494,14 @@ audio{
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: -10px;
+}
+
+.centered-image-bottom{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .centered-text{
@@ -806,36 +814,14 @@ th
 
 .date{
 	font-size: 4rem;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0%;
-	margin-top: 0em;
-	margin-bottom: 1em;
-	padding: 0px;
-	line-height: 1.6;
 }
 
 .top-paragraph{
 	font-size: 4rem;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0%;
-	margin-top: -5px;
-	margin-bottom: 0em;
-	padding: 0px;
-	line-height: 1.6;
 	}
 
 .centered-text{
-	text-align: center;
 	font-size: 4.8rem;
-	color: #DDDBDB;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0%;
-	margin-top: 1em;
-	margin-bottom: 0em;
-	padding: 0px;
-	line-height: 1.6;
 }
 
 figcaption.poster-caption {
