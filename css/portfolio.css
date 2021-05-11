@@ -418,6 +418,7 @@ audio{
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: .8em;
+	overflow-x: scroll;
 
 }
 
