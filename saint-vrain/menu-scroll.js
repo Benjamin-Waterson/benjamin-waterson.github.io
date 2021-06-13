@@ -3,7 +3,7 @@ $(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >= 100) {
+        if (scroll >= 50) {
             header.removeClass('menu-top').addClass("menu-scroll");
         } else {
             header.removeClass("menu-scroll").addClass('menu-top');

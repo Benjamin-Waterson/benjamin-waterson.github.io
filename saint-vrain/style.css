@@ -46,8 +46,8 @@ h5{
 	font-size: 1rem;
 	text-align: left;
 	margin-top: 1em;
-	margin-bottom: .2em;
-	margin-left: 0px;
+	margin-bottom: 0em;
+	margin-left: -5px;
 	color: black;
 }
 
@@ -57,13 +57,15 @@ p{
 	font-size: 1.1rem;
 }
 
-a.link  {
+a {
 	font-weight: normal;
 	color: red;
-	text-decoration: none;
+	text-decoration: underline;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1rem;
-	margin: 0px;
+	font-size: .5 rem;
+	margin: 0;
+	margin-top: 0;
+	padding: 0;
 }
 
 hr{
@@ -75,7 +77,7 @@ hr{
 
 body.welcome-photo
 {
-	background-image: url("DSC_0979_4.JPG");
+	background-image: url("welcome-photo-fairgrounds-desktop.JPG");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -84,7 +86,6 @@ body.welcome-photo
 
 .learn-more {
 	font-family: 'Barlow Condensed', sans-serif;
-	min-width: 150px;
 	font-size: 2rem;
 	border: solid 4px;
 	border-color: black;
@@ -95,6 +96,7 @@ body.welcome-photo
 	display: inline-block;
 	transition: 0.3s;
 }
+
 
 .learn-more:hover, .learn-more:active {
 	background-color: black;
@@ -133,8 +135,8 @@ body.welcome-photo
 	text-align: center;
 	width: 100%;
 	max-width: 650px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .lazy 
@@ -145,7 +147,7 @@ body.welcome-photo
 }
 
 .credits{
-	margin-top: 1em;
+	margin-top: .5em;
 	margin-left: .5em;
 }
 
@@ -161,6 +163,7 @@ body.welcome-photo
 }
 
 .menu-top {
+	z-index: ;
 	transition: background-color 1s ease;
 	position: fixed;
 	top: 0;
@@ -176,7 +179,7 @@ body.welcome-photo
 	line-height: 50px;
 }
 
-.menu-top p, a {
+.menu-top p {
 	text-decoration: none;
 	color: black;
 	font-family: 'Merriweather', serif;
@@ -189,8 +192,20 @@ body.welcome-photo
 	font-weight: bold;
 }
 
+.menu-top a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 
 .menu-scroll {
+	z-index: 99;
 	transition: background-color 1s ease;
 	background-color: black;
 	position: fixed;
@@ -221,11 +236,11 @@ body.welcome-photo
 }
 
 .menu-scroll a {
-
 	text-decoration: none;
 	color: white;
 	font-family: 'Merriweather', serif;
 	text-align: center;
+	font-weight: bold;
 	font-size: 1.8rem;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -247,7 +262,7 @@ body.welcome-photo
 
 .header-photo
 {
-	background-image: url(DSC_0979_4_copy.JPG);
+	background-image: url(header-photo-desktop-fairgrounds.JPG);
 	background-size: cover;
 	background-position: 50%;
 	width:100%; height:50%;
@@ -285,7 +300,6 @@ body.welcome-photo
 
 .listen-now {
 	font-family: 'Barlow Condensed', sans-serif;
-	min-width: 150px;
 	font-size: 1.8rem;
 	border: solid 4px;
 	border-color: black;
@@ -308,11 +322,23 @@ body.welcome-photo
 }
 
 .calender {
-	margin-top: 50px;
-	margin-right: 0px;
-	margin-left: 0px;
-	max-width: 50%;
+	position: relative;
+  overflow: x-scroll;
+  width: 100%;
+  padding-top: 100%;
 }
+
+.responsive-calendar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 .video-responsive{
 	overflow:hidden;
@@ -324,6 +350,7 @@ body.welcome-photo
 }
 
 .video-responsive iframe{
+	z-index: 0;
 	left:0;
 	top:0;
 	height:100%;
@@ -335,8 +362,8 @@ body.welcome-photo
 .socials
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	grid-row-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	grid-row-gap: 1px;
 	justify-content: space-around;
 	justify-items: center;
 }
@@ -384,7 +411,7 @@ body.welcome-photo
 
 	.learn-more {
 		font-size: 3rem;
-		padding: 2% 0%;
+		padding: 1rem ;
 	}
 }
 
@@ -429,15 +456,32 @@ body.welcome-photo
 	margin-bottom: 10px;
 	}
 
-	h5{
+	h5
+	{
 	font-size: 2rem;
-}
+	}
 
-	p{
+	p
+	{
 		font-size: 2rem;
 	}
 
-	.menu-top p, a 
+	a {
+	font-size: 2rem;
+}
+
+	.menu-top p
+	{
+		
+		font-size: 3rem;
+		margin-top: 1%;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-bottom: 1%;
+		line-height: 200%;
+	}
+
+	.menu-top a 
 	{
 		
 		font-size: 3rem;
@@ -498,20 +542,14 @@ a.link  {
 	}
 
 	.welcome-photo{
-	content: url(DSC_0979_4_copy_copy.JPG);
+	content: url(header-photo-fairgrounds-mobile.JPG);
 
 }
 
-	.learn-more {
-
-	font-size: 3vw;
-	padding: 1%;
-
-	}
 
 	.header-photo
 {
-	content: url(DSC_0979_4_copy_copy.JPG);
+	content: url(header-photo-fairgrounds-mobile.JPG);
 	width:100%; height:70%;
 	object-fit: cover;
 
