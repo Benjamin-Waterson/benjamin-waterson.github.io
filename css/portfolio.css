@@ -57,6 +57,7 @@ h2{
 	text-align: center;
 	font-weight: 700;
 	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 h3{
@@ -702,6 +703,14 @@ figcaption.gallery-caption{
 	opacity: 1;
 }
 
+/*@media screen and (max-width:  1080px)
+{
+	#wrapper{
+	width:90%;
+}
+
+}*/
+
 @media screen and (orientation: portrait)
 {
 	html
@@ -727,7 +736,7 @@ figcaption.gallery-caption{
 	div.top-left 
 	{
 		font-size: 6vw;
-		top: .5em;
+		top: .2em;
 		left: .5em;
 	}
 }
@@ -739,7 +748,7 @@ figcaption.gallery-caption{
 	}
 
 	h1{
-	font-size: 7.2rem;
+	font-size: 5.5rem;
 
 	
 }
@@ -763,13 +772,13 @@ h5{
 }
 
 a{
-	font-size: 4rem;
+	font-size: 3.8rem;
 	
 }
 
 
 p{
-	font-size: 4rem;
+	font-size: 3.8rem;
 	
 }
 
@@ -792,12 +801,18 @@ li{
 	font-size: 4rem;
 }
 
+figcaption{
+	font-size: 3.5rem;
+	
+}
+
 #load{
 	font-size: 4rem;
 }
 
 .menu{
 	font-size: 4rem;
+	padding: .5em;
 
 	
 }
@@ -822,7 +837,7 @@ li{
 
 .blog-header
 {
-	font-size: 7rem;
+	font-size: 5.5rem;
 	
 
 }
