@@ -159,7 +159,7 @@ video {
 	margin-right: auto;
 }
 
-ul{
+ul.tags{
 	padding: 0;
 	margin-left: 25px;
 	margin-top: 0px;
@@ -261,6 +261,12 @@ button
 
 audio{
 	margin-top: 25px;
+}
+
+details{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	color: #DDDBDB;
 }
 
 #wrapper{
@@ -422,7 +428,7 @@ audio{
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
-	padding-bottom: .8em;
+	padding-bottom: 15px;
 	overflow-x: scroll;
 
 }
@@ -703,6 +709,19 @@ figcaption.gallery-caption{
 	opacity: 1;
 }
 
+.month {
+	margin-left: 10px;
+}
+
+.blog-archive
+{
+margin-left: 10px;	
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+
+
 /*@media screen and (max-width:  1080px)
 {
 	#wrapper{
@@ -804,6 +823,10 @@ li{
 figcaption{
 	font-size: 3.5rem;
 	
+}
+
+details{
+	font-size: 3.8rem;
 }
 
 #load{
