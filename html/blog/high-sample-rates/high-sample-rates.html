@@ -93,17 +93,17 @@ The Enduring Confusion Around High Sample Rates
 		
 		<p>Now that I’m the proprietor of a(n admittedly humble) home studio, I like to think that I’ve really come to terms with the nuts and bolts of music technology. But the truth is, I still have a lot to learn, as mastering even a single effect like compression can take some time.</p>
 
-		<p>There are other topics that some people think are best left undiscussed. I’ve really gone on a deep dive in the last couple of months trying to make sense of sample rates, particularly the case for using a high sample rate. For some people, it’s easy: just use 44.1kHz and be done with it. It’s the same sample rate that the CD uses, and it’s been the standard for decades. Other people swear that higher sample rates will make music sound better. To further complicate things, some folks will argue that high sample rates are not only unnecessary, but they can actually make your music sound worse.</p>
+		<p>There are other topics that some people think are best left undiscussed. I’ve really gone on a deep dive in the last couple of months trying to make sense of sample rates, particularly the case for using a high sample rate. For some people, it’s easy: just use 44.1kHz and be done with it. It’s the same sample rate that the CD uses, and it’s been the standard for decades. Other people swear that higher sample rates will make music sound better. To further complicate things, some folks will argue that high sample rates are not only unnecessary, but they can actually make your music sound <i>worse</i>.</p>
 
-		<p>Let’s start by making sure we’re all up to speed on this. If you already know the basics of digital audio, click here to jump ahead. In the meantime, let’s get started. Most music is captured with a microphone, which is really just an electromagnet that moves as air hits it. Moving magnets create electricity, which is carried away by the mic’s cable (a speaker basically uses the same principles in reverse).</p>
+		<p>Let’s start by making sure we’re all up to speed on this. Most music is captured with a microphone, which is really just an electromagnet that moves as air hits it. Moving magnets create electricity, which is carried away by the mic’s cable (a speaker basically uses the same principles in reverse).</p>
 
-		<p>So, how do you digitize all of the information in an electrical signal? Well, you can’t — there’s too much info to capture (at least for the time being). So the solution is to sample: the CD sample rate is 44.1kHz. An analog to digital converter (ADC or A/D converter) using a 44.1 sample rate will measure the electric signal of a mic 44,100 times a second. These measurements/samples are eventually used to create the original waveform.</p>
+		<p>So, how do you digitize all of the information in an electrical signal? Well, you can’t — there’s too much info to capture (at least with our current technology). So the solution is to sample: the CD sample rate is 44.1kHz. An analog to digital converter (ADC or A/D converter) using a 44.1 sample rate will measure the electric signal of a mic 44,100 times a second. These measurements/samples are eventually used to create the original waveform.</p>
 
 		<p>Part of the argument for high sample rates seems intuitive: more samples mean more information. Here’s a 1kHz sine wave that I whipped up in Logic Pro with a sample rate of 44.1kHz:</p>
 
 		<img src="../../../images/blog/high-sample-rates/high-sample-rates-44-logic.png" class="centered-image" alt="Cowbell">
 
-		<p>This is zoomed in at a considerable scale. Remember that one period of this wave will last 1/1000th of a second, with a wavelength of about 13.5 inches (34cm). At this scale, it’s easy to make out the different sample points, but it more or less looks like a sine wave.</p>
+		<p>This is zoomed in at a considerable scale. Remember that one period of this wave will last 1/1000th of a second, with a wavelength of about 13.5 inches (34cm). At this scale, it’s easy to make out the different sample points, but all together it more or less looks like a sine wave.</p>
 
 		<p>Now let’s whip up the same sine wave with a project sample rate of 192kHz:</p>
 
@@ -175,9 +175,7 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>Of course, the more important question here is whether or not humans can detect these high frequencies in any way. There’s not a lot of great research into what effect ultrasonics have on the perception of music — what little there is usually describes the phenomenon as the “<a href="https://en.wikipedia.org/wiki/Hypersonic_effect" target="_blank">hypersonic effect</a>”. And unsurprisingly, there’re studies both supporting and refuting its existence. It’s safe to say that it’s not settled science.</p>
 
-		<p>You can do some testing yourself — there exist tests online that let you listen to music</p>
-
-		<p>You might hear a difference, but it could have nothing to do with your ears. It could all be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz. If they try to, they will likely create distortion as they struggle to play these high frequencies. Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
+		<p>You can do some testing yourself — there exist <a href="http://www.2l.no/hires/" target="_blank">tests online</a> that let you listen to a piece of music in a variety of formats. You might hear a difference, but it could have nothing to do with your ears. It could all be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz. If they try to, they will likely create distortion as they struggle to play these high frequencies. Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
 
 		<p>One of the reasons people may say they prefer hi–res audio is actually because of distortion. Distortion is one of the reasons why people may think vinyl has a nice “warm” sound since audio has to be significantly mangled as it’s mastered for vinyl. And other types of distortion exist which are much trickier to deal with, bringing us to another video:</p>
 
@@ -185,9 +183,9 @@ The Enduring Confusion Around High Sample Rates
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/-jCwIsT0X8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
-		<p>This one was published in early 2020 by Dan Worral of Fab Filter, a plugin designer. It’s become a sort of companion piece to Monty’s video, as they both have become the chagrin of audiophiles everywhere. It’s another long, technical video, and the crux of it comes in the first eight minutes or so, where Dan uses high frequencies to demonstrate something called intermodulation distortion.</p>
+		<p>This one was published in early 2020 by Dan Worral of <a href="https://www.fabfilter.com" target="_blank">Fab Filter</a>, a plugin designer. It’s become a sort of companion piece to Monty’s video, as they both have become the chagrin of audiophiles everywhere. It’s another long, technical video, and the crux of it comes in the first eight minutes or so, where Dan uses high frequencies to demonstrate something called intermodulation distortion.</p>
 
-		<p>Intermodulation is another complicated subject up there with the Sampling Theorem; topics like this one are typically discussed by electrical engineers more so than producers. Simply put, intermodulation distortion (IMD) occurs when two signals interact and create other signals called intercept points. IMD is caused by nonlinearities; in the case of audio, something is nonlinear if it doesn’t have a flat frequency response. Microphones, preamps, amplifiers, and audio interfaces all have some degree of nonlinearity, chiefly because it’s basically impossible to create something that treats any and all audio exactly the same. And as Dan shows in his video, certain audio effects are nonlinear by design.</p>
+		<p>Intermodulation is another complicated subject up there with the Sampling Theorem; topics like this one are typically discussed by <a href="https://youtu.be/cM3K5NdScDU" target="_blank">electrical engineers</a> more so than producers. Simply put, intermodulation distortion (IMD) occurs when two signals interact and create other signals called intercept points. IMD is caused by nonlinearities; in the case of audio, something is nonlinear if it doesn’t have a flat frequency response. Microphones, preamps, amplifiers, and audio interfaces all have some degree of nonlinearity, chiefly because it’s basically impossible to create something that treats any and all audio exactly the same. And as Dan shows in his video, certain audio effects are nonlinear by design.</p>
 
 		<p>IMD is something that always exists in recorded music, although for most cases, the intercept points are much too quiet to be of any concern (unless some heavy distortion is involved). It’s really only at ultrasonic frequencies that IMD products become problematic since linearity tends to get worse as frequencies increase. As Dan puts it:</p>
 
@@ -229,16 +227,12 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>So, what does all this mean? Well, like many others have said, just use 44.1 or 48 and be done with it. Then you can spend more time writing good music and practicing your instrument instead of stressing about it all.</p>
 
-		<p>https://en.wikipedia.org/wiki/Direct_Stream_Digital#DSD_vs._PCM</p>
-
-		<p>https://www.cco.caltech.edu/~boyk/spectra/spectra.htm</p>
-
-		<img src="../../../images/blog/song/song.png" class="centered-image" alt="Cowbell">
+		<p>If you want to know more about how a digital to analog converter creates smooth signals from discrete samples, <a href="https://youtu.be/pWjdWCePgvA" target="_blank">here’s a good introduction</a> from YouTuber TechnologyConnections. If you want to fry your brain, here’s a <a href="../../../zips/blog/high-sample-rates/sampling-theroem-papers.zip" download>.zip file</a> of all the math papers that are generally considered to have laid to groundwork for the modern–day Sampling Theorem. </p>
 
 		<hr>
-		<p><i>Posted on July 2, 2021</i></p>
+		<p><i>Posted on November 28, 2021</i></p>
 		<br>
-		<p><i>Tags: <a href="../tags/tagged-2021.html">2021</a> • <a href="../tags/tagged-.html">Transcription</a></i></p>
+		<p><i>Tags: <a href="../tags/tagged-2021.html">2021</a> • <a href="../tags/tagged-rants-and-raves.html">Rants & Raves</a> • <a href="../tags/tagged-education.html">Education</a> • <a href="../tags/tagged-music-technology.html">Music Technology</a></i></p>
 		</div>
 		</article>
 		
