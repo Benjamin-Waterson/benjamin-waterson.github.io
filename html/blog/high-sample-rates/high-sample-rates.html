@@ -193,7 +193,7 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>So using a high sample rate seems to have diminishing results. It is very taxing on your computer and it will clog up your disk space, all for effects that might not exist (or could be adding distortion more than anything else), and nonetheless won’t be appreciated in any capacity by most of your audience.</p>
 
-		<p>So, why the hell do these high sample rates exists? Is so–called “hi–res audio” just snake oil? Well, according to some, yes. YouTube channel PresentDayProduction has a video featuring a portable recorder with an “intriguing” hi–res sticker. Or in other words, “the sticker gives the game away; the answer, largely, is marketing”.</p>
+		<p>So, why the hell do these high sample rates exists? Is so–called “hi–res audio” just snake oil? Well, according to some, yes. YouTube channel <a href="https://www.youtube.com/c/PresentDayProduction" title="_blank">PresentDayProduction</a> has a video featuring a portable recorder with an “intriguing” hi–res sticker. Or in other words, “the sticker gives the game away; the answer, largely, is marketing”.</p>
 
 		<p>That might be a little unfair, as there are some very specific reasons to use a high sample rate. Monty’s video was inspired by an article he wrote in March of 2012. The original link 404’s for some reason, but it has been <a href="https://web.archive.org/web/20120306150922/https://people.xiph.org/~xiphmont/demo/neil-young.html#toc_sfam" target="_blank">archived</a>. In the article, Monty mentions how a high sample rate (more specifically a higher Nyquist limit) could fix some problems with filters. Remember, filtering out content above the Nyquist frequency is essential to prevent aliasing. But early filters weren’t very good; chiefly, they tended to screw with the audio in the audible range by creating artifacts and phases shifts.</p>
 
@@ -201,13 +201,15 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>But is this still a problem? Filters have come a long way, especially the digital filters most modern converters use. I have never doubted the transparency of my Apollo interface. And to be clear, the whole point of a high sample rate in this regard isn’t to include ultrasonics; as such, it’s more accurate to describe this process as oversampling.</p>
 
-		<p>more space between nyquist and audilble range allows for easy filtering. interfaces might do this anyway</p>
-
 		<p>One other practical use of a high sample rate is extreme pitch shifting or time stretching. If you push a 44.1kHz clip of audio down an octave, you will have no content from 10kHz and up, so the result may sound a bit thin and hollow. Using a high sample rate will fix this, as ultrasonic content will be brought down into the audible range, creating a fuller sound and reducing IMD from the ultrasonics. You can hear the effects in this video, although note that the best sounding sample used a niche microphone that has been demonstrated to capture frequencies up to 100kHz. Most studio mics can’t do that.</p>
 
 		<p>You may have noticed that Monty disabled the comments on his video, although if you start digging through the comments on Dan’s video, it’s easy to see why Monty may have done that:</p>
 
+		<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-1.png" class="centered-image" alt="comment 1">
+
 		<p>Oy vey… let’s focus on some misconceptions that are easier to comprehend. For instance, some people think the Sampling Theorem only works for sine waves, and the whole thing falls apart for real music:</p>
+
+		<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-2.png" class="centered-image" alt="comment 2">
 
 		<p>Apparently, the only solution is to use a higher sample rate, or god forbid an analog recording medium.</p>
 
