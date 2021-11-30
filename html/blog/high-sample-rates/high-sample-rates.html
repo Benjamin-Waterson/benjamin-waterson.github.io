@@ -11,10 +11,10 @@ The Enduring Confusion Around High Sample Rates
 </title>
 
 <meta charset="utf-8">
-<meta name="description" content="Desc">
-<meta name="keywords" content="Drum, Drums, Drumming,">
+<meta name="description" content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz">
+<meta name="keywords" content="Sample Rates, High Sample Rates, Music Technology">
 <meta name="author" content="Benjamin Waterson">
-<meta name="date" content="July 18, 2021">
+<meta name="date" content="November 28, 2021">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -55,16 +55,16 @@ The Enduring Confusion Around High Sample Rates
 </script>
 
 <meta property="og:site_name" content="Benjamin Waterson" />
-<meta property="og:title" content="SONG" />
-<meta property="og:description" content="Drum Transcription of “” by Artist" />
-<meta property="og:url" content="https://benjaminwaterson.com/html/blog/song/song.html" />
+<meta property="og:title" content="The Enduring Confusion Around High Sample Rates" />
+<meta property="og:description" content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz" />
+<meta property="og:url" content="https://benjaminwaterson.com/html/blog/high-sample-rates/high-sample-rates.html" />
 <meta property="og:type" content="Article" />
 <meta property="article:publisher" content="https://benjaminwaterson.com" />
-<meta property="og:image" content="https://benjaminwaterson.com/images/blog/song/song-summary.png" />
+<meta property="og:image" content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
 <meta property="og:image:width" content="1280" />
 <meta property="og:image:height" content="640" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://benjaminwaterson.com/images/blog/song/song-summary.png" />
+<meta name="twitter:image" content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
 <meta name="twitter:site" content="@H2O_drums" />
 
 </head>
@@ -159,7 +159,7 @@ The Enduring Confusion Around High Sample Rates
 
 		<img src="../../../images/blog/high-sample-rates/high-sample-rates-aliasing.png" class="centered-image" alt="Cowbell">
 
-		<p>The easy way to prevent aliasing is to just filter out everything above the Nyquist limit. The CD sample rate is not arbitrary. As I mentioned earlier, humans can’t hear tones above 20kHz (even then, most children struggle to hear that high — if you’re an adult, forget about it). So, at 20kHz, a filter starts to take effect to filter out high frequencies. It’s very challenging to create a filter in practice that just lops off everything past a specific point. It’s easier to use something more gradual:</p>
+		<p>The easy way to prevent aliasing is to just filter out everything above the Nyquist limit. The CD sample rate is not arbitrary. As I mentioned earlier, humans can’t hear tones above 20kHz (even then, most children struggle to hear that high — if you’re an adult, forget about it). So, at 20kHz, a filter starts to take effect to filter out high frequencies. It’s very challenging to create a filter in practice that just lops off everything past a specific point. It’s easier to use something more gradual.</p>
 
 		<p>With the CD sample rate, the filter can work from 20kHz to 22hKz, since 22.05kHz is our Nyquist frequency.</p>
 
@@ -171,11 +171,11 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>Now we’re into a thorny subject. Audio with content above 20kHz is generally called “<a href="https://en.wikipedia.org/wiki/High-resolution_audio" target="_blank">hi–res audio</a>” (which is a problematic name as I’ll get into later), and for many audiophiles, the point of hi–res audio is to make music more authentic: if you were to listen to the music live, would be exposed to ultrasonics, so it’s best to include them.</p>
 
-		<p> Things are getting a bit philosophical; as someone who has stood right next to a crash cymbal played at full volume, I’m not terribly interested in having that experience recreated for me when I listen to drums on a record.</p>
+		<p> Things are getting a bit philosophical; as someone who has stood right next to a crash cymbal played at full volume, I’m not terribly interested in having that experience recreated for me when I listen to drums on a record. Moreover, pretty much every piece of audio equipment will color/distort the sound to some unavoidable degree. Mics, preamps, converts, interfaces, you name it.</p>
 
 		<p>Of course, the more important question here is whether or not humans can detect these high frequencies in any way. There’s not a lot of great research into what effect ultrasonics have on the perception of music — what little there is usually describes the phenomenon as the “<a href="https://en.wikipedia.org/wiki/Hypersonic_effect" target="_blank">hypersonic effect</a>”. And unsurprisingly, there’re studies both supporting and refuting its existence. It’s safe to say that it’s not settled science.</p>
 
-		<p>You can do some testing yourself — there exist <a href="http://www.2l.no/hires/" target="_blank">tests online</a> that let you listen to a piece of music in a variety of formats. You might hear a difference, but it could have nothing to do with your ears. It could all be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz. If they try to, they will likely create distortion as they struggle to play these high frequencies. Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
+		<p>You can do some experimenting yourself — there exist <a href="http://www.2l.no/hires/" target="_blank">tests online</a> that let you listen to a piece of music in a variety of formats. You might hear a difference, but it could have nothing to do with your ears. It could all be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz. If they try to, they will likely create distortion as they struggle to play these high frequencies. Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
 
 		<p>One of the reasons people may say they prefer hi–res audio is actually because of distortion. Distortion is one of the reasons why people may think vinyl has a nice “warm” sound since audio has to be significantly mangled as it’s mastered for vinyl. And other types of distortion exist which are much trickier to deal with, bringing us to another video:</p>
 
@@ -201,7 +201,7 @@ The Enduring Confusion Around High Sample Rates
 
 		<p>But is this still a problem? Filters have come a long way, especially the digital filters most modern converters use. I have never doubted the transparency of my Apollo interface. And to be clear, the whole point of a high sample rate in this regard isn’t to include ultrasonics; as such, it’s more accurate to describe this process as oversampling.</p>
 
-		<p>One other practical use of a high sample rate is extreme pitch shifting or time stretching. If you push a 44.1kHz clip of audio down an octave, you will have no content from 10kHz and up, so the result may sound a bit thin and hollow. Using a high sample rate will fix this, as ultrasonic content will be brought down into the audible range, creating a fuller sound and reducing IMD from the ultrasonics. You can hear the effects in this video, although note that the best sounding sample used a niche microphone that has been demonstrated to capture frequencies up to 100kHz. Most studio mics can’t do that.</p>
+		<p>One other practical use of a high sample rate is extreme pitch shifting or time stretching. If you push a 44.1kHz clip of audio down an octave, you will have no content from 10kHz and up, so the result may sound a bit thin and hollow. Using a high sample rate will fix this, as ultrasonic content will be brought down into the audible range, creating a fuller sound and reducing IMD from the ultrasonics. You can hear the effects in <a href="https://www.youtube.com/watch?v=e093pWoWCBs" target="_blank">this video</a>, although note that the best sounding sample used a niche microphone that has been demonstrated to capture frequencies up to 100kHz. Most studio mics can’t do that.</p>
 
 		<p>You may have noticed that Monty disabled the comments on his video, although if you start digging through the comments on Dan’s video, it’s easy to see why Monty may have done that:</p>
 
