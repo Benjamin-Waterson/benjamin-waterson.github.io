@@ -162,9 +162,10 @@ video {
 ul.tags{
 	padding: 0;
 	margin-left: 25px;
-	margin-top: 0px;
+	margin-top: -10px;
 	margin-bottom: 10px;
 }
+
 
 
 
@@ -232,10 +233,15 @@ header{
 	
 }
 
-li{
-	font-size:1.2rem;
-	color:rgb(255, 252, 252);
+li {
+	font-size: 1.3rem;
+	color: #DDDBDB;
 	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: .5em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
 }
 
 input[type=text] 
