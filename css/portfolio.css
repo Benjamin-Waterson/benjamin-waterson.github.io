@@ -87,7 +87,7 @@ h5{
 	text-align: left;
 	margin-top: 15px;
 	margin-bottom: 0px;
-	margin-left: 5px;
+	margin-left: 0px;
 	font-weight: 600;
 }
 
@@ -794,6 +794,7 @@ h4{
 
 h5{
 	font-size: 1.50rem;
+
 }
 
 a{
