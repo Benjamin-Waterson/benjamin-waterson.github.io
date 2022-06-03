@@ -7,7 +7,6 @@ html {
 }
 
 body {
-	margin: 0px;
 	height: 100%;
 
 }
@@ -47,6 +46,7 @@ footer {
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
+	flex-shrink: 0;
 	align-items: center;
 	justify-content: space-around;
 	padding-top: 10px;
@@ -58,6 +58,7 @@ footer {
 
 footer a {
 	color: white;
+	text-decoration: none;
 }
 
 footer p {
@@ -65,10 +66,11 @@ footer p {
 	margin: 0px;
 }
 
+
 .copyright::after {
 	content: "\00A9 2022 Benjamin Waterson";
 	color: white;
-	margin-bottom: 0px;
+
 }
 
 img {
@@ -164,7 +166,7 @@ h4 {
 	color: black;
 	text-align: left;
 	margin-top: 1em;
-	margin-bottom: -1em;
+	margin-bottom: 0em;
 	margin-left: 0px;
 	padding: 0px;
 	font-weight: 600;
@@ -186,7 +188,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 	color: black;
-	margin-top: 1em;
+	margin-bottom: 1em;
 	line-height: 1.6;
 
 }
@@ -237,8 +239,13 @@ input{
   margin-left: 0px;
 }
 
+hr{
+	margin-top: 0em;
+	margin-bottom: 1em;
+  }
+
 #content {
-	position: relative;
+	flex: 1 0 auto;
 	min-height: 100vh;
 	width: 100%;
 	margin-top: 0px;
@@ -246,11 +253,53 @@ input{
 	margin-right: auto;
 }
 
+#carousel{
+	margin-top: -1em;
+	margin-bottom: 1em;
+}
+
 #summary-image {
 	width: 100%;
 	height: auto;
 	border: 2px solid black;
+	margin-bottom: .5em;
 }
+
+
+#search-button
+{
+  background-color: black;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#load{
+	display: block;
+	max-width: 300px;
+	margin: auto;
+	margin-bottom: 15px;
+	background-color: #000000;
+	border-style: solid;
+	border-color: #737373;
+	color: #FFF300;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 1.2em;
+	transition: 0.3s;
+  }
+  
+  #load:hover {
+	background-color: #737373;
+	color: #FFF300;
+	cursor:pointer;
+  
+  }
 
 .landing-page {
 	height: 100%;
@@ -261,19 +310,6 @@ input{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-#search-button
-{
-  background-color: rgb(56, 56, 56);
-  border: solid;
-  border-color: rgb(56, 56, 56);
-  border-radius: 1px;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .landing-text h1 {
@@ -363,8 +399,11 @@ input{
   }
   
   .closeIcon {
+
 	border: none;
 	display: none;
+	color: white;
+	background-color: black;
   }
   
   .hamburger-menu {
@@ -379,7 +418,7 @@ input{
 	background: black;
 	color: white;
 	list-style: none;
-	padding-top: 4rem;
+	padding-top: 100px;
   }
   
   .showMenu {
@@ -410,10 +449,13 @@ input{
 	text-decoration: none;
 
 
+
 }
 
 ul.hamburger-menu {
-	margin: 0px;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 5px;
 	padding: 0px;
 	list-style-type: none;
 	color: white;
@@ -422,8 +464,8 @@ ul.hamburger-menu {
 .hamburger-menu li {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
-	margin-left: 0px;
-	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 30px;
 	color: white;
 }
 
@@ -532,7 +574,7 @@ ul.hamburger-menu {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
 	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	padding: 0px;
 	line-height: 1.6;
 }
@@ -564,7 +606,7 @@ ul.hamburger-menu {
 
 .embed-container {
 	margin-top: .8em;
-	margin-bottom: -0.5em;
+	margin-bottom: 0px;
 	overflow: hidden;
 	padding-bottom: 56.25%;
 	position: relative;
@@ -646,6 +688,14 @@ ul.hamburger-menu {
 		z-index: 100;
 		border: none;
 		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.hamburger:hover {
+		background-color: white;
+		color: black;
+		cursor: pointer;
 
 	}
 
@@ -672,6 +722,10 @@ ul.hamburger-menu {
 }
 
 @media only screen and (max-width: 600px) {
+
+	html{
+		font-size: 5vw;
+	}
 
 	.banner {
 		max-width: 100%;

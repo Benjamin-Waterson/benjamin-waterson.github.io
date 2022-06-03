@@ -14,8 +14,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<script defer src="../../js/hamburger-menu.js"></script>
+<script defer src="../../js/search.js"></script>
+<script defer src="../../js/load-more.js"></script>
 
 <link href="../../css/portfolio.css" rel="stylesheet">
 
@@ -53,22 +62,30 @@
 
     <header>
 
-      <div class="header-container">  
-      <div class="top-left">Benjamin Waterson</div>
-      <nav class="menu">
-        <a href="about-me.html">About</a> | <a href="blog.html">Blog</a> | <a href="music-and-bands.html">Music & Bands</a> | <a href="drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a href="art-design.html">Art & Design</a> | <a class="selected" href="transcription-archive.html">Transcription Archive</a>
-        </nav>
-      
-        <div id="hamburger-open">
-          <a href="#" class="fa fa-bars"></a>
-        </div>
-      
-      
-      <nav id="hamburger-menu" class="hamburger-menu">
-    
-        <a href="about-me.html">About</a> <a href="blog.html">Blog</a> <a href="music-and-bands.html">Music & Bands</a> <a href="drum-tracking-and-recording.html">Drum Tracking & Recording</a> <a href="art-and-design.html">Art & Design</a> <a class="selected" href="transcription-archive.html">Transcription Archive</a>
-    
-      </nav> 
+      <div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a 
+						href="music-and-bands.html">Music & Bands</a> | <a href="drum-tracking-and-recording.html">Drum
+						Tracking & Recording</a> | <a href="art-design.html">Art & Design</a> | <a class="selected"
+						href="transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="about.html">About</a> </li>
+					<li><a href="blog.html">Blog</a> </li>
+					<li><a href="music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="art-and-design.html">Art & Design</a> </li>
+					<li><a class="selected" href="transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
     
       </header>
 
@@ -336,11 +353,14 @@
 	</article>
 		
   <footer>
-    <div class="footer-container">
-    <p><a href="index.html">Home</a> | <a href="search.html">Search</a></p>
+    <section class="full-row-bottom">
+    <p><a class="fa fa-home" href="../../index.html"></a> 
+|
+    <input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+  </form>
     <p><span class="copyright"></span></p>
-    </div>
-</footer>
+    </section>
+   </footer>
 
 </div>
 

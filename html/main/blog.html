@@ -12,30 +12,31 @@
 
 	<meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-	<meta name="robots" content="noindex">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-		rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
 
-	<link href="../../css/portfolio.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script defer src="../../js/hamburger-menu.js"></script>
+<script defer src="../../js/search.js"></script>
+<script defer src="../../js/load-more.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../../css/bootstrap-iso.css">
+<link href="../../css/portfolio.css" rel="stylesheet">
 
-	<script src="../../js/portfolio.js" type="text/javascript" defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-171694271-1');
-	</script>
+  gtag('config', 'UA-171694271-1');
+</script>
 
 	<meta property="og:site_name" content="Benjamin Waterson" />
 	<meta property="og:title" content="Blog" />
@@ -60,30 +61,31 @@
 		<header>
 
 			<div class="header-container">
-				<div class="top-left">Benjamin Waterson</div>
+				<div class="top-left">
+					<img class="logo" src="../../images/logo.png">
+					Benjamin Waterson
+				</div>
 				<nav class="menu">
-					<a href="about-me.html">About</a> | <a class="selected" href="blog.html">Blog</a> | <a
+					<a href="about.html">About</a> | <a class="selected" href="blog.html">Blog</a> | <a
 						href="music-and-bands.html">Music & Bands</a> | <a href="drum-tracking-and-recording.html">Drum
 						Tracking & Recording</a> | <a href="art-design.html">Art & Design</a> | <a
 						href="transcription-archive.html">Transcription Archive</a>
 				</nav>
 
-				<div id="hamburger-open">
-					<a href="#" class="fa fa-bars"></a>
-				</div>
-
-
-				<nav id="hamburger-menu" class="hamburger-menu">
-
-					<a href="about-me.html">About</a> <a class="selected" href="blog.html">Blog</a> <a
-						href="music-and-bands.html">Music & Bands</a> <a href="drum-tracking-and-recording.html">Drum
-						Tracking & Recording</a> <a href="art-and-design.html">Art & Design</a> <a
-						href="transcription-archive.html">Transcription Archive</a>
-
-				</nav>
+				<ul class="hamburger-menu">
+					<li><a href="about.html">About</a> </li>
+					<li><a class="selected" href="blog.html">Blog</a> </li>
+					<li><a href="music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="art-and-design.html">Art & Design</a> </li>
+					<li><a href="transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
 
 		</header>
-
 		<div class="banner">
 			<h1>Blog</h1>
 		</div>
@@ -96,12 +98,16 @@
 					The Great Website Redesign
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 15, 2022</i></p>
 				<img src="../../images/blog/website-redesign/website-redesign.png" alt="Redesign Summary"
 					id="summary-image">
-				<p>Just a heads up that I’m in the process of redesigning my website, so I’ll be taking a few weeks off to work on it. Some site functionality will break over this period of time, so please be patient with me. I’ll be back when I’m back.
+				<p>Just a heads up that I’m in the process of redesigning my website, so I’ll be taking a few weeks off
+					to work on it. Some site functionality will break over this period of time, so please be patient
+					with me. I’ll be back when I’m back.
 			</div>
+			<hr>
+
 
 
 			<div class="full-row-blog">
@@ -110,7 +116,7 @@
 					Will I Ever Make Another YouTube Video?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 8, 2022</i></p>
 				<img src="../../images/blog/youtube-videos/youtube-videos-summary.jpg" alt="YouTube Summary"
 					id="summary-image">
@@ -123,6 +129,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -130,7 +137,7 @@
 					Groove(s): “Glass of Water” + “Death and All His Friends” — Will Champion with Coldplay
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 1, 2022</i></p>
 				<img src="../../images/blog/glass-of-water-death-and-all-his-friends/glass-of-water-death-and-all-his-friends-summary.png"
 					alt="Glass of Water Summary" id="summary-image">
@@ -145,6 +152,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -152,7 +160,7 @@
 					Transcription: “Forget About It” — Jarred Katz with The Dip
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on April 25, 2021</i></p>
 				<img src="../../images/blog/forget-about-it/forget-about-it-summary.png" alt="Forget about it Summary"
 					id="summary-image">
@@ -168,6 +176,7 @@
 						href="../blog/forget-about-it/forget-about-it.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -175,7 +184,7 @@
 					What’s the Deal With “Bonham Triplets”?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on April 17, 2022</i></p>
 				<img src="../../images/blog/bonham-triplets/bonham-triplets-summary.png" alt="Bonham Triplets"
 					id="summary-image">
@@ -189,6 +198,7 @@
 						href="../blog/bonham-triplets/bonham-triplets.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -196,7 +206,7 @@
 					Review: <i>Roll Review</i> by Michael Skinner
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on April 10, 2022</i></p>
 				<img src="../../images/blog/roll-review/roll-review-summary.png" alt="Roll Review Summary"
 					id="summary-image">
@@ -212,6 +222,7 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -219,7 +230,7 @@
 					Transcription: “The XIth Commandment” — James Bradley, Jr. with Chuck Mangione
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on April 3, 2022</i></p>
 				<img src="../../images/blog/the-xith-commandment/the-xith-commandment-summary.png"
 					alt="The XIth Commandment Summary" id="summary-image">
@@ -231,6 +242,7 @@
 						href="../blog/the-xith-commandment/the-xith-commandment.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -238,7 +250,7 @@
 					Fire Safety for the Home Studio
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 27, 2022</i></p>
 				<img src="../../images/blog/fire-safety/fire-safety-summary.jpeg" alt="Fire Safety Summary"
 					id="summary-image">
@@ -253,6 +265,7 @@
 						href="../blog/fire-safety/fire-safety.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -260,13 +273,14 @@
 					Transcription: “Cafo” — Animals as Leaders
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 20, 2022</i></p>
 				<img src="../../images/blog/cafo/cafo-summary.png" alt="Cafo Summary" id="summary-image">
 				<p>I really have no business doing this… but there’s no denying that, even 13 years later, the first
 					Animals as Leaders album still puts quite a spell on people, especially drummers. If you go to the
 					<a href="https://www.youtube.com/watch?v=NmfzWpp0hMc" target="_blank">music video</a> for the
-					album’s standout track, “Cafo”, you’ll see tons of people gushing over the drumming.</p>
+					album’s standout track, “Cafo”, you’ll see tons of people gushing over the drumming.
+				</p>
 
 				<p>Well, here’s the thing: the drums are programmed. It’s actually pretty obvious. They don’t sound very
 					good, the hats and ride cymbals are typically ignored in favor of crash/china cymbal barrages, and a
@@ -274,6 +288,7 @@
 						href="../blog/cafo/cafo.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -281,7 +296,7 @@
 					Transcription(s): The Nick Mason Fill Recipe
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 16, 2022</i></p>
 				<img src="../../images/blog/nick-mason-fill-recipe/nick-mason-fill-recipe-summary.png"
 					alt="Nick Mason Fill Summary" id="summary-image">
@@ -296,6 +311,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -303,7 +319,7 @@
 					Know Your Tempos: Pink Floyd
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 6, 2022</i></p>
 				<img src="../../images/blog/know-your-tempos-pink-floyd/know-your-tempos-pink-floyd-summary.jpg"
 					alt="Know Your Tempos: Pink Floyd Summary" id="summary-image">
@@ -324,6 +340,7 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -331,7 +348,7 @@
 					My Cymbal Bleed Saga
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 27, 2022</i></p>
 				<img src="../../images/blog/cymbal-bleed/cymbal-bleed-summary.png" alt="Cymbal Bleed Summary"
 					id="summary-image">
@@ -350,6 +367,7 @@
 					things. <a href="../blog/cymbal-bleed/cymbal-bleed.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -357,7 +375,7 @@
 					Drums Don’t Play Actual Pitches. And Even if They Could, Why Would You Want Them To?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 20, 2022</i></p>
 				<img src="../../images/blog/drums-and-pitches/drums-and-pitches-summary.jpg"
 					alt="Drums and Pitches Summary" id="summary-image">
@@ -376,6 +394,7 @@
 						href="../blog/drums-and-pitches/drums-and-pitches.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -383,7 +402,7 @@
 					Transcription: “Like Eating Glass” — Matt Tong with Bloc Party
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 13, 2022</i></p>
 				<img src="../../images/blog/like-eating-glass/like-eating-glass-summary.png"
 					alt="Like Eating Glass Summary" id="summary-image">
@@ -396,6 +415,7 @@
 						href="../blog/like-eating-glass/like-eating-glass.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -403,7 +423,7 @@
 					Is There Any Difference Between the Triplet and the Sextuplet? And What About the 12–Let?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 6, 2022</i></p>
 				<img src="../../images/blog/triplets-sextuplets/triplets-sextuplets-summary.jpeg"
 					alt="Triplets and Sextuplets Summary" id="summary-image">
@@ -413,6 +433,7 @@
 							. .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -420,7 +441,7 @@
 					Review: <i>Savage Rudimental Workshop</i> by Matt Savage
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 30, 2022</i></p>
 				<img src="../../images/blog/savage-rudiments/savage-rudiments-summary.png"
 					alt="Savage Rudiments Summary" id="summary-image">
@@ -429,6 +450,7 @@
 						href="../blog/savage-rudiments/savage-rudiments.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -436,7 +458,7 @@
 					How To Get Started On The Drums
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 23, 2022</i></p>
 				<img src="../../images/blog/getting-started/getting-started-summary.jpg" alt="Getting Started Summary"
 					id="summary-image">
@@ -449,6 +471,7 @@
 						href="../blog/getting-started/getting-started.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -456,7 +479,7 @@
 					Transcription: “No Return” (Theme From <i>Yellowjackets</i>) — Craig Wedren and Anna Waronker
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 16, 2022</i></p>
 				<img src="../../images/blog/no-return/no-return-summary.png" alt="No Return Summary" id="summary-image">
 				<p>This is an unusual topic, but today we’re talking about the theme music for the recently premiered TV
@@ -466,6 +489,7 @@
 						href="../blog/no-return/no-return.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -473,7 +497,7 @@
 					Do Drummers Worry Too Much About Chops? Or Do They Not Worry Enough?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 9, 2022</i></p>
 				<img src="../../images/blog/chops/chops-summary.jpeg" alt="Chops Summary" id="summary-image">
 				<p>Who wouldn’t want to kick off the new year with a rant and a rave?</p>
@@ -486,6 +510,7 @@
 					possibility. <a href="../blog/chops/chops.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -493,7 +518,7 @@
 					Wrapping up 2021
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 2, 2022</i></p>
 				<img src="../../images/blog/2021/2021-summary.jpeg" alt="2021 Summary" id="summary-image">
 				<p>
@@ -503,6 +528,7 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -510,7 +536,7 @@
 					Transcription: “In Color” — Patrick Hallahan with My Morning Jacket
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on December 19, 2021</i></p>
 				<img src="../../images/blog/in-color/in-color-summary.png" alt="In Color Summary" id="summary-image">
 				<p>
@@ -522,6 +548,7 @@
 					Something like that anyway. <a href="../blog/in-color/in-color.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -529,7 +556,7 @@
 					Exercise(s): Building Speed on the Drums
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on December 12, 2021</i></p>
 				<img src="../../images/blog/speed-exercises/speed-exercises-summary.JPG" alt="Speed Exercises Summary"
 					id="summary-image">
@@ -543,11 +570,12 @@
 							. . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Chart: “Too Good Too Bad” From <i>Cowboy Bebop</i></h1>
-				<hr>
+
 				<p class="date"><i>Posted on December 5, 2021</i></p>
 				<img src="../../images/blog/too-good-too-bad/too-good-too-bad-summary.png"
 					alt="Too Good Too Bad Summary" id="summary-image">
@@ -562,11 +590,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">The Enduring Confusion Around High Sample Rates</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 28, 2021</i></p>
 				<img src="../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg"
 					alt="High Sample Rates Summary" id="summary-image">
@@ -582,11 +611,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Groove: “Cath...” — Jason McGerr with Death Cab For Cutie</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 14, 2021</i></p>
 				<img src="../../images/blog/cath/cath-summary.png" alt="Cath Summary" id="summary-image">
 
@@ -599,12 +629,13 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Groove: “I Never Could Get Enough” — Patrick Hallahan with My Morning Jacket
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 5, 2021</i></p>
 				<img src="../../images/blog/i-never-could-get-enough/i-never-could-get-enough-summary.png"
 					alt="I Never Could Get Enough Summary" id="summary-image">
@@ -619,11 +650,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Review: <i>The Art of Bop Drumming</i> by John Riley</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 31, 2021</i></p>
 				<img src="../../images/blog/the-art-of-bop/the-art-of-bop-summary.png" alt="The Art of Bop Summary"
 					id="summary-image">
@@ -639,11 +671,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Unpopular Opinions (Part 2)</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 17, 2021</i></p>
 				<img src="../../images/blog/unpopular-opinions-part-2/unpopular-opinions-part-2-summary.jpg"
 					alt="Unpopular Opinions Part 2 Summary" id="summary-image">
@@ -659,11 +692,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Dealing With a Bit of Writer’s Block</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 8, 2021</i></p>
 				<img src="../../images/blog/writers-block/writers-block-summary.png" alt="Writer’s Block Summary"
 					id="summary-image">
@@ -682,11 +716,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Response: Rick Beato’s “TOP 20 DRUM GROOVES OF ALL TIME”</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 3, 2021</i></p>
 
 
@@ -696,6 +731,7 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
+				<hr>
 				<p>
 					Sorry I missed last week. I don’t really have anything to blame, other than my motivation for taking
 					a nosedive towards the end of last week. I didn’t really have anything else to write about, but I
@@ -706,6 +742,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -713,7 +750,7 @@
 					Searching for the World’s First Drum Book
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on September 19, 2021</i></p>
 				<img src="../../images/blog/first-drum-book/first-drum-book-summary.webp" alt="First Drum Book Summary"
 					id="summary-image">
@@ -727,6 +764,7 @@
 						href="../blog/first-drum-book/first-drum-book.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -734,7 +772,7 @@
 					Groove: “Jamie All Over” — Jack Bundrick with Mayday Parade
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on September 12, 2021</i></p>
 				<img src="../../images/blog/jamie-all-over/jamie-all-over-summary.png" alt="Jamie All Over Summary"
 					id="summary-image">
@@ -746,6 +784,7 @@
 						href="../blog/jamie-all-over/jamie-all-over.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -753,7 +792,7 @@
 					Transcription: “Amazing Journey” — Keith Moon with The Who
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on September 3, 2021</i></p>
 				<img src="../../images/blog/amazing-journey/amazing-journey-summary.png" alt="Amazing Jounrey Summary"
 					id="summary-image">
@@ -772,6 +811,7 @@
 						href="../blog/amazing-journey/amazing-journey.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -780,7 +820,7 @@
 					Stones
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 29, 2021</i></p>
 				<img src="../../images/blog/charlie-watts-midnight-rambler/charlie-watts-summary.jpeg"
 					alt="Charlie Watts Summary" id="summary-image">
@@ -799,6 +839,7 @@
 							. .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -806,7 +847,7 @@
 					Chart: <i>Mario Kart 8</i> Main Theme + Pratice Loop
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 22, 2021</i></p>
 				<img src="../../images/blog/mario-kart-8/mario-kart-8-summary.png" alt="Mario Kart 8 Summary"
 					id="summary-image">
@@ -819,6 +860,7 @@
 						href="../blog/mario-kart-8/mario-kart-8.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -826,7 +868,7 @@
 					Exercise: “Flam Stack”
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 15, 2021</i></p>
 				<img src="../../images/blog/flam-stack/flam-stack-summary.png" alt="Flam Stack Summary"
 					id="summary-image">
@@ -837,6 +879,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -844,7 +887,7 @@
 					Know Your Tempos — Jimi Hendrix
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 8, 2021</i></p>
 				<img src="../../images/blog/know-your-tempos-hendrix/know-your-tempos-hendrix-summary.jpg"
 					alt="Jimi Hendrix Summary" id="summary-image">
@@ -858,6 +901,7 @@
 						href="../blog/know-your-tempos-hendrix/know-your-tempos-hendrix.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -865,7 +909,7 @@
 					Review: <i>Advanced Techniques for the Modern Drummer</i> by Jim Chapin
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 4, 2021</i></p>
 				<img src="../../images/blog/advanced-techniques/advanced-techniques-summary.png"
 					alt="Advanced Techniques Summary" id="summary-image">
@@ -878,6 +922,7 @@
 						href="../blog/advanced-techniques/advanced-techniques.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -885,7 +930,7 @@
 					Joey Jordison (1975–2021)
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 1, 2021</i></p>
 				<img src="../../images/blog/joey-jordison/joey-jordison-summary.jpg" alt="Joey Jordison Summary"
 					id="summary-image">
@@ -896,6 +941,7 @@
 						href="../blog/joey-jordison/joey-jordison.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -903,7 +949,7 @@
 					Chart: “Rush” from <i>Cowboy Bebop</i>
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on July 25, 2021</i></p>
 				<img src="../../images/blog/rush/rush-summary.png" alt="Rush Summary" id="summary-image">
 				<p>
@@ -924,6 +970,7 @@
 						href="../blog/rush/rush.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -931,7 +978,7 @@
 					Transcription: “Aftermath” — Tom Pitts with Rolo Tomassi
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on July 18, 2021</i></p>
 				<img src="../../images/blog/aftermath/aftermath-summary.png" alt="Aftermath Summary" id="summary-image">
 				<p>
@@ -948,6 +995,7 @@
 					often. <a href="../blog/aftermath/aftermath.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -955,7 +1003,7 @@
 					Transcription: “Lycanthrope” — Travis Barker with +44
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on July 11, 2021</i></p>
 				<img src="../../images/blog/lycanthrope/lycanthrope-summary.png" alt="Lycanthrope Summary"
 					id="summary-image">
@@ -969,6 +1017,7 @@
 						href="../blog/lycanthrope/lycanthrope.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -976,7 +1025,7 @@
 					Sheet Music Play–Though Experiments
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on June 27, 2021</i></p>
 				<img src="../../images/blog/sheet-music-playthrough-experiments/sheet-music-playthrough-experiments-summary.png"
 					alt="Sheet Music Playthough Experiments Summary" id="summary-image">
@@ -996,6 +1045,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1003,7 +1053,7 @@
 					<i>Natural Born Killer</i> Released!
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on June 10, 2021</i></p>
 				<img src="../../images/blog/natural-born-killer/natural-born-killer-summary.png"
 					alt="Natural Born Killer Summary" id="summary-image">
@@ -1013,6 +1063,7 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1020,7 +1071,7 @@
 					Transcription: “Ten Years Gone” — John Bonham with Led Zeppelin
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on June 13, 2021</i></p>
 				<img src="../../images/blog/ten-years-gone/ten-years-gone-summary.png" alt="Song Summary"
 					id="summary-image">
@@ -1038,6 +1089,7 @@
 						href="../blog/ten-years-gone/ten-years-gone.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1045,7 +1097,7 @@
 					Transcription: “Voodoo Chile” — Mitch Mitchell with Jimi Hendrix
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on June 6, 2021</i></p>
 				<img src="../../images/blog/voodoo-chile/voodoo-chile-summary.png" alt="Voodoo Chile Summary"
 					id="summary-image">
@@ -1064,6 +1116,7 @@
 					<a href="../blog/voodoo-chile/voodoo-chile.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1071,7 +1124,7 @@
 					First EP — Lessons Learned
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 30, 2021</i></p>
 				<img src="../../images/blog/first-ep-lessons-learned/first-ep-lessons-learned-summary.JPG"
 					alt="First EP Summary" id="summary-image">
@@ -1092,6 +1145,7 @@
 						href="../blog/first-ep-lessons-learned/first-ep-lessons-learned.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1099,7 +1153,7 @@
 					An Honest Look at the Rudiments
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 16, 2021</i></p>
 				<img src="../../images/blog/drum-rudiments/drum-rudiments-summary.jpg" alt="Rudiments Summary"
 					id="summary-image">
@@ -1112,6 +1166,7 @@
 						href="../blog/drum-rudiments/drum-rudiments.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1119,7 +1174,7 @@
 					Transcription: “Stars” — Ray Luzier with KXM
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 9, 2021</i></p>
 				<img src="../../images/blog/stars/stars-summary.png" alt="Stars Summary" id="summary-image">
 				<p>
@@ -1135,11 +1190,12 @@
 					records). <a href="../blog/stars/stars.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Chart: “Tank!” from <i>Cowboy Bebop</i></h1>
-				<hr>
+
 				<p class="date"><i>Posted on May 2, 2021</i></p>
 				<img src="../../images/blog/tank/tank-summary.png" alt="Tank Summary" id="summary-image">
 
@@ -1154,6 +1210,7 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
+				<hr>
 
 				<p>
 					Even if you’ve never heard this tune before, you should probably conclude by the 15 second mark that
@@ -1162,11 +1219,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Review: <i>Advanced Funk Studies</i> by Rick Lantham</h1>
-				<hr>
+
 				<p class="date"><i>Posted on April 25, 2021</i></p>
 				<img src="../../images/blog/advanced-funk-studies/advanced-funk-studies-summary.png"
 					alt="Advanced Funk Studies Summary" id="summary-image">
@@ -1183,11 +1241,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Response: Rick Beato’s “TOP 20 DRUM INTROS OF ALL TIME”</h1>
-				<hr>
+
 				<p class="date"><i>Posted on April 18, 2021</i></p>
 				<div class="video-responsive">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/HmZCOpNC2HY?start=97"
@@ -1195,6 +1254,7 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
+				<hr>
 
 				<p>
 					I still want to add some more variety to the site — I don’t want the blog to be an endless stream of
@@ -1210,11 +1270,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “Salt of the Earth” — Alex Rüdinger with Good Tiger</h1>
-				<hr>
+
 				<p class="date"><i>Posted on April 11, 2021</i></p>
 				<img src="../../images/blog/salt-of-the-earth/salt-of-the-earth-summary.png"
 					alt="Salt of the Earth Summary" id="summary-image">
@@ -1230,11 +1291,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “Rock and Roll” — John Bonham with Led Zeppelin</h1>
-				<hr>
+
 				<p class="date"><i>Posted on April 4, 2021</i></p>
 				<img src="../../images/blog/rock-and-roll/rock-and-roll-summary.png" alt="Rock and Roll Summary"
 					id="summary-image">
@@ -1246,11 +1308,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Review: <i>A Funky Primer</i> by Charles Dowd</h1>
-				<hr>
+
 				<p class="date"><i>Posted on March 28, 2021</i></p>
 
 				<img src="../../images/blog/a-funky-primer/a-funky-primer-summary.png" alt="A Funky Primer Summary"
@@ -1267,11 +1330,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<!-- <div class="full-row-blog">	
 
 		<h1 class="blog-header">This Week in Boulder</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on March 24, 2021</i></p>
 
 		<img src="../../images/blog/this-week-in-boulder/this-week-in-boulder-summary.jpg" alt="This Week in Boulder Summary" id="summary-image">	
@@ -1283,7 +1347,8 @@
 			It’s a bit chilling for me, since I used to go to that store all the time. <a href="../blog/this-week-in-boulder/this-week-in-boulder.html"><i>Read More . . .</i></a>
 		</p>
 
-		</div> -->
+		</div>
+<hr> -->
 
 			<div class="full-row-blog">
 
@@ -1291,7 +1356,7 @@
 					Transcription: “Jazz Crimes” — Tommy Igoe with The Tommy Igoe Groove Conspiracy
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 21, 2021</i></p>
 				<img src="../../images/blog/jazz-crimes/jazz-crimes-summary.png" alt="Jazz Crimes Summary">
 				<p>
@@ -1302,6 +1367,7 @@
 						href="../blog/jazz-crimes/jazz-crimes.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1310,7 +1376,7 @@
 					with The Fall of Troy
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on March 14, 2021</i></p>
 				<img src="../../images/blog/fcpsitsgepgepgep/fcpsitsgepgepgep-summary.png"
 					alt="F.C.P.S.I.T.S.G.E.P.G.E.P.G.E.P. Summary" id="summary-image">
@@ -1325,19 +1391,21 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
+				<hr>
 
 				<p>
 					I’ll be shocked if you watch more than 30 seconds of that. <a
 						href="../blog/fcpsitsgepgepgep/fcpsitsgepgepgep.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">
 					Transcription: “Hey Joe” — Mitch Mitchell with Jimi Hendrix
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on March 7, 2021</i></p>
 
 				<img src="../../images/blog/hey-joe/hey-joe-summary.png" alt="Hey Joe Summary" id="summary-image">
@@ -1357,6 +1425,7 @@
 						href="../blog/hey-joe/hey-joe.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1364,7 +1433,7 @@
 					“Advanced” Music Theory (For Drummers)
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 29, 2021</i></p>
 				<img src="../../images/blog/advanced-music-theory/advanced-music-theory-summary.png"
 					alt="Advanced Music Theory Summary">
@@ -1378,6 +1447,7 @@
 						href="../blog/advanced-music-theory/advanced-music-theory.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1385,7 +1455,7 @@
 					Chart: “Chainlink Charge” by Mahito Yokota, Toru Minegishi, Yasuaki Iwata, & Koji Kondo + Practice
 					Loop
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on February 21, 2021</i></p>
 				<img src="../../images/blog/chainlink-charge/chainlink-charge-summary.png"
 					alt="Chainlink Charge Summary" id="summary-image">
@@ -1407,6 +1477,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1414,7 +1485,7 @@
 					Transcription: “Nite Sprite” — Steve Gadd with Chick Corea
 
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on February 14, 2021</i></p>
 				<img src="../../images/blog/nite-sprite/nite-sprite-summary.png" alt="Nite Sprite Summary"
 					id="summary-image">
@@ -1434,6 +1505,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1441,7 +1513,7 @@
 					Unpopular Opinions
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 7, 2021</i></p>
 				<img src="../../images/blog/unpopular-opinions/unpopular-opinions-summary.jpg"
 					alt="Unpopular Opinions Summary" id="summary-image">
@@ -1461,6 +1533,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1468,7 +1541,7 @@
 					Transcription: “Hipsterminate” — Richard Kass with Thunkfish
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 31, 2021</i></p>
 				<img src="../../images/blog/hipsterminate/hipsterminate-summary.png" alt="Hipsterminate Summary">
 				<p>
@@ -1483,6 +1556,7 @@
 					Thunkfish. <a href="../blog/hipsterminate/hipsterminate.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1490,7 +1564,7 @@
 					Know Your Tempos — Led Zeppelin
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 24, 2021</i></p>
 				<img src="../../images/blog/know-your-tempos-led-zeppelin/know-your-tempos-led-zeppelin-summary.jpg"
 					alt="Led Zeppelin Summary" id="summary-image">
@@ -1510,6 +1584,7 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1517,7 +1592,7 @@
 					MuseScore 3.6 Released
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 20, 2021</i></p>
 				<img src="../../images/blog/musescore-3.6/musescore-3.6-summary.jpg" alt="Aja Summary">
 				<p>
@@ -1530,6 +1605,7 @@
 						href="../blog/musescore-3.6/musescore-3.6.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1537,7 +1613,7 @@
 					Transcription: “Feeling This” — Travis Barker with Blink-182
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 17, 2021</i></p>
 				<img src="../../images/blog/feeling-this/feeling-this-summary.png" alt="Feeling This Summary">
 				<p>
@@ -1549,6 +1625,7 @@
 						href="../blog/feeling-this/feeling-this.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1556,7 +1633,7 @@
 					Groove: “Requests” — Makaya McCraven
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 10, 2021</i></p>
 				<img src="../../images/blog/requests/requests-summary.png" alt="Requests Summary">
 				<p>
@@ -1568,12 +1645,14 @@
 					<iframe width="560" height="315" src="https://www.ispot.tv/share/n3sW" frameborder="0"
 						scrolling="no" allowfullscreen="">></iframe>
 				</div>
+				<hr>
 
 				<p>
 					It certainly gets your attention, especially with that music. <a
 						href="../blog/requests/requests.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1581,7 +1660,7 @@
 					Transcription: “The New Year” — Jason McGerr with Death Cab For Cutie
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 3, 2021</i></p>
 				<img src="../../images/blog/the-new-year/the-new-year-summary.png" alt="The New Year Summary"
 					id="summary-image">
@@ -1597,6 +1676,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1604,7 +1684,7 @@
 					Wrapping Up 2020
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 1, 2021</i></p>
 				<img src="../../images/blog/2020/2020-summary.jpg" alt="2020 Summary" id="summary-image">
 				<p>
@@ -1619,11 +1699,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “How Many More Times” — John Bonham with Led Zeppelin</h1>
-				<hr>
+
 				<p class="date"><i>Posted on December 27, 2020</i></p>
 
 				<img src="../../images/blog/how-many-more-times/how-many-more-times-summary.png"
@@ -1642,6 +1723,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1649,7 +1731,7 @@
 					Rant: Thoughts on Buddy Rich
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on December 20, 2020</i></p>
 				<img src="../../images/blog/buddy-rich/buddy-rich-summary.jpeg" alt="Buddy Rich Summary"
 					id="summary-image">
@@ -1663,6 +1745,7 @@
 							. .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1670,7 +1753,7 @@
 					Movie Review: <i>Sound of Metal</i>
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on December 16, 2020</i></p>
 				<img src="../../images/blog/sound-of-metal/sound-of-metal-summary.jpg" alt="Sound of Metal Summary">
 				<p>
@@ -1686,11 +1769,12 @@
 					to pretend doesn’t exist. However, <i>Sound of Metal</i> has a premise more intriguing than any of
 					those other films. <a href="../blog/sound-of-metal/sound-of-metal.html"><i>Read More . . .</i></a>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Rant: Drum Solos</h1>
-				<hr>
+
 				<p class="date"><i>Posted on December 13, 2020</i></p>
 
 				<img src="../../images/blog/drum-solos/drum-solos-summary.jpg" alt="Song Summary" id="summary-image">
@@ -1705,11 +1789,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “Wind Machine” — Louie Bellson with The Buddy Rich Big Band</h1>
-				<hr>
+
 				<p class="date"><i>Posted on December 6, 2020</i></p>
 
 				<img src="../../images/blog/wind-machine/wind-machine-summary.png" alt="Song Summary"
@@ -1725,12 +1810,13 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “Mercy, Mercy, Mercy” — Dave Weckl with The Buddy Rich Big Band
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 29, 2020</i></p>
 
 				<img src="../../images/blog/mercy-mercy-mercy/mercy-mercy-mercy-summary.png" alt="Song Summary"
@@ -1745,6 +1831,7 @@
 				</p>
 
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1752,7 +1839,7 @@
 					Transcription: “Dancing Men” — Dennis Chambers with The Buddy Rich Big Band
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on November 22, 2020</i></p>
 				<img src="../../images/blog/dancing-men/dancing-men-summary.png" alt="Song Summary" id="summary-image">
 				<p>
@@ -1767,12 +1854,13 @@
 					play the charts. <a href="../blog/dancing-men/dancing-men.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 				<h1 class="blog-header">
 					Drum Groove: “Grapevine Fires” — Jason McGerr with Death Cab For Cutie
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 15, 2020</i></p>
 
 				<img src="../../images/blog/grapevine-fires/grapevine-fires-summary.png" alt="Song Summary"
@@ -1785,13 +1873,14 @@
 						href="../blog/grapevine-fires/grapevine-fires.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">
 					Transcription: “115” — Kevin Sherwood
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 8, 2020</i></p>
 
 				<img src="../../images/blog/115/115-summary.png" alt="Song Summary" id="summary-image">
@@ -1805,13 +1894,14 @@
 					turn ten years old tomorrow. <a href="../blog/115/115.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">
 					Chart: “The Incredits” by Michael Giacchino
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 1, 2020</i></p>
 
 				<img src="../../images/blog/the-incredits/the-incredits-summary.png" alt="Song Summary"
@@ -1830,6 +1920,7 @@
 						href="../blog/the-incredits/the-incredits.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1837,7 +1928,7 @@
 					Transcription: “Ya Gotta Try” — Vinnie Colaiuta with The Buddy Rich Big Band
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 25, 2020</i></p>
 				<img src="../../images/blog/ya-gotta-try/ya-gotta-try-summary.png" alt="Song Summary"
 					id="summary-image">
@@ -1848,6 +1939,7 @@
 						href="../blog/ya-gotta-try/ya-gotta-try.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1855,7 +1947,7 @@
 					Transcription: “Time Check” — Gregg Bisonette with The Buddy Rich Big Band
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 18, 2020</i></p>
 				<img src="../../images/blog/time-check/time-check-summary.png" alt="Time Check Summary">
 				<p>
@@ -1866,6 +1958,7 @@
 						href="../blog/time-check/time-check.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1873,7 +1966,7 @@
 					Transcription: “Keep The Customer Satisfied” — Steve Gadd with The Buddy Rich Big Band
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 11, 2020</i></p>
 				<img src="../../images/blog/keep-the-customer-satisfied/keep-the-customer-satisfied-summary.png"
 					alt="Keep The Custoemr Satisfied Summary">
@@ -1890,6 +1983,7 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1897,7 +1991,7 @@
 					Transcription: “Story” — Brian Evans with Chon + A rant about music theory
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 4, 2020</i></p>
 				<img src="../../images/blog/story/story-summary.png" alt="Story Summary">
 				<p>
@@ -1910,6 +2004,7 @@
 						href="../blog/story/story.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -1917,7 +2012,7 @@
 					Transcription: “Separate Ways (Worlds Apart)” — Steve Smith with Journey
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 4, 2020</i></p>
 				<img src="../../images/blog/separate-ways/separate-ways-summary.png" alt="Separate Ways">
 				<p>
@@ -1927,10 +2022,11 @@
 						href="../blog/separate-ways/separate-ways.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 				<h1 class="blog-header">Transcription: “Early Summer” — Yoshinori Ryo with Ryo Fukui</h1>
-				<hr>
+
 				<p class="date"><i>Posted on September 20, 2020</i></p>
 				<img src="../../images/blog/early-summer/early-summer-summary.png" alt="Rosanna Summary"
 					id="summary-image">
@@ -1945,6 +2041,7 @@
 						class="centered-image">
 					</iframe>
 				</div>
+				<hr>
 
 				<p>
 					What you’re hearing is a guy named Ryo Fukui (福居良). He began his life in music by playing the
@@ -1954,11 +2051,12 @@
 				</p>
 
 			</div>
+			<hr>
 
 
 			<div class="full-row-blog">
 				<h1 class="blog-header">Transcription: “Rosanna” — Jeff Porcaro with Toto</h1>
-				<hr>
+
 				<p class="date"><i>Posted on September 6, 2020</i></p>
 
 				<img src="../../images/blog/rosanna/rosanna-summary.png" alt="Rosanna Summary" id="summary-image">
@@ -1974,11 +2072,12 @@
 					groove. <a href="../blog/rosanna/rosanna.html"><i>Read More ...</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “Behind Blue Eyes” — Keith Moon with The Who</h1>
-				<hr>
+
 				<p class="date"><i>Posted on August 30, 2020</i></p>
 				<img src="../../images/blog/behind-blue-eyes/behind-blue-eyes-summary.png" alt="Behind Blue Eyes">
 				<p>
@@ -1993,11 +2092,12 @@
 						href="../blog/behind-blue-eyes/behind-blue-eyes.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Transcription: “The Price” — David Garibaldi with Tower of Power</h1>
-				<hr>
+
 				<p class="date"><i>Posted on August 23, 2020</i></p>
 				<img src="../../images/blog/the-price/the-price-summary.png" alt="The Price">
 				<p>
@@ -2010,13 +2110,14 @@
 							More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 				<h1 class="blog-header">
 					Transcription: “Odessa” — Navene Koperweis with Animals as Leaders
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 16, 2020</i></p>
 				<img src="../../images/blog/odessa/odessa-summary.png" alt="Aja Summary">
 				<p>
@@ -2030,6 +2131,7 @@
 						href="../blog/odessa/odessa.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -2037,7 +2139,7 @@
 					Transcription: “Aja” — Steve Gadd with Steely Dan
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on August 9, 2020</i></p>
 				<img src="../../images/blog/aja/aja-summary.png" alt="Aja Summary">
 				<p>
@@ -2048,13 +2150,14 @@
 						href="../blog/aja/aja.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">
 					Transcription: “Little Wing” — Mitch Mitchell with Jimi Hendrix
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on August 2, 2020</i></p>
 
 				<img src="../../images/blog/little-wing/little-wing-summary.png" alt="Little Wing Summary"
@@ -2073,12 +2176,13 @@
 							.</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<div class="full-row-blog">
 				<h1 class="blog-header">
 					Transcription: “Good Times Bad Times” — John Bonham with Led Zeppelin
 				</h1>
-				<hr>
+
 				<p class="date"><i>Posted on July 26, 2020</i></p>
 
 				<img src="../../images/blog/good-times-bad-times/good-times-bad-times-summary.png"
@@ -2092,16 +2196,20 @@
 						href="../blog/good-times-bad-times/good-times-bad-times.html"><i>Read More . . .</i></a>
 				</p>
 			</div>
+			<hr>
 
 			<a href="#" id="load">Load More</a>
 		</article>
 
-		<article>
-			<section class="full-row-bottom">
-				<p><a href="../../index.html">Home</a> | <a href="search.html">Search</a></p>
-				<p><span class="copyright"></span></p>
-			</section>
-		</article>
+		<footer>
+    		<section class="full-row-bottom">
+    		<p><a class="fa fa-home" href="../../index.html"></a> 
+|
+				<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+    		<p><span class="copyright"></span></p>
+    		</section>
+   		</footer>
 	</div>
 
 </body>

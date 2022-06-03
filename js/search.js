@@ -1,12 +1,9 @@
-var input = document.getElementById("input");
-input.addEventListener("keydown", function (e) {
-    if (e.keyCode === 13) {
-        validate(e);
-    }
-});
+const input = document.getElementById("search-input").value;
+const searchButton = document.getElementById("search-button");
 
-function validate(e) {
-var input = document.getElementById("input").value;
-location.replace(" " + input + "");
-};
+searchButton.addEventListener("click", search)
 
+function search(){
+    window.open("http://google.com/search?q=" + input + " site:benjaminwaterson.com");
+    console.log(input)
+}

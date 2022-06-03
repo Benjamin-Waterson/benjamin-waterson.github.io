@@ -1,4 +1,4 @@
-$(function load(){
+$(document).ready(function load(){
     $('.full-row-blog').slice(0, 5).show();
     $("#load").click(function(e){
         e.preventDefault();
