@@ -1,10 +1,10 @@
-$(document).ready(function load(){
-    $('.full-row-blog').slice(0, 5).show();
-    $("#load").click(function(e){
+$(function(){
+    $("full-row-blog").slice(0, 10).show(); // select the first ten
+    $("#load").click(function(e){ // click event for load more
         e.preventDefault();
-        $('.full-row-blog:hidden').slice(0, 5).show(); 
-        if($('.full-row-blog:hidden').length == 0){
-            $('#load').fadeOut();
+        $("div:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
+        if($("div:hidden").length == 0){ // check if any hidden divs still exist
+            alert("No more divs"); // alert if there are none left
         }
     });
 });
