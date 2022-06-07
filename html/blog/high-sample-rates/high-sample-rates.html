@@ -4,35 +4,44 @@
 
 <head>
 
-<link rel="icon" type="image/png" href="../../../images/main/favicon.png">
+	<link rel="icon" type="image/png" href="../../../images/main/favicon.png">
 
-<title>
-The Enduring Confusion Around High Sample Rates
-</title>
+	<title>
+		The Enduring Confusion Around High Sample Rates
+	</title>
 
-<meta charset="utf-8">
-<meta name="description" content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz">
-<meta name="keywords" content="Sample Rates, High Sample Rates, Music Technology">
-<meta name="author" content="Benjamin Waterson">
-<meta name="date" content="November 28, 2021">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta charset="utf-8">
+	<meta name="description"
+		content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz">
+	<meta name="keywords" content="Sample Rates, High Sample Rates, Music Technology">
+	<meta name="author" content="Benjamin Waterson">
+	<meta name="date" content="November 28, 2021">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
 
-<link href="../../../css/portfolio.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script defer src="../../../js/hamburger-menu.js"></script>
+	<script defer src="../../../js/search.js"></script>
 
-  gtag('config', 'UA-171694271-1');
-</script>
+	<link href="../../../css/portfolio.css" rel="stylesheet">
 
-<script type="application/ld+json">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171694271-1');
+	</script>
+
+	<script type="application/ld+json">
 	{
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -54,197 +63,406 @@ The Enduring Confusion Around High Sample Rates
     }
 </script>
 
-<meta property="og:site_name" content="Benjamin Waterson" />
-<meta property="og:title" content="The Enduring Confusion Around High Sample Rates" />
-<meta property="og:description" content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz" />
-<meta property="og:url" content="https://benjaminwaterson.com/html/blog/high-sample-rates/high-sample-rates.html" />
-<meta property="og:type" content="Article" />
-<meta property="article:publisher" content="https://benjaminwaterson.com" />
-<meta property="og:image" content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
-<meta property="og:image:width" content="1280" />
-<meta property="og:image:height" content="640" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
-<meta name="twitter:site" content="@H2O_drums" />
+	<meta property="og:site_name" content="Benjamin Waterson" />
+	<meta property="og:title" content="The Enduring Confusion Around High Sample Rates" />
+	<meta property="og:description"
+		content="A technical discussion of samples rates, and the case for using a sample rate much higher than 44.1kHz" />
+	<meta property="og:url" content="https://benjaminwaterson.com/html/blog/high-sample-rates/high-sample-rates.html" />
+	<meta property="og:type" content="Article" />
+	<meta property="article:publisher" content="https://benjaminwaterson.com" />
+	<meta property="og:image"
+		content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="640" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image"
+		content="https://benjaminwaterson.com/images/blog/high-sample-rates/high-sample-rates-summary.jpeg" />
+	<meta name="twitter:site" content="@H2O_drums" />
 
 </head>
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
 
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
 
-	<article>
-		<h1>The Enduring Confusion Around High Sample Rates</h1>
-		<div class="full-row">
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg" alt="High Sample Rates Summary" id="summary-image">	
-		
-		<p>Now that I’m the proprietor of a(n admittedly humble) home studio, I like to think that I’ve really come to terms with the nuts and bolts of music technology. But the truth is, I still have a lot to learn, as mastering even a single effect like compression can take some time.</p>
-
-		<p>There are other topics that some people think are best left undiscussed. I’ve really gone on a deep dive in the last couple of months trying to make sense of sample rates, particularly the case for using a high sample rate. For some people, it’s easy: just use 44.1kHz and be done with it. It’s the same sample rate that the CD uses, and it’s been the standard for decades. Other people swear that higher sample rates will make music sound better. To further complicate things, some folks will argue that high sample rates are not only unnecessary, but they can actually make your music sound <i>worse</i>.</p>
-
-		<p>Let’s start by making sure we’re all up to speed on this. Most music is captured with a microphone, which is really just an electromagnet that moves as air hits it. Moving magnets create electricity, which is carried away by the mic’s cable (a speaker basically uses the same principles in reverse).</p>
-
-		<p>So, how do you digitize all of the information in an electrical signal? Well, you can’t — there’s too much info to capture (at least with our current technology). So the solution is to sample: the CD sample rate is 44.1kHz. An analog to digital converter (ADC or A/D converter) using a 44.1 sample rate will measure the electric signal of a mic 44,100 times a second. These measurements/samples are eventually used to create the original waveform.</p>
-
-		<p>Part of the argument for high sample rates seems intuitive: more samples mean more information. Here’s a 1kHz sine wave that I whipped up in Logic Pro with a sample rate of 44.1kHz:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-44-logic.png" class="centered-image" alt="Cowbell">
-
-		<p>This is zoomed in at a considerable scale. Remember that one period of this wave will last 1/1000th of a second, with a wavelength of about 13.5 inches (34cm). At this scale, it’s easy to make out the different sample points, but all together it more or less looks like a sine wave.</p>
-
-		<p>Now let’s whip up the same sine wave with a project sample rate of 192kHz:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-192-logic.png" class="centered-image" alt="Cowbell">
-
-		<p>Hmmm, this wave looks much better. Even zoomed in all the way, it’s almost impossible to make out the individual samples.</p>
-
-		<p>Let’s do a similar demo in Audacity:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-192-audacity.png" class="centered-image" alt="Cowbell">
-
-		<p>We can clearly see that the wave on the bottom at 192kHz has over four times the information for each period of the wave when compard to the signal at 44.1kHz up top. So that means that the wave at 192kHz will sound better.</p>
-
-		<p>Right?</p>
-
-		<p>Well, have a listen for yourself. Here’s a 1kHz sine wave at 44.1kHz:</p>
-
-		<audio controls>
-		<source src="../../../audio/blog/high-sample-rates/1khz-44k.wav" type="audio/wav">
-		Your browser does not support the audio element.
-		</audio>
-
-		<p>Here’s a 1kHz sine wave at 192 — hopefully by now the 3 MB file has loaded:</p>
-
-		<audio controls>
-		<source src="../../../audio/blog/high-sample-rates/1khz-192k.wav" type="audio/wav">
-		Your browser does not support the audio element.
-		</audio>
-
-		<p>Listen closely. Do they sound the same? They should. Because they are the same.</p>
-
-		<p>That wasn’t a trick question. Those were two different audio files, each with a different sample rate. But what you were hearing is the miracle of digital audio. Sampling doesn’t get all of the information of an analog signal; but the thing is, we don’t need all of it. A sample rate of 44.1kHz can reproduce a perfect 1kHz sine wave. The sine wave at 192kHz does have extra information, but none of it’s needed to create a 1kHz sine wave.</p>
-
-		<p>This is not intuitive at all. Thankfully, seeing is believing — here’s a very famous video published back in early 2013 that visually demonstrates all of this:</p>
-
-		<div class="video-responsive">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/cIQ9IXSUzuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="banner">
+			<h1>Blog</h1>
 		</div>
 
-		<p>This video has been passed around all over the internet; I’d wager that half of the views come from people who have sent it to a friend who stubbornly insists analog audio sounds better, even though digital sounds just as good, and often sounds better since it has a lower noise floor, a higher distortion ceiling, better frequency response, and has the added benefit of not destroying itself over time.</p>
 
-		<p>Ahem. Let’s stay focused. This video was cooked up by Chris “Monty” Montgomery, an engineer who invented the Vorbis technology that powers the .OGG file type (most famously used by <a href="https://artists.spotify.com/help/article/audio-file-formats" target="_blank">Spotify</a> and <a href="https://en.wikipedia.org/wiki/Help:Sound_file_markup#File_types" target="_blank">Wikipedia</a>).</p>
-
-		<p>I would encourage you to watch the full thing, but the meat and potatoes come in the first eight and a half minutes or so. In the video, Monty uses an analog signal generator and two analog oscilloscopes: one connected to the generator, and another connected to the analog output of a basic audio interface that’s digitizing the signal from the generator. Even at 20kHz (the highest pitch any human could hope to hear), the two scopes look identical.</p>
-
-		<p>This all works because of the <a href="https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem" target="_blank">Sampling Theorem</a>. You see, there’s a lot of math behind digital audio, most of it coming from the early 1900s in papers written about the telegraph and telephone. The Sampling Theorem says a lot of things, and there are a few ways to distill its key point.</p>
-
-		<p>Put simply, the Sampling Theorem states that, if you have a signal of a frequency 𝓧, you can perfectly reconstruct that signal by measuring it at something greater than 2(𝓧). So, if you have a signal with a frequency of 1000 hertz, measuring it (or sampling it) at something greater than 2000 times per second will give you all of the information you need to perfectly create the original signal.</p>
-
-		<p>There is another way to think of it: if you’re working with a sample rate of 𝓧, the highest frequency you can capture is 𝓧/2. So the highest frequency that a 44.1 sample rate can reproduce is 22,050 hertz, since 44,100/2 = 22,050 (half of the sample rate is a frequency called the Nyquist frequency).</p>
-
-		<p>What happens to frequencies above this Nyquist limit? Well, the sampling won’t work, and the audio will be aliased. Aliasing is a generic term for when signals get misinterpreted. In the case of digital audio, a high–frequency signal will get garbled up and distorted into a lower frequency signal:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-aliasing.png" class="centered-image" alt="Cowbell">
-
-		<p>The easy way to prevent aliasing is to just filter out everything above the Nyquist limit. The CD sample rate is not arbitrary. As I mentioned earlier, humans can’t hear tones above 20kHz (even then, most children struggle to hear that high — if you’re an adult, forget about it). So, at 20kHz, a filter starts to take effect to filter out high frequencies. It’s very challenging to create a filter in practice that just lops off everything past a specific point. It’s easier to use something more gradual.</p>
-
-		<p>With the CD sample rate, the filter can work from 20kHz to 22hKz, since 22.05kHz is our Nyquist frequency.</p>
-
-		<p>Accordingly, there’s a third way to think of the sampling theorem: if a signal contains no frequencies higher than 𝓧 hertz, it can be completely reconstructed by measurements that are taken at a frequency of 2(𝓧). When a signal has frequencies filtered out past a certain point, it is said to be bandlimited.</p>
-
-		<p>Ok, now that we got all of that out of the way, we know that the CD sample rate of 44.1kHz can perfectly capture and reproduce all of the frequencies we can hear. So then, what am I supposed to do with all these high sample rates? My Apollo interface goes up to 192. What’s the point?</p>
-
-		<p>Think back to the Nyquist frequency: with a sample rate of 192kHz, we can reproduce frequencies up to 96kHz. But we can’t hear above 20kHz, so what difference does it make?</p>
-
-		<p>Now we’re into a thorny subject. Audio with content above 20kHz is generally called “<a href="https://en.wikipedia.org/wiki/High-resolution_audio" target="_blank">hi–res audio</a>” (which is a problematic name as I’ll get into later), and for many audiophiles, the point of hi–res audio is to make music more authentic: if you were to listen to the music live, would be exposed to ultrasonics, so it’s best to include them.</p>
-
-		<p> Things are getting a bit philosophical; as someone who has stood right next to a crash cymbal played at full volume, I’m not terribly interested in having that experience recreated for me when I listen to drums on a record. Moreover, pretty much every piece of audio equipment will color/distort the sound to some unavoidable degree. Mics, preamps, converts, interfaces, you name it.</p>
-
-		<p>Of course, the more important question here is whether or not humans can detect these high frequencies in any way. There’s not a lot of great research into what effect ultrasonics have on the perception of music — what little there is usually describes the phenomenon as the “<a href="https://en.wikipedia.org/wiki/Hypersonic_effect" target="_blank">hypersonic effect</a>”. And unsurprisingly, there’re studies both supporting and refuting its existence. It’s safe to say that it’s not settled science.</p>
-
-		<p>You can do some experimenting yourself — there exist <a href="http://www.2l.no/hires/" target="_blank">tests online</a> that let you listen to a piece of music in a variety of formats. You might hear a difference, but it could have nothing to do with your ears. It could all be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz. If they try to, they will likely create distortion as they struggle to play these high frequencies. Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
-
-		<p>One of the reasons people may say they prefer hi–res audio is actually because of distortion. Distortion is one of the reasons why people may think vinyl has a nice “warm” sound since audio has to be significantly mangled as it’s mastered for vinyl. And other types of distortion exist which are much trickier to deal with, bringing us to another video:</p>
-
-		<div class="video-responsive">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/-jCwIsT0X8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-
-		<p>This one was published in early 2020 by Dan Worral of <a href="https://www.fabfilter.com" target="_blank">Fab Filter</a>, a plugin designer. It’s become a sort of companion piece to Monty’s video, as they both have become the chagrin of audiophiles everywhere. It’s another long, technical video, and the crux of it comes in the first eight minutes or so, where Dan uses high frequencies to demonstrate something called intermodulation distortion.</p>
-
-		<p>Intermodulation is another complicated subject up there with the Sampling Theorem; topics like this one are typically discussed by <a href="https://youtu.be/cM3K5NdScDU" target="_blank">electrical engineers</a> more so than producers. Simply put, intermodulation distortion (IMD) occurs when two signals interact and create other signals called intercept points. IMD is caused by nonlinearities; in the case of audio, something is nonlinear if it doesn’t have a flat frequency response. Microphones, preamps, amplifiers, and audio interfaces all have some degree of nonlinearity, chiefly because it’s basically impossible to create something that treats any and all audio exactly the same. And as Dan shows in his video, certain audio effects are nonlinear by design.</p>
-
-		<p>IMD is something that always exists in recorded music, although for most cases, the intercept points are much too quiet to be of any concern (unless some heavy distortion is involved). It’s really only at ultrasonic frequencies that IMD products become problematic since linearity tends to get worse as frequencies increase. As Dan puts it:</p>
-
-		<p class="block-quote">…unless your playback system is 100% linear and free of any distortion whatsoever, then having extra inaudible content above 20kHz simply means you’ll have more unwanted intermodulation below 20kHz. If you bandlimit the signal by removing the inaudible content above 20kHz, you might actually end up with a cleaner, better–quality result.</p>
-
-		<p>So using a high sample rate seems to have diminishing results. It is very taxing on your computer and it will clog up your disk space, all for effects that might not exist (or could be adding distortion more than anything else), and nonetheless won’t be appreciated in any capacity by most of your audience.</p>
-
-		<p>So, why the hell do these high sample rates exists? Is so–called “hi–res audio” just snake oil? Well, according to some, yes. YouTube channel <a href="https://www.youtube.com/c/PresentDayProduction" title="_blank">PresentDayProduction</a> has a video featuring a portable recorder with an “intriguing” hi–res sticker. Or in other words, “the sticker gives the game away; the answer, largely, is marketing”.</p>
-
-		<p>That might be a little unfair, as there are some very specific reasons to use a high sample rate. Monty’s video was inspired by an article he wrote in March of 2012. The original link 404’s for some reason, but it has been <a href="https://web.archive.org/web/20120306150922/https://people.xiph.org/~xiphmont/demo/neil-young.html#toc_sfam" target="_blank">archived</a>. In the article, Monty mentions how a high sample rate (more specifically a higher Nyquist limit) could fix some problems with filters. Remember, filtering out content above the Nyquist frequency is essential to prevent aliasing. But early filters weren’t very good; chiefly, they tended to screw with the audio in the audible range by creating artifacts and phases shifts.</p>
-
-		<p>One solution is to use a gentler, less diligent filter, one that doesn’t mess with the audio as much. Such a filter would let frequencies past 22kHz, so a higher Nyquist limit is needed — ergo, a higher sample rate.</p>
-
-		<p>But is this still a problem? Filters have come a long way, especially the digital filters most modern converters use. I have never doubted the transparency of my Apollo interface. And to be clear, the whole point of a high sample rate in this regard isn’t to include ultrasonics; as such, it’s more accurate to describe this process as oversampling.</p>
-
-		<p>One other practical use of a high sample rate is extreme pitch shifting or time stretching. If you push a 44.1kHz clip of audio down an octave, you will have no content from 10kHz and up, so the result may sound a bit thin and hollow. Using a high sample rate will fix this, as ultrasonic content will be brought down into the audible range, creating a fuller sound and reducing IMD from the ultrasonics. You can hear the effects in <a href="https://www.youtube.com/watch?v=e093pWoWCBs" target="_blank">this video</a>, although note that the best sounding sample used a niche microphone that has been demonstrated to capture frequencies up to 100kHz. Most studio mics can’t do that.</p>
-
-		<p>You may have noticed that Monty disabled the comments on his video, although if you start digging through the comments on Dan’s video, it’s easy to see why Monty may have done that:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-1.png" class="centered-image" alt="comment 1">
-
-		<p>Oy vey… let’s focus on some misconceptions that are easier to comprehend. For instance, some people think the Sampling Theorem only works for sine waves, and the whole thing falls apart for real music:</p>
-
-		<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-2.png" class="centered-image" alt="comment 2">
-
-		<p>Apparently, the only solution is to use a higher sample rate, or god forbid an analog recording medium.</p>
-
-		<p> Think big picture: the ultimate goal of an A/D converter is to measure the frequency and amplitude of an electric signal and store that information digitally. The way a microphone works doesn’t change regardless of what you stick it in front of. It’s still producing a signal with frequency and amplitude, which is all you need to create any audible sound. It makes no difference to the mic, the converter, or the Sampling Theorem how complex the sound is.</p>
-
-		<p>There’s another misconception out there about the timing of a sample rate, evinced by this comment from a ProToolsExpert <a href="https://www.pro-tools-expert.com/production-expert-1/2020/3/4/when-and-why-you-should-use-higher-sample-rates-for-recording-and-mixing-and-when-you-shouldnt" target="_blank">post</a> about Dan’s video:</p>
-
-		<p class="block-quote">Others in the comments have remarked on the greater temporal accuracy and improved imaging we get from high sample rates. That temporal accuracy also gives us a much better capture of the evolution of partials well within the range of human hearing. [For] real instruments, partials aren’t simple multiples of the fundamental. They evolve in many complex ways based [on] the materials and other physical characteristics of an instrument. Higher sample rates give us many more points to represent the evolution of those partials. At low rates, partials are represented less accurately and the situation only worsens as [the] signal passes through even the simplest of filters. This is less of a problem at high rates and when we finally downsample, we’ve still got something that’s closer to the truth.</p>
-
-		<p>I’ve seen comments on Dan’s actual video that more or less say the same thing.</p>
-
-		<p>Now, if you watched the first chunk of Monty’s video, you might be able to piece together why this claim doesn’t make sense. In any case, Monty addresses this specific point just before the 21–minute mark:</p>
-
-		<p class="block-quote">...You’ve probably heard that the timing precision of a digital signal is limited by its sample rate; put another way, that digital signals can’t represent anything that falls between the samples… implying that impulses or fast attacks have to align exactly with a sample, or the timing gets mangled, or they just disappear. At this point, we can easily see why that’s wrong. Again, our input signals are bandlimited. And digital signals are samples, <b>not</b> stairsteps, <b>not</b> “connect–the–dots”. We most certainly can, for example, put the rising edge of our bandlimited square wave anywhere we want between samples. It’s represented perfectly and it’s reconstructed perfectly.</p>
-
-		<p>It seems like even after 8 years and 500,000+ views, people still think you hear discrete samples coming out of the speakers connected to a digital audio device. You don’t.</p>
-
-		<p>So, what does all this mean? Well, like many others have said, just use 44.1 or 48 and be done with it. Then you can spend more time writing good music and practicing your instrument instead of stressing about it all.</p>
-
-		<p>If you want to know more about how a digital to analog converter creates smooth signals from discrete samples, <a href="https://youtu.be/pWjdWCePgvA" target="_blank">here’s a good introduction</a> from YouTuber TechnologyConnections. If you want to fry your brain, here’s a <a href="../../../zips/blog/high-sample-rates/sampling-theroem-papers.zip" download>.zip file</a> of all the math papers that are generally considered to have laid to groundwork for the modern–day Sampling Theorem. </p>
-
-		<hr>
-		<p><i>Posted on November 28, 2021</i></p>
-		<br>
-		<p><i>Tags: <a href="../tags/tagged-2021.html">2021</a> • <a href="../tags/tagged-rants-and-raves.html">Rants & Raves</a> • <a href="../tags/tagged-education.html">Education</a> • <a href="../tags/tagged-music-technology.html">Music Technology</a></i></p>
-		</div>
-		</article>
-		
 		<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-     </article>
-</div>
+			<h1>The Enduring Confusion Around High Sample Rates</h1>
+			<p class="date"><i>Posted on November 28, 2021</i></p>
+			<div class="full-row">
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg"
+					alt="High Sample Rates Summary" id="summary-image">
+
+				<p>Now that I’m the proprietor of a(n admittedly humble) home studio, I like to think that I’ve really
+					come to terms with the nuts and bolts of music technology. But the truth is, I still have a lot to
+					learn, as mastering even a single effect like compression can take some time.</p>
+
+				<p>There are other topics that some people think are best left undiscussed. I’ve really gone on a deep
+					dive in the last couple of months trying to make sense of sample rates, particularly the case for
+					using a high sample rate. For some people, it’s easy: just use 44.1kHz and be done with it. It’s the
+					same sample rate that the CD uses, and it’s been the standard for decades. Other people swear that
+					higher sample rates will make music sound better. To further complicate things, some folks will
+					argue that high sample rates are not only unnecessary, but they can actually make your music sound
+					<i>worse</i>.</p>
+
+				<p>Let’s start by making sure we’re all up to speed on this. Most music is captured with a microphone,
+					which is really just an electromagnet that moves as air hits it. Moving magnets create electricity,
+					which is carried away by the mic’s cable (a speaker basically uses the same principles in reverse).
+				</p>
+
+				<p>So, how do you digitize all of the information in an electrical signal? Well, you can’t — there’s too
+					much info to capture (at least with our current technology). So the solution is to sample: the CD
+					sample rate is 44.1kHz. An analog to digital converter (ADC or A/D converter) using a 44.1 sample
+					rate will measure the electric signal of a mic 44,100 times a second. These measurements/samples are
+					eventually used to create the original waveform.</p>
+
+				<p>Part of the argument for high sample rates seems intuitive: more samples mean more information.
+					Here’s a 1kHz sine wave that I whipped up in Logic Pro with a sample rate of 44.1kHz:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-44-logic.png" class="centered-image"
+					alt="Cowbell">
+
+				<p>This is zoomed in at a considerable scale. Remember that one period of this wave will last 1/1000th
+					of a second, with a wavelength of about 13.5 inches (34cm). At this scale, it’s easy to make out the
+					different sample points, but all together it more or less looks like a sine wave.</p>
+
+				<p>Now let’s whip up the same sine wave with a project sample rate of 192kHz:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-192-logic.png" class="centered-image"
+					alt="Cowbell">
+
+				<p>Hmmm, this wave looks much better. Even zoomed in all the way, it’s almost impossible to make out the
+					individual samples.</p>
+
+				<p>Let’s do a similar demo in Audacity:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-192-audacity.png"
+					class="centered-image" alt="Cowbell">
+
+				<p>We can clearly see that the wave on the bottom at 192kHz has over four times the information for each
+					period of the wave when compard to the signal at 44.1kHz up top. So that means that the wave at
+					192kHz will sound better.</p>
+
+				<p>Right?</p>
+
+				<p>Well, have a listen for yourself. Here’s a 1kHz sine wave at 44.1kHz:</p>
+
+				<audio controls>
+					<source src="../../../audio/blog/high-sample-rates/1khz-44k.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio>
+
+				<p>Here’s a 1kHz sine wave at 192 — hopefully by now the 3 MB file has loaded:</p>
+
+				<audio controls>
+					<source src="../../../audio/blog/high-sample-rates/1khz-192k.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio>
+
+				<p>Listen closely. Do they sound the same? They should. Because they are the same.</p>
+
+				<p>That wasn’t a trick question. Those were two different audio files, each with a different sample
+					rate. But what you were hearing is the miracle of digital audio. Sampling doesn’t get all of the
+					information of an analog signal; but the thing is, we don’t need all of it. A sample rate of 44.1kHz
+					can reproduce a perfect 1kHz sine wave. The sine wave at 192kHz does have extra information, but
+					none of it’s needed to create a 1kHz sine wave.</p>
+
+				<p>This is not intuitive at all. Thankfully, seeing is believing — here’s a very famous video published
+					back in early 2013 that visually demonstrates all of this:</p>
+
+				<div class="video-responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cIQ9IXSUzuM"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+				<p>This video has been passed around all over the internet; I’d wager that half of the views come from
+					people who have sent it to a friend who stubbornly insists analog audio sounds better, even though
+					digital sounds just as good, and often sounds better since it has a lower noise floor, a higher
+					distortion ceiling, better frequency response, and has the added benefit of not destroying itself
+					over time.</p>
+
+				<p>Ahem. Let’s stay focused. This video was cooked up by Chris “Monty” Montgomery, an engineer who
+					invented the Vorbis technology that powers the .OGG file type (most famously used by <a
+						href="https://artists.spotify.com/help/article/audio-file-formats" target="_blank">Spotify</a>
+					and <a href="https://en.wikipedia.org/wiki/Help:Sound_file_markup#File_types"
+						target="_blank">Wikipedia</a>).</p>
+
+				<p>I would encourage you to watch the full thing, but the meat and potatoes come in the first eight and
+					a half minutes or so. In the video, Monty uses an analog signal generator and two analog
+					oscilloscopes: one connected to the generator, and another connected to the analog output of a basic
+					audio interface that’s digitizing the signal from the generator. Even at 20kHz (the highest pitch
+					any human could hope to hear), the two scopes look identical.</p>
+
+				<p>This all works because of the <a
+						href="https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem" target="_blank">Sampling
+						Theorem</a>. You see, there’s a lot of math behind digital audio, most of it coming from the
+					early 1900s in papers written about the telegraph and telephone. The Sampling Theorem says a lot of
+					things, and there are a few ways to distill its key point.</p>
+
+				<p>Put simply, the Sampling Theorem states that, if you have a signal of a frequency 𝓧, you can
+					perfectly reconstruct that signal by measuring it at something greater than 2(𝓧). So, if you have a
+					signal with a frequency of 1000 hertz, measuring it (or sampling it) at something greater than 2000
+					times per second will give you all of the information you need to perfectly create the original
+					signal.</p>
+
+				<p>There is another way to think of it: if you’re working with a sample rate of 𝓧, the highest
+					frequency you can capture is 𝓧/2. So the highest frequency that a 44.1 sample rate can reproduce is
+					22,050 hertz, since 44,100/2 = 22,050 (half of the sample rate is a frequency called the Nyquist
+					frequency).</p>
+
+				<p>What happens to frequencies above this Nyquist limit? Well, the sampling won’t work, and the audio
+					will be aliased. Aliasing is a generic term for when signals get misinterpreted. In the case of
+					digital audio, a high–frequency signal will get garbled up and distorted into a lower frequency
+					signal:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-aliasing.png" class="centered-image"
+					alt="Cowbell">
+
+				<p>The easy way to prevent aliasing is to just filter out everything above the Nyquist limit. The CD
+					sample rate is not arbitrary. As I mentioned earlier, humans can’t hear tones above 20kHz (even
+					then, most children struggle to hear that high — if you’re an adult, forget about it). So, at 20kHz,
+					a filter starts to take effect to filter out high frequencies. It’s very challenging to create a
+					filter in practice that just lops off everything past a specific point. It’s easier to use something
+					more gradual.</p>
+
+				<p>With the CD sample rate, the filter can work from 20kHz to 22hKz, since 22.05kHz is our Nyquist
+					frequency.</p>
+
+				<p>Accordingly, there’s a third way to think of the sampling theorem: if a signal contains no
+					frequencies higher than 𝓧 hertz, it can be completely reconstructed by measurements that are taken
+					at a frequency of 2(𝓧). When a signal has frequencies filtered out past a certain point, it is said
+					to be bandlimited.</p>
+
+				<p>Ok, now that we got all of that out of the way, we know that the CD sample rate of 44.1kHz can
+					perfectly capture and reproduce all of the frequencies we can hear. So then, what am I supposed to
+					do with all these high sample rates? My Apollo interface goes up to 192. What’s the point?</p>
+
+				<p>Think back to the Nyquist frequency: with a sample rate of 192kHz, we can reproduce frequencies up to
+					96kHz. But we can’t hear above 20kHz, so what difference does it make?</p>
+
+				<p>Now we’re into a thorny subject. Audio with content above 20kHz is generally called “<a
+						href="https://en.wikipedia.org/wiki/High-resolution_audio" target="_blank">hi–res audio</a>”
+					(which is a problematic name as I’ll get into later), and for many audiophiles, the point of hi–res
+					audio is to make music more authentic: if you were to listen to the music live, would be exposed to
+					ultrasonics, so it’s best to include them.</p>
+
+				<p> Things are getting a bit philosophical; as someone who has stood right next to a crash cymbal played
+					at full volume, I’m not terribly interested in having that experience recreated for me when I listen
+					to drums on a record. Moreover, pretty much every piece of audio equipment will color/distort the
+					sound to some unavoidable degree. Mics, preamps, converts, interfaces, you name it.</p>
+
+				<p>Of course, the more important question here is whether or not humans can detect these high
+					frequencies in any way. There’s not a lot of great research into what effect ultrasonics have on the
+					perception of music — what little there is usually describes the phenomenon as the “<a
+						href="https://en.wikipedia.org/wiki/Hypersonic_effect" target="_blank">hypersonic effect</a>”.
+					And unsurprisingly, there’re studies both supporting and refuting its existence. It’s safe to say
+					that it’s not settled science.</p>
+
+				<p>You can do some experimenting yourself — there exist <a href="http://www.2l.no/hires/"
+						target="_blank">tests online</a> that let you listen to a piece of music in a variety of
+					formats. You might hear a difference, but it could have nothing to do with your ears. It could all
+					be about your speakers. You see, most speakers aren’t designed to reproduce frequencies above 20kHz.
+					If they try to, they will likely create distortion as they struggle to play these high frequencies.
+					Alternatively, a speaker may have an amplifier that just filters out ultrasonic content.</p>
+
+				<p>One of the reasons people may say they prefer hi–res audio is actually because of distortion.
+					Distortion is one of the reasons why people may think vinyl has a nice “warm” sound since audio has
+					to be significantly mangled as it’s mastered for vinyl. And other types of distortion exist which
+					are much trickier to deal with, bringing us to another video:</p>
+
+				<div class="video-responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-jCwIsT0X8M"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+				<p>This one was published in early 2020 by Dan Worral of <a href="https://www.fabfilter.com"
+						target="_blank">Fab Filter</a>, a plugin designer. It’s become a sort of companion piece to
+					Monty’s video, as they both have become the chagrin of audiophiles everywhere. It’s another long,
+					technical video, and the crux of it comes in the first eight minutes or so, where Dan uses high
+					frequencies to demonstrate something called intermodulation distortion.</p>
+
+				<p>Intermodulation is another complicated subject up there with the Sampling Theorem; topics like this
+					one are typically discussed by <a href="https://youtu.be/cM3K5NdScDU" target="_blank">electrical
+						engineers</a> more so than producers. Simply put, intermodulation distortion (IMD) occurs when
+					two signals interact and create other signals called intercept points. IMD is caused by
+					nonlinearities; in the case of audio, something is nonlinear if it doesn’t have a flat frequency
+					response. Microphones, preamps, amplifiers, and audio interfaces all have some degree of
+					nonlinearity, chiefly because it’s basically impossible to create something that treats any and all
+					audio exactly the same. And as Dan shows in his video, certain audio effects are nonlinear by
+					design.</p>
+
+				<p>IMD is something that always exists in recorded music, although for most cases, the intercept points
+					are much too quiet to be of any concern (unless some heavy distortion is involved). It’s really only
+					at ultrasonic frequencies that IMD products become problematic since linearity tends to get worse as
+					frequencies increase. As Dan puts it:</p>
+
+				<p class="block-quote">…unless your playback system is 100% linear and free of any distortion
+					whatsoever, then having extra inaudible content above 20kHz simply means you’ll have more unwanted
+					intermodulation below 20kHz. If you bandlimit the signal by removing the inaudible content above
+					20kHz, you might actually end up with a cleaner, better–quality result.</p>
+
+				<p>So using a high sample rate seems to have diminishing results. It is very taxing on your computer and
+					it will clog up your disk space, all for effects that might not exist (or could be adding distortion
+					more than anything else), and nonetheless won’t be appreciated in any capacity by most of your
+					audience.</p>
+
+				<p>So, why the hell do these high sample rates exists? Is so–called “hi–res audio” just snake oil? Well,
+					according to some, yes. YouTube channel <a href="https://www.youtube.com/c/PresentDayProduction"
+						title="_blank">PresentDayProduction</a> has a video featuring a portable recorder with an
+					“intriguing” hi–res sticker. Or in other words, “the sticker gives the game away; the answer,
+					largely, is marketing”.</p>
+
+				<p>That might be a little unfair, as there are some very specific reasons to use a high sample rate.
+					Monty’s video was inspired by an article he wrote in March of 2012. The original link 404’s for some
+					reason, but it has been <a
+						href="https://web.archive.org/web/20120306150922/https://people.xiph.org/~xiphmont/demo/neil-young.html#toc_sfam"
+						target="_blank">archived</a>. In the article, Monty mentions how a high sample rate (more
+					specifically a higher Nyquist limit) could fix some problems with filters. Remember, filtering out
+					content above the Nyquist frequency is essential to prevent aliasing. But early filters weren’t very
+					good; chiefly, they tended to screw with the audio in the audible range by creating artifacts and
+					phases shifts.</p>
+
+				<p>One solution is to use a gentler, less diligent filter, one that doesn’t mess with the audio as much.
+					Such a filter would let frequencies past 22kHz, so a higher Nyquist limit is needed — ergo, a higher
+					sample rate.</p>
+
+				<p>But is this still a problem? Filters have come a long way, especially the digital filters most modern
+					converters use. I have never doubted the transparency of my Apollo interface. And to be clear, the
+					whole point of a high sample rate in this regard isn’t to include ultrasonics; as such, it’s more
+					accurate to describe this process as oversampling.</p>
+
+				<p>One other practical use of a high sample rate is extreme pitch shifting or time stretching. If you
+					push a 44.1kHz clip of audio down an octave, you will have no content from 10kHz and up, so the
+					result may sound a bit thin and hollow. Using a high sample rate will fix this, as ultrasonic
+					content will be brought down into the audible range, creating a fuller sound and reducing IMD from
+					the ultrasonics. You can hear the effects in <a href="https://www.youtube.com/watch?v=e093pWoWCBs"
+						target="_blank">this video</a>, although note that the best sounding sample used a niche
+					microphone that has been demonstrated to capture frequencies up to 100kHz. Most studio mics can’t do
+					that.</p>
+
+				<p>You may have noticed that Monty disabled the comments on his video, although if you start digging
+					through the comments on Dan’s video, it’s easy to see why Monty may have done that:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-1.png" class="centered-image"
+					alt="comment 1">
+
+				<p>Oy vey… let’s focus on some misconceptions that are easier to comprehend. For instance, some people
+					think the Sampling Theorem only works for sine waves, and the whole thing falls apart for real
+					music:</p>
+
+				<img src="../../../images/blog/high-sample-rates/high-sample-rates-comment-2.png" class="centered-image"
+					alt="comment 2">
+
+				<p>Apparently, the only solution is to use a higher sample rate, or god forbid an analog recording
+					medium.</p>
+
+				<p> Think big picture: the ultimate goal of an A/D converter is to measure the frequency and amplitude
+					of an electric signal and store that information digitally. The way a microphone works doesn’t
+					change regardless of what you stick it in front of. It’s still producing a signal with frequency and
+					amplitude, which is all you need to create any audible sound. It makes no difference to the mic, the
+					converter, or the Sampling Theorem how complex the sound is.</p>
+
+				<p>There’s another misconception out there about the timing of a sample rate, evinced by this comment
+					from a ProToolsExpert <a
+						href="https://www.pro-tools-expert.com/production-expert-1/2020/3/4/when-and-why-you-should-use-higher-sample-rates-for-recording-and-mixing-and-when-you-shouldnt"
+						target="_blank">post</a> about Dan’s video:</p>
+
+				<p class="block-quote">Others in the comments have remarked on the greater temporal accuracy and
+					improved imaging we get from high sample rates. That temporal accuracy also gives us a much better
+					capture of the evolution of partials well within the range of human hearing. [For] real instruments,
+					partials aren’t simple multiples of the fundamental. They evolve in many complex ways based [on] the
+					materials and other physical characteristics of an instrument. Higher sample rates give us many more
+					points to represent the evolution of those partials. At low rates, partials are represented less
+					accurately and the situation only worsens as [the] signal passes through even the simplest of
+					filters. This is less of a problem at high rates and when we finally downsample, we’ve still got
+					something that’s closer to the truth.</p>
+
+				<p>I’ve seen comments on Dan’s actual video that more or less say the same thing.</p>
+
+				<p>Now, if you watched the first chunk of Monty’s video, you might be able to piece together why this
+					claim doesn’t make sense. In any case, Monty addresses this specific point just before the 21–minute
+					mark:</p>
+
+				<p class="block-quote">...You’ve probably heard that the timing precision of a digital signal is limited
+					by its sample rate; put another way, that digital signals can’t represent anything that falls
+					between the samples… implying that impulses or fast attacks have to align exactly with a sample, or
+					the timing gets mangled, or they just disappear. At this point, we can easily see why that’s wrong.
+					Again, our input signals are bandlimited. And digital signals are samples, <b>not</b> stairsteps,
+					<b>not</b> “connect–the–dots”. We most certainly can, for example, put the rising edge of our
+					bandlimited square wave anywhere we want between samples. It’s represented perfectly and it’s
+					reconstructed perfectly.</p>
+
+				<p>It seems like even after 8 years and 500,000+ views, people still think you hear discrete samples
+					coming out of the speakers connected to a digital audio device. You don’t.</p>
+
+				<p>So, what does all this mean? Well, like many others have said, just use 44.1 or 48 and be done with
+					it. Then you can spend more time writing good music and practicing your instrument instead of
+					stressing about it all.</p>
+
+				<p>If you want to know more about how a digital to analog converter creates smooth signals from discrete
+					samples, <a href="https://youtu.be/pWjdWCePgvA" target="_blank">here’s a good introduction</a> from
+					YouTuber TechnologyConnections. If you want to fry your brain, here’s a <a
+						href="../../../zips/blog/high-sample-rates/sampling-theroem-papers.zip" download>.zip file</a>
+					of all the math papers that are generally considered to have laid to groundwork for the modern–day
+					Sampling Theorem. </p>
+
+<hr>
+				<p><i>Tags: <a href="../tags/tagged-2021.html">2021</a> • <a
+							href="../tags/tagged-rants-and-raves.html">Rants & Raves</a> • <a
+							href="../tags/tagged-education.html">Education</a> • <a
+							href="../tags/tagged-music-technology.html">Music Technology</a></i></p>
+			</div>
+		</article>
+
+		 <footer>
+    		<section class="full-row-bottom">
+    		<p><a class="fa fa-home" href="../../index.html"></a> 
+|
+				<input id="search-input" class="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+    		<p><span class="copyright"></span></p>
+    		</section>
+   		</footer>
+	</div>
 
 
 </body>

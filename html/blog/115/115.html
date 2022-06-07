@@ -14,8 +14,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
 
@@ -46,22 +52,42 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
-
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
-
+		<header>
+		
+			<div class="header-container">  
+			<div class="top-left">
+			<img class="logo" src="../../../images/logo.png">
+			Benjamin Waterson
+			</div>
+			<nav class="menu">
+				<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+	
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				  </ul>
+				  <button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				  </button>
+		
+			</header>
+	
+			<div class="banner">
+				<h1>Blog</h1>
+			</div>
+	
 
 	<article>
 		<h1>Transcription: “115” — Kevin Sherwood</h1>
+		<p class="date"><i>Posted on November 8, 2020</i></p>
 		<div class="full-row">
 
 		<img src="../../../images/blog/115/115-summary.png" alt="Song Summary" id="summary-image">	
@@ -77,7 +103,7 @@
 			So what does any of that have to do with music? Well, there’s a song from the <i>Black Ops</i> soundtrack called “115”, written by a guy named Kevin Sherwood. Give it a listen:
 		</p>
 
-		<div class="video-responsive">
+		<div class="embed-container">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/KtSpk2pMZrs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
@@ -119,18 +145,19 @@
 			“115” on <a href="https://open.spotify.com/track/3lpnYiJSFZmtsIM13OyRfa?si=iAK2QOaAQ9OHEEXGBQYDDQ" target="_blank">Spotify</a> and <a href="https://music.apple.com/us/album/115/629012743?i=629012798" target="_blank">Apple Music</a>.
 		</p>
 		<hr>
-		<p><i>Posted on November 8, 2020</i></p>
-		<br>
 		<p><i>Tags: <a href="../tags/tagged-2020.html">2020</a> • <a href="../tags/tagged-transcription.html">Transcription</a> • <a href="../tags/tagged-kevin-sherwood.html">Kevin Sherwood</a></i></p>
 		</div>
 		</article>
 		
-		<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-        </article>
+		<footer>
+    		<section class="full-row-bottom">
+    		<p><a class="fa fa-home" href="../../index.html"></a> 
+|
+				<input id="search-input" class="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+    		<p><span class="copyright"></span></p>
+    		</section>
+   		</footer>
 </div>
 
 

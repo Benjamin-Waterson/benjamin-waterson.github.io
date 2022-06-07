@@ -228,6 +228,11 @@ details {
 	font-family: 'Open Sans', sans-serif;
 }
 
+details li {
+margin-left: 40px;
+margin-bottom: 5px;
+}
+
 input[type=text] 
 {
   font-family: 'Open Sans', sans-serif;
@@ -674,6 +679,15 @@ ul.hamburger-menu {
 	margin-top: 5px;
 	margin-bottom: 0px;
 }
+
+
+.centered-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: -10px;
+  }
 
 @media only screen and (min-width: 1250px) {
 	#hamburger-open {

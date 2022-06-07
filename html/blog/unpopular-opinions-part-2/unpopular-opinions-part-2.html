@@ -17,8 +17,14 @@ Unpopular Opinions (Part 2)
 <meta name="date" content="October 17, 2021">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
 
@@ -71,22 +77,42 @@ Unpopular Opinions (Part 2)
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
-
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+		<header>
+		
+			<div class="header-container">  
+			<div class="top-left">
+			<img class="logo" src="../../../images/logo.png">
+			Benjamin Waterson
+			</div>
+			<nav class="menu">
+				<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+	
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				  </ul>
+				  <button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				  </button>
+		</div>
+			</header>
+	
+		  <div class="banner">
+			<h1>Blog</h1>
+		</div>
 
 
 	<article>
 		<h1>Unpopular Opinions (Part 2)</h1>
+		<p class="date"><i>Posted on October 17, 2021</i></p>
 		<div class="full-row">
 
 		<img src="../../../images/blog/unpopular-opinions-part-2/unpopular-opinions-part-2-summary.jpg" alt="Unpopular Opinions Part 2 Summary" id="summary-image">	
@@ -252,19 +278,20 @@ Unpopular Opinions (Part 2)
 			Well, I reckon that’s all for now. I sure did have a lot of motivation for this one, more so than anything else recently. BTW, I’ll be taking next week off. Until next time.
 		</p>
 
-		<hr>
-		<p><i>Posted on October 17, 2021</i></p>
-		<br>
+<hr>
 		<p><i>Tags: <a href="../tags/tagged-2021.html">2021</a> • <a href="../tags/tagged-rants-and-raves.html">Transcription</a></i></p>
 		</div>
 		</article>
 		
-		<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-     </article>
+		<footer>
+    		<section class="full-row-bottom">
+    		<p><a class="fa fa-home" href="../../index.html"></a> 
+|
+				<input id="search-input" class="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+    		<p><span class="copyright"></span></p>
+    		</section>
+   		</footer>
 </div>
 
 

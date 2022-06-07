@@ -4,206 +4,334 @@
 
 <head>
 
-<link rel="icon" type="image/png" href="../../../images/main/favicon.png">
+	<link rel="icon" type="image/png" href="../../../images/main/favicon.png">
 
-<title>
-Buddy Rich
-</title>
+	<title>
+		Buddy Rich
+	</title>
 
-<meta charset="utf-8">
+	<meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
 
-<link href="../../../css/portfolio.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script defer src="../../../js/hamburger-menu.js"></script>
+	<script defer src="../../../js/search.js"></script>
 
-  gtag('config', 'UA-171694271-1');
-</script>
+	<link href="../../../css/portfolio.css" rel="stylesheet">
 
-<meta property="og:site_name" content="Benjamin Waterson" />
-<meta property="og:title" content="Buddy Rich" />
-<meta property="og:description" content='Song thoughts on jazz drummer Buddy Rich' />
-<meta property="og:url" content="https://benjaminwaterson.com/html/blog/buddy-rich/buddy-rich.html" />
-<meta property="og:type" content="Article" />
-<meta property="article:publisher" content="https://benjaminwaterson.com" />
-<meta property="og:image" content="https://benjaminwaterson.com/images/blog/buddy-rich/buddy-rich-summary.jpeg" />
-<meta property="og:image:width" content="1280" />
-<meta property="og:image:height" content="640" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://benjaminwaterson.com/images/blog/buddy-rich/buddy-rich-summary.jpeg" />
-<meta name="twitter:site" content="@H2O_drums" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171694271-1');
+	</script>
+
+	<meta property="og:site_name" content="Benjamin Waterson" />
+	<meta property="og:title" content="Buddy Rich" />
+	<meta property="og:description" content='Song thoughts on jazz drummer Buddy Rich' />
+	<meta property="og:url" content="https://benjaminwaterson.com/html/blog/buddy-rich/buddy-rich.html" />
+	<meta property="og:type" content="Article" />
+	<meta property="article:publisher" content="https://benjaminwaterson.com" />
+	<meta property="og:image" content="https://benjaminwaterson.com/images/blog/buddy-rich/buddy-rich-summary.jpeg" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="640" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://benjaminwaterson.com/images/blog/buddy-rich/buddy-rich-summary.jpeg" />
+	<meta name="twitter:site" content="@H2O_drums" />
 
 </head>
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
 
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
 
-	<article>
-		<h1>Rant: Thoughts on Buddy Rich</h1>
-		<div class="full-row">
+		</header>
 
-		<img src="../../../images/blog/buddy-rich/buddy-rich-summary.jpeg" alt="Buddy Rich Summary" id="summary-image">	
-		<p>
-			When I took my deep dive into the <a href="../tags/tagged-1989-buddy-rich-memorial-concert.html" target="_blank">’89 Buddy Rich Memorial Concert</a>, I had to watch most of it on YouTube before I got my hands on my own copy (which is much too difficult — shame on you Alfred!). Of course, I often wandered into the comments section on these videos, and amongst all the praise for these great drummers I started noticing comments that were… a little dismissive. All these years later apparently some people are not impressed with how the players do Buddy justice.
-		</p>
-
-		<p>
-			From Steve Gadd:
-		</p>
-		<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-5.png" class="centered-image" alt="Gadd 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-2.png" class="centered-image" alt="Gadd 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-3.png" class="centered-image" alt="Gadd 3">
-<br>
-<br>
-		<p>
-			From Gregg Bisonette:
-		</p>
-
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-1.png" class="centered-image" alt="Bisonette 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-2.png" class="centered-image" alt="Bisonette 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-3.png" class="centered-image" alt="Bisonette 3">
-<br>
-<br>
-		
-		<p>
-			From Vinnie Colaiuta:
-		</p>
-
-		<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-1.png" class="centered-image" alt="Colaiuta 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-2.png" class="centered-image" alt="Colaiuta 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-3.png" class="centered-image" alt="Colaiuta 3">
-
-<br>
-<br>
-		
-		<p>
-			From Dennis Chambers:
-		</p>
-		
-		<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-1.png" class="centered-image" alt="Chambers 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-2.png" class="centered-image" alt="Chambers 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-3.png" class="centered-image" alt="Chambers 3">
-
-<br>
-<br>
-
-		<p>
-			From Dave Weckl:
-		</p>
-
-		<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-1.png" class="centered-image" alt="Weckl 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-2.png" class="centered-image" alt="Weckl 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-3.png" class="centered-image" alt="Weckl 3">
-
-<br>
-<br>
-		
-		<p>
-			From Louis Bellson:
-		</p>
-
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-1.png" class="centered-image" alt="Bellson 1">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-4.png" class="centered-image" alt="Bellson 2">
-		<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-3.png" class="centered-image" alt="Bellson 3">
-
-<br>
-<br>
-		
-		<p>
-			So. Right. If you’re like me, then you probably have no idea what the hell these people are on about. These comments are philosophical and abstract, but in way that doesn’t seem to actually get at anything — sadly, that’s the way most drummers on YouTube are. Many like to post videos with esoteric topics; I think everyone wants to be an <a href="https://www.youtube.com/user/havic5" target="_blank">Adam Neely</a>/<a href="https://www.youtube.com/channel/UCTUtqcDkzw7bisadh6AOx5w" target="_blank">12Tone</a>/<a href="https://www.youtube.com/user/pegzch" target="_blank">Rick Beato</a>, but when drummers get to sermonizing I tend to walk away more confused than before.
-		</p>
-		
-		<p>
-			This all reminds me of <a href="https://web.archive.org/web/20190217105545/http://jazzistheworst.blogspot.com/2014/10/whiplash-movie.html" target="_blank">a review</a> of <i>Whiplash</i> I found back in the spring of 2015, from a blog called JazzIsTheWorst. Unfortunately the blog appears to be dead now, but the review is freaking hilarious, and towards the end it has this nugget:
-		</p>
-
-		<p class="block-quote">
-			...The kid finishes his drum solo and the audience is silent… probably because like most Jazz audiences they have no fucking idea what’s going on at all times. If you’re at a Jazz show you just wait for other people to clap and then you clap too...
-		</p>
-		
-		<p>
-			Every once in a while, someone on r/Drums will post something asking (in earnest) why “so-and-so” is a good drummer. While it seems naïve, I appreciate those questions, and they deserve to be asked. I think in the drumming world, opinions tend to snowball, i.e. if enough people say a drummer is good, everyone will believe it. I mean, Buddy is supposed to be the greatest drummer in history, a player that nobody can hang with. You gotta rep that position, lest you look unknowledgeable. 
-		</p>
-		
-		<p>
-			A few months ago, Todd Bishop shared <a href="http://www.cruiseshipdrummer.com/2020/08/the-case-of-rufus-speedy-jones.html" target="_blank">a blog post</a> over on CruiseShipDrummer where he discussed <a href="https://en.wikipedia.org/wiki/Rufus_%22Speedy%22_Jones" target="_blank">Rufus Jones</a>, a chop-centric jazzer who’s drum solos are beloved by many. Todd, however, was unimpressed by Jones’ solo work — the post linked a video featuring Jones playing with a trio, and he uses a laid-back blues tune as an opportunity to blast off into a very aggressive “Moby Dick” style solo. Don’t take it from me:
-		</p>
-
-		<div class="video-responsive">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/LjJZJJ5QBhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="banner">
+			<h1>Blog</h1>
 		</div>
 
-		<p>
-			Todd had a hard time making sense of the praise that was being heaved onto Jones in the comment section of the video. I’m in the same boat; I do find the performance to be quite jarring. Funny thing, both Todd and myself find Jones to be very skilled at playing with an ensemble. Read the CruiseShipDrummer post to see the songs Todd linked — when he’s with a band, Jones swings hard and has some tasty fills. 
-		</p>
-		
-		<p>
-			When I first read Todd’s thoughts, I was reminded of Buddy, because for me he’s actually the opposite. I think Buddy is a really talented soloist, but I’ve never been too impressed by his playing with the rest of the band. I have a lot of Buddy’s music in my library because he a great taste in charts, but I tend to enjoy the other players more so than Buddy. Unlike Jones, I don’t think Buddy ever plays with questionable taste, but all the while I’ve never been too impressed by one of his fills, or the way he catches a figure. 
-		</p>
-		
-		<p>
-			I don’t want to hate on Buddy too much, because he was a talented dude and did a good job of navigating challenging music. But when I first listened to John Bonham when I was 16, I couldn’t get enough of him, even though much of his playing is now rote in the 21st century. I never really had those moments for Buddy, outside of watching him solo — he’s a very entertaining drummer to watch. 
-		</p>
-		
-		<p>
-			There are a few people on YouTube who are brave enough to comment about how they struggle to understand the Buddy’s hype. Responses often involve something like “well, have you seen him live?”. I get the response, because watching Buddy is where most of the fun is at. In fact I think there’s are growing number of drummers who aspire to be visual performers, but I think music shouldn’t <i>need</i> a visual component. First and foremost, music uses sound. I wouldn’t want to detract from the skill or the artistry involved in these performances, but it’s not at all what I’m interested as a musician. The fancy <a href="https://youtu.be/s_PRFc0nkco?t=29" target="_blank">BYOS</a> snare stuff I see on YouTube is good fun, but it leans so much into the visual spectacle that the playing feels severed from what I want out of music. 
-		</p>
-		
-		<p>
-			I’m really not sure what these folks commenting on the Memorial Concert are trying to say. And look, analyzing drummers is difficult. If it’s not some random YouTuber, it’s someone like <a href="https://www.youtube.com/channel/UCXkNod_JcH7PleOjwK_8rYQ" target="_blank"></a> Polyphonic; the channel posted <a href="https://www.youtube.com/watch?v=UvOm2oZRQIk" target="_blank">a video</a> about Bonham a few years ago. Although Bonham might be one of the most famous “drummy” drummers out there, the video didn’t provide many insights to those familiar with his playing. Have a watch for yourself. My favorite part is the discussion about the track “Fool In The Rain”, which is just… well:
-		</p>
-		
-		<p class="block-quote">
-			...Theres a lot going on this beat, so let’s see if we can’t break it down. So first of all, the beat is polyrhythmic, meaning that there are two different rhythms happening simultaneously. One of the rhythms comes from the hi hat, where Bonham lays down steady triplets, opening and closing the hats for emphasis on certain notes. He compliments this with ghost notes on the snare, notes which are barely audible, and more meant to provide a feel to the song than anything else. Beneath this comes the second rhythm, where Bonzo plays a swung half time shuffle on his bass and snare. As if the beat wasn’t enough, the piano and guitar lines are playing in 12/8 time over 4/4 beat. This gives a syncopated triplet feel to the song, thats impossible not to get with...
-		</p>
-		
-		<p>
-			Oof. Now, whether or not any of that music theory stuff is even correct is sort of besides the point. The shuffle Bonham plays on “Fool in the Rain” sounds great because it has a unique feel to it, it fits the song well, and it is a great example of how to take someone else’s idea and put your own spin on it. It’s not because the groove “polyrhythmic” — FWIW, it is in fact not polyrhythmic, although as I have <a href="../story/story.html" target="_blank"> written in the past</a>, this is an increasingly frustrating discussion to be had on the internet. I guess when people aren’t aimlessly philosophizing, they need to throw around music theory terms like “polyrhythm” with no rhyme or reason. Ugh. 
-		</p>
-		
-		<p>
-			Maybe one of these days I’ll take a closer look at Buddy’s playing, but I haven’t been to inspired to put the work in. I tend to not want to make the effort to enjoy something, but maybe there’s hope for me and Buddy yet.
-		</p>
-		
-		<p>
-			Personally, I think all those commenters can shove it. I don’t want to hear you whining about Steve Gadd when you can’t even articulate why Buddy is so great. To be clear, I don’t think Buddy is a bad drummer, but I was so taken aback by how much rambling worship he still has. For some of the other famous drummers out there (like Bonham or perhaps Neil Peart), immitation is usually met with much more respect. I simply can’t deny the fact that I’ve learned much more from Gadd than Buddy. I’m not even sure I could tell you what Buddy’s signature licks are, aside from playing singles as fast as possible. Not to mention poeple such as Gadd actually appear to be nice human beings. 
-		</p>
-		<hr>
-		<p><i>Posted on December 20, 2020</i></p>
-		<br>
-		<p><i>Tags: <a href="../tags/tagged-2020.html">2020</a> • <a href="../tags/tagged-rants-and-raves.html">Rants & Raves</a> • <a href="../tags/tagged-buddy-rich.html">Buddy Rich</a></i></p>
-		</div>
-		</article>
-		
+
 		<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-        </article>
-</div>
+			<h1>Rant: Thoughts on Buddy Rich</h1>
+			<p class="date"><i>Posted on December 20, 2020</i></p>
+			<div class="full-row">
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-summary.jpeg" alt="Buddy Rich Summary"
+					id="summary-image">
+				<p>
+					When I took my deep dive into the <a href="../tags/tagged-1989-buddy-rich-memorial-concert.html"
+						target="_blank">’89 Buddy Rich Memorial Concert</a>, I had to watch most of it on YouTube before
+					I got my hands on my own copy (which is much too difficult — shame on you Alfred!). Of course, I
+					often wandered into the comments section on these videos, and amongst all the praise for these great
+					drummers I started noticing comments that were… a little dismissive. All these years later
+					apparently some people are not impressed with how the players do Buddy justice.
+				</p>
+
+				<p>
+					From Steve Gadd:
+				</p>
+				<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-5.png" class="centered-image" alt="Gadd 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-2.png" class="centered-image" alt="Gadd 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-gadd-3.png" class="centered-image" alt="Gadd 3">
+				<br>
+				<br>
+				<p>
+					From Gregg Bisonette:
+				</p>
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-1.png" class="centered-image"
+					alt="Bisonette 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-2.png" class="centered-image"
+					alt="Bisonette 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bisonette-3.png" class="centered-image"
+					alt="Bisonette 3">
+				<br>
+				<br>
+
+				<p>
+					From Vinnie Colaiuta:
+				</p>
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-1.png" class="centered-image"
+					alt="Colaiuta 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-2.png" class="centered-image"
+					alt="Colaiuta 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-colaiuta-3.png" class="centered-image"
+					alt="Colaiuta 3">
+
+				<br>
+				<br>
+
+				<p>
+					From Dennis Chambers:
+				</p>
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-1.png" class="centered-image"
+					alt="Chambers 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-2.png" class="centered-image"
+					alt="Chambers 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-chambers-3.png" class="centered-image"
+					alt="Chambers 3">
+
+				<br>
+				<br>
+
+				<p>
+					From Dave Weckl:
+				</p>
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-1.png" class="centered-image" alt="Weckl 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-2.png" class="centered-image" alt="Weckl 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-weckl-3.png" class="centered-image" alt="Weckl 3">
+
+				<br>
+				<br>
+
+				<p>
+					From Louis Bellson:
+				</p>
+
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-1.png" class="centered-image"
+					alt="Bellson 1">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-4.png" class="centered-image"
+					alt="Bellson 2">
+				<img src="../../../images/blog/buddy-rich/buddy-rich-bellson-3.png" class="centered-image"
+					alt="Bellson 3">
+
+				<br>
+				<br>
+
+				<p>
+					So. Right. If you’re like me, then you probably have no idea what the hell these people are on
+					about. These comments are philosophical and abstract, but in way that doesn’t seem to actually get
+					at anything — sadly, that’s the way most drummers on YouTube are. Many like to post videos with
+					esoteric topics; I think everyone wants to be an <a href="https://www.youtube.com/user/havic5"
+						target="_blank">Adam Neely</a>/<a
+						href="https://www.youtube.com/channel/UCTUtqcDkzw7bisadh6AOx5w" target="_blank">12Tone</a>/<a
+						href="https://www.youtube.com/user/pegzch" target="_blank">Rick Beato</a>, but when drummers get
+					to sermonizing I tend to walk away more confused than before.
+				</p>
+
+				<p>
+					This all reminds me of <a
+						href="https://web.archive.org/web/20190217105545/http://jazzistheworst.blogspot.com/2014/10/whiplash-movie.html"
+						target="_blank">a review</a> of <i>Whiplash</i> I found back in the spring of 2015, from a blog
+					called JazzIsTheWorst. Unfortunately the blog appears to be dead now, but the review is freaking
+					hilarious, and towards the end it has this nugget:
+				</p>
+
+				<p class="block-quote">
+					...The kid finishes his drum solo and the audience is silent… probably because like most Jazz
+					audiences they have no fucking idea what’s going on at all times. If you’re at a Jazz show you just
+					wait for other people to clap and then you clap too...
+				</p>
+
+				<p>
+					Every once in a while, someone on r/Drums will post something asking (in earnest) why “so-and-so” is
+					a good drummer. While it seems naïve, I appreciate those questions, and they deserve to be asked. I
+					think in the drumming world, opinions tend to snowball, i.e. if enough people say a drummer is good,
+					everyone will believe it. I mean, Buddy is supposed to be the greatest drummer in history, a player
+					that nobody can hang with. You gotta rep that position, lest you look unknowledgeable.
+				</p>
+
+				<p>
+					A few months ago, Todd Bishop shared <a
+						href="http://www.cruiseshipdrummer.com/2020/08/the-case-of-rufus-speedy-jones.html"
+						target="_blank">a blog post</a> over on CruiseShipDrummer where he discussed <a
+						href="https://en.wikipedia.org/wiki/Rufus_%22Speedy%22_Jones" target="_blank">Rufus Jones</a>, a
+					chop-centric jazzer who’s drum solos are beloved by many. Todd, however, was unimpressed by Jones’
+					solo work — the post linked a video featuring Jones playing with a trio, and he uses a laid-back
+					blues tune as an opportunity to blast off into a very aggressive “Moby Dick” style solo. Don’t take
+					it from me:
+				</p>
+
+				<div class="video-responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LjJZJJ5QBhc" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+				<p>
+					Todd had a hard time making sense of the praise that was being heaved onto Jones in the comment
+					section of the video. I’m in the same boat; I do find the performance to be quite jarring. Funny
+					thing, both Todd and myself find Jones to be very skilled at playing with an ensemble. Read the
+					CruiseShipDrummer post to see the songs Todd linked — when he’s with a band, Jones swings hard and
+					has some tasty fills.
+				</p>
+
+				<p>
+					When I first read Todd’s thoughts, I was reminded of Buddy, because for me he’s actually the
+					opposite. I think Buddy is a really talented soloist, but I’ve never been too impressed by his
+					playing with the rest of the band. I have a lot of Buddy’s music in my library because he a great
+					taste in charts, but I tend to enjoy the other players more so than Buddy. Unlike Jones, I don’t
+					think Buddy ever plays with questionable taste, but all the while I’ve never been too impressed by
+					one of his fills, or the way he catches a figure.
+				</p>
+
+				<p>
+					I don’t want to hate on Buddy too much, because he was a talented dude and did a good job of
+					navigating challenging music. But when I first listened to John Bonham when I was 16, I couldn’t get
+					enough of him, even though much of his playing is now rote in the 21st century. I never really had
+					those moments for Buddy, outside of watching him solo — he’s a very entertaining drummer to watch.
+				</p>
+
+				<p>
+					There are a few people on YouTube who are brave enough to comment about how they struggle to
+					understand the Buddy’s hype. Responses often involve something like “well, have you seen him live?”.
+					I get the response, because watching Buddy is where most of the fun is at. In fact I think there’s
+					are growing number of drummers who aspire to be visual performers, but I think music shouldn’t
+					<i>need</i> a visual component. First and foremost, music uses sound. I wouldn’t want to detract
+					from the skill or the artistry involved in these performances, but it’s not at all what I’m
+					interested as a musician. The fancy <a href="https://youtu.be/s_PRFc0nkco?t=29"
+						target="_blank">BYOS</a> snare stuff I see on YouTube is good fun, but it leans so much into the
+					visual spectacle that the playing feels severed from what I want out of music.
+				</p>
+
+				<p>
+					I’m really not sure what these folks commenting on the Memorial Concert are trying to say. And look,
+					analyzing drummers is difficult. If it’s not some random YouTuber, it’s someone like <a
+						href="https://www.youtube.com/channel/UCXkNod_JcH7PleOjwK_8rYQ" target="_blank"></a> Polyphonic;
+					the channel posted <a href="https://www.youtube.com/watch?v=UvOm2oZRQIk" target="_blank">a video</a>
+					about Bonham a few years ago. Although Bonham might be one of the most famous “drummy” drummers out
+					there, the video didn’t provide many insights to those familiar with his playing. Have a watch for
+					yourself. My favorite part is the discussion about the track “Fool In The Rain”, which is just…
+					well:
+				</p>
+
+				<p class="block-quote">
+					...Theres a lot going on this beat, so let’s see if we can’t break it down. So first of all, the
+					beat is polyrhythmic, meaning that there are two different rhythms happening simultaneously. One of
+					the rhythms comes from the hi hat, where Bonham lays down steady triplets, opening and closing the
+					hats for emphasis on certain notes. He compliments this with ghost notes on the snare, notes which
+					are barely audible, and more meant to provide a feel to the song than anything else. Beneath this
+					comes the second rhythm, where Bonzo plays a swung half time shuffle on his bass and snare. As if
+					the beat wasn’t enough, the piano and guitar lines are playing in 12/8 time over 4/4 beat. This
+					gives a syncopated triplet feel to the song, thats impossible not to get with...
+				</p>
+
+				<p>
+					Oof. Now, whether or not any of that music theory stuff is even correct is sort of besides the
+					point. The shuffle Bonham plays on “Fool in the Rain” sounds great because it has a unique feel to
+					it, it fits the song well, and it is a great example of how to take someone else’s idea and put your
+					own spin on it. It’s not because the groove “polyrhythmic” — FWIW, it is in fact not polyrhythmic,
+					although as I have <a href="../story/story.html" target="_blank"> written in the past</a>, this is
+					an increasingly frustrating discussion to be had on the internet. I guess when people aren’t
+					aimlessly philosophizing, they need to throw around music theory terms like “polyrhythm” with no
+					rhyme or reason. Ugh.
+				</p>
+
+				<p>
+					Maybe one of these days I’ll take a closer look at Buddy’s playing, but I haven’t been to inspired
+					to put the work in. I tend to not want to make the effort to enjoy something, but maybe there’s hope
+					for me and Buddy yet.
+				</p>
+
+				<p>
+					Personally, I think all those commenters can shove it. I don’t want to hear you whining about Steve
+					Gadd when you can’t even articulate why Buddy is so great. To be clear, I don’t think Buddy is a bad
+					drummer, but I was so taken aback by how much rambling worship he still has. For some of the other
+					famous drummers out there (like Bonham or perhaps Neil Peart), immitation is usually met with much
+					more respect. I simply can’t deny the fact that I’ve learned much more from Gadd than Buddy. I’m not
+					even sure I could tell you what Buddy’s signature licks are, aside from playing singles as fast as
+					possible. Not to mention poeple such as Gadd actually appear to be nice human beings.
+				</p>
+<hr>
+				<p><i>Tags: <a href="../tags/tagged-2020.html">2020</a> • <a
+							href="../tags/tagged-rants-and-raves.html">Rants & Raves</a> • <a
+							href="../tags/tagged-buddy-rich.html">Buddy Rich</a></i></p>
+			</div>
+		</article>
+
+		 <footer>
+    		<section class="full-row-bottom">
+    		<p><a class="fa fa-home" href="../../index.html"></a> 
+|
+				<input id="search-input" class="search-input" name="q" type="text" placeholder="Search..."><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+    		<p><span class="copyright"></span></p>
+    		</section>
+   		</footer>
+	</div>
 
 
 </body>
