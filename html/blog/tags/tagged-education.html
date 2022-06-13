@@ -15,14 +15,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+	rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
+<script defer src="../../../js/load-more.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="../../../js/portfolio.js"type="text/javascript" defer></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -38,21 +44,44 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
+		<div class="banner">
+			<h1>Blog</h1>
+		</div>
 
 	<article>
-		<h1>Tagged: Education</h1>
+		<h1><i>Tagged: Education</i></h1>
+		<hr>
 
 		<div class="full-row-blog">	
 
@@ -60,11 +89,12 @@
 		Fire Safety for the Home Studio
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on March 27, 2022</i></p>
 		<img src="../../../images/blog/fire-safety/fire-safety-summary.jpeg" alt="Fire Safety Summary"  id="summary-image">	
 		<p>A fire <a href="https://amp.cnn.com/cnn/2022/03/24/us/denver-stadium-fire/index.html" target="_blank">broke out</a> at the Broncos stadium this past week, and just yesterday a wildfire sparked up and threatened to <a href="https://abcnews.go.com/amp/US/wireStory/wildfire-southwest-boulder-forces-1200-evacuations-83693090" target="_blank">destroy part of Boulder</a>. And as an unfortunate coincidence, I wanted to talk about fire safety today. So, instead of ruminating about how fires are now a year–round hazard in Colorado (on top of the seasonal hazards of floods, hail, lightning, and tornadoes), let’s talk about how to set up a home studio without burning your place down. <a href="../fire-safety/fire-safety.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -73,13 +103,14 @@
 		Drums Don’t Play Actual Pitches. And Even if They Could, Why Would You Want Them To?
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on February 20, 2022</i></p>
 		<img src="../../../images/blog/drums-and-pitches/drums-and-pitches-summary.jpg" alt="Drums and Pitches Summary"  id="summary-image">	
 		<p>I’m starting to wonder if drummers are on a misguided quest to try and get their instrument to be taken more seriously. I think the metric modulation nonsense that I often <a href="../blog/advanced-music-theory/advanced-music-theory.html" target="_blank">complain about</a> is part of this; other instruments get to talk about advanced harmony, so I get the appeal… but you just end up looking silly to non–drummers.</p>
 
 		<p>There’s another topic I want to look at in the same vein: tuning drums to notes. Like many problems in this day and age, the internet is partly to blame. Case in point: my inspiration to write this comes from <a href="https://www.reddit.com/r/drums/comments/styzk9/rant_nothing_on_a_standard_drumset_is_a_pitched/" target="_blank">a Reddit thread</a> that was started this past week. As always, I chimed in on the thread and will expand upon my thoughts here. <a href="../drums-and-pitches/drums-and-pitches.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 
@@ -89,11 +120,12 @@
 		Is There Any Difference Between the Triplet and the Sextuplet? And What About the 12–Let?
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on February 6, 2022</i></p>
 		<img src="../../../images/blog/triplets-sextuplets/triplets-sextuplets-summary.jpeg" alt="Triplets and Sextuplets Summary" id="summary-image">	
 		<p>This is a pretty niche topic, but I wanted to share some thoughts I had on it, and I can imagine that some other musicians might actually be intrigued themselves if they were to consider this question, so just bear with me. <a href="../triplets-sextuplets/triplets-sextuplets.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -102,17 +134,18 @@
 		How To Get Started On The Drums
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on January 23, 2022</i></p>
 		<img src="../../../images/blog/getting-started/getting-started-summary.jpg" alt="Getting Started Summary" id="summary-image">	
 		<p>Without a doubt, this is the number one question asked in internet drumming circles. Anyone who asks how to get started on the drums is guaranteed to get at least a few responses, so I’ve never bothered chiming in. I always figured that full–time teachers would be best at responding since they have to routinely get beginners up to speed. But I do have some thoughts to share, and despite my desire to see different topics brought up online, the burden is ultimately on me to come up with stuff to talk about. So let’s go through some pointers. <a href="../getting-started/getting-started.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
 
 		<h1 class="blog-header">The Enduring Confusion Around High Sample Rates</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on November 28, 2021</i></p>
 		<img src="../../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg" alt="High Sample Rates Summary" id="summary-image">	
 
@@ -120,7 +153,7 @@
 
 		<p>There are other topics that some people think are best left undiscussed. I’ve really gone on a deep dive in the last couple of months trying to make sense of sample rates, particularly the case for using a high sample rate. <a href="../../blog/high-sample-rates/high-sample-rates.html"><i>Read More . . .</i></a>
 		</p>
-
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -129,13 +162,14 @@
 		Searching for the World’s First Drum Book
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on September 19, 2021</i></p>
 		<img src="../../../images/blog/first-drum-book/first-drum-book-summary.webp" alt="First Drum Book Summary" id="summary-image">	
 	
 		<p>		
 			When I recently <a href="../advanced-techniques/advanced-techniques.html">wrote about</a> <i>Advanced Techniques for the Modern Drummer</i>, I mused about how it’s one of the oldest drum set books still in print. After the fact, I began to wonder more and more if it is in fact the first book ever published to contain exercises written out for practice on a drum set. So that led me to today’s question: what was the first drum set book ever written? <a href="../first-drum-book/first-drum-book.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -144,7 +178,7 @@
 		“Advanced” Music Theory (For Drummers)
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on February 29, 2021</i></p>
 		<img src="../../../images/blog/advanced-music-theory/advanced-music-theory-summary.png" alt="Advanced Music Theory Summary" id="summary-image">	
 		<p>		
@@ -156,12 +190,16 @@
 		<a href="#" id="load">Load More</a> 
 	</article>
 
-			<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-        </article>
+	<footer>
+		<section class="full-row-bottom">
+			<p><a class="fa fa-home" href="../../../index.html"></a>
+				|
+				<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button"
+					type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			<p><span class="copyright"></span></p>
+		</section>
+	</footer>
 </div>
 
 </body>

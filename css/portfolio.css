@@ -229,25 +229,38 @@ details {
 }
 
 details li {
-margin-left: 40px;
-margin-bottom: 5px;
+	margin-left: 40px;
+	margin-bottom: 5px;
 }
 
-input[type=text] 
-{
-  font-family: 'Open Sans', sans-serif;
-  padding:5px;
-  vertical-align: middle;
+input[type=text] {
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px;
+	vertical-align: middle;
 }
 
-input{
-  margin-left: 0px;
+input {
+	margin-left: 0px;
 }
 
-hr{
+hr {
 	margin-top: 0em;
 	margin-bottom: 1em;
-  }
+	height: 5px;
+	background-color: black;
+	border: none;
+}
+
+li {
+	font-size: 1.3rem;
+	color: #DDDBDB;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0%;
+	margin-top: .5em;
+	margin-bottom: 0em;
+	padding: 0px;
+	line-height: 1.6;
+}
 
 #content {
 	flex: 1 0 auto;
@@ -258,7 +271,7 @@ hr{
 	margin-right: auto;
 }
 
-#carousel{
+#carousel {
 	margin-top: -1em;
 	margin-bottom: 1em;
 }
@@ -271,20 +284,19 @@ hr{
 }
 
 
-#search-button
-{
-  background-color: black;
-  border: none;
-  margin-left: 10px;
-  color: white;
-  font-size: 20px;
-  padding: 0px;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
+#search-button {
+	background-color: black;
+	border: none;
+	margin-left: 10px;
+	color: white;
+	font-size: 20px;
+	padding: 0px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
 }
 
-#load{
+#load {
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	display: block;
@@ -299,16 +311,16 @@ hr{
 	text-align: center;
 	font-size: 1.2em;
 	transition: 0.3s;
-  }
+}
 
 
-  
-  #load:hover {
+
+#load:hover {
 	background-color: black;
 	color: white;
-	cursor:pointer;
-  
-  }
+	cursor: pointer;
+
+}
 
 .landing-page {
 	height: 100%;
@@ -326,7 +338,7 @@ hr{
 	font-size: 3rem;
 	font-weight: bold;
 	color: white;
-	margin-bottom: 1rem;
+	margin-bottom: .5rem;
 
 }
 
@@ -335,6 +347,7 @@ hr{
 	font-size: 2rem;
 	font-weight: normal;
 	color: white;
+	margin-top: .5rem;
 
 }
 
@@ -347,6 +360,7 @@ hr{
 
 .landing-text p {
 	color: white;
+	margin: .5rem;
 
 }
 
@@ -381,21 +395,21 @@ hr{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  }
-  
-  .menuItem {
+}
+
+.menuItem {
 	display: block;
 	margin: 2rem 4rem;
 	font-size: 1.8rem;
 	color: white;
 	text-decoration: none;
-  }
-  
-  .menuItem:hover {
+}
+
+.menuItem:hover {
 	text-decoration: underline;
-  }
-  
-  .hamburger {
+}
+
+.hamburger {
 	display: none;
 	/* position: fixed;
 	z-index: 100;
@@ -405,17 +419,17 @@ hr{
 	border: none;
 	background: white;
 	cursor: pointer; */
-  }
-  
-  .closeIcon {
+}
+
+.closeIcon {
 
 	border: none;
 	display: none;
 	color: white;
 	background-color: black;
-  }
-  
-  .hamburger-menu {
+}
+
+.hamburger-menu {
 	position: fixed;
 	transform: translateX(100%);
 	transition: transform 0.5s;
@@ -428,11 +442,11 @@ hr{
 	color: white;
 	list-style: none;
 	padding-top: 100px;
-  }
-  
-  .showMenu {
+}
+
+.showMenu {
 	transform: translateX(0);
-  }
+}
 
 /* .hamburger-menu {
 	position: fixed;
@@ -576,6 +590,11 @@ ul.hamburger-menu {
 
 }
 
+
+.full-row-blog {
+	display: none;
+}
+
 .date {
 	font-size: 1.3rem;
 	color: black;
@@ -587,6 +606,10 @@ ul.hamburger-menu {
 	line-height: 1.6;
 }
 
+.hidden {
+	display: none;
+}
+
 .tags {
 	font-size: 1.3rem;
 	color: black;
@@ -596,6 +619,10 @@ ul.hamburger-menu {
 	margin-bottom: .5em;
 	padding: 0px;
 	line-height: 1.6;
+}
+
+.tags li {
+	color: black;
 }
 
 .button-container {
@@ -628,6 +655,14 @@ ul.hamburger-menu {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+}
+
+.word-break {
+	word-break: break-all;
+}
+
+.word-wrap {
+	word-wrap: break-word;
 }
 
 .gallery {
@@ -681,13 +716,13 @@ ul.hamburger-menu {
 }
 
 
-.centered-image{
+.centered-image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: -10px;
-  }
+}
 
 @media only screen and (min-width: 1250px) {
 	#hamburger-open {
@@ -740,8 +775,14 @@ ul.hamburger-menu {
 
 @media only screen and (max-width: 600px) {
 
-	html{
+	html {
 		font-size: 3vw;
+	}
+
+	.landing-page {
+		background-image: url(/images/landing2.jpg);
+		background-size: cover;
+
 	}
 
 	.banner {
@@ -751,7 +792,6 @@ ul.hamburger-menu {
 
 	.banner h1 {
 		margin-top: 1rem;
-		font-size: 2rem;
 	}
 
 	.header-container {
@@ -771,4 +811,3 @@ ul.hamburger-menu {
 
 
 }
-

@@ -1,4 +1,4 @@
-function sortList() {
+window.onload = function sortList() {
 	var list, i, switching, b, shouldSwitch;
 	list = document.getElementById("tags");
 	switching = true;

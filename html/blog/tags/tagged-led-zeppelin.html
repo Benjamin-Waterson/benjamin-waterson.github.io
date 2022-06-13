@@ -15,14 +15,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+	rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
+<script defer src="../../../js/load-more.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="../../../js/portfolio.js"type="text/javascript" defer></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -38,21 +44,44 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
+		<div class="banner">
+			<h1>Blog</h1>
+		</div>
 
 	<article>
-		<h1>Tagged: Led Zeppelin</h1>
+		<h1><i>Tagged: Led Zeppelin</i></h1>
+		<hr>
 
 		<div class="full-row-blog">	
 
@@ -60,7 +89,7 @@
 		Transcription: “Ten Years Gone” — John Bonham with Led Zeppelin
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on June 13, 2021</i></p>
 		<img src="../../../images/blog/ten-years-gone/ten-years-gone-summary.png" alt="Song Summary" id="summary-image">	
 		<p>
@@ -70,19 +99,20 @@
 		<p>
 			Like “How Many More Times”, this was a Zeppelin song that escaped me for a few years after I first got into the band. I really never gave this track a proper listen until right after I graduated high school. And I must say, the tune is one of Zeppelin’s most engaging and emotional. <a href="../../blog/ten-years-gone/ten-years-gone.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
 
 		<h1 class="blog-header">Transcription: “Rock and Roll” — John Bonham with Led Zeppelin</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on April 4, 2021</i></p>
 		<img src="../../../images/blog/rock-and-roll/rock-and-roll-summary.png" alt="Rock and Roll Summary" id="summary-image">	
 		
 		<p>		
 			Another sleepy post this week: I don’t have much to add about this tune, I just wanted to get my interpretation down on paper, since (surprisingly) there aren’t many transcriptions of this solo out there. <a href="../../blog/rock-and-roll/rock-and-roll.html"><i>Read More . . .</i></a>
 		</p>
-
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -91,7 +121,7 @@
 		Know Your Tempos — Led Zeppelin
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on January 24, 2021</i></p>
 		<img src="../../../images/blog/know-your-tempos-led-zeppelin/know-your-tempos-led-zeppelin-summary.jpg" alt="Led Zeppelin Summary" id="summary-image">	
 		<p>
@@ -101,12 +131,13 @@
 		<p>
 			Well, despite the fact that “read tempo” is a phrase that I’ve never heard a real musician use, you can indeed develop a skill like this. <a href="../../blog/know-your-tempos-led-zeppelin/know-your-tempos-led-zeppelin.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">
 
 		<h1 class="blog-header">Transcription: “How Many More Times” — John Bonham with Led Zeppelin</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on December 27, 2020</i></p>
 
 		<img src="../../../images/blog/how-many-more-times/how-many-more-times-summary.png" alt="How Many More Times Summary" id="summary-image">	
@@ -117,14 +148,14 @@
 		<p>
 			I think it’s appropriate to close out my first year on the site with this tune. The project was actually the first “big time” transcription of a song I ever attempted, starting way back in the summer of 2014. <a href="../../blog/how-many-more-times/how-many-more-times.html"><i>Read More . . .</i></a>
 		</p>
-
+		<hr>
 		</div>
 
 		<div class="full-row-blog">
 		<h1 class="blog-header">
 			Transcription: “Good Times Bad Times” — John Bonham with Led Zeppelin		
 		</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on July 26, 2020</i></p>
 
 		<img src="../../../images/blog/good-times-bad-times/good-times-bad-times-summary.png" alt="Good Times Bad Times Summary" id="summary-image">	
@@ -137,12 +168,16 @@
 		<!--<a href="#" id="load">Load More</a> -->
 	</article>
 
-		<article>
-            <section class="full-row-bottom">
-            <p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
-            <p><span class="copyright"></span></p>
-            </section>
-        </article>
+	<footer>
+		<section class="full-row-bottom">
+			<p><a class="fa fa-home" href="../../../index.html"></a>
+				|
+				<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button"
+					type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			<p><span class="copyright"></span></p>
+		</section>
+	</footer>
 </div>
 
 </body>
