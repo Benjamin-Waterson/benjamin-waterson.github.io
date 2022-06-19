@@ -7,11 +7,13 @@ html {
 }
 
 body {
-	height: 100%;
-
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 article {
+	flex: 1;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
@@ -25,7 +27,6 @@ header {
 	background-color: white;
 
 }
-
 
 nav {
 	font-family: 'Open Sans', sans-serif;
@@ -98,7 +99,7 @@ table {
 	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 15px;
+	margin-top: 0px;
 	margin-bottom: 15px;
 	border-collapse: collapse;
 	font-size: 1.2em;
@@ -188,6 +189,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 	color: black;
+	margin-top: 1em;
 	margin-bottom: 1em;
 	line-height: 1.6;
 
@@ -229,8 +231,10 @@ details {
 }
 
 details li {
+	color: black;
 	margin-left: 40px;
-	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 input[type=text] {
@@ -263,8 +267,6 @@ li {
 }
 
 #content {
-	flex: 1 0 auto;
-	min-height: 100vh;
 	width: 100%;
 	margin-top: 0px;
 	margin-left: auto;
@@ -280,7 +282,7 @@ li {
 	width: 100%;
 	height: auto;
 	border: 2px solid black;
-	margin-bottom: .5em;
+	margin-bottom: -.5em;
 }
 
 
@@ -326,6 +328,7 @@ li {
 	height: 100%;
 	background-image: url(/images/landing2.jpg);
 	background-size: cover;
+	background-position: center;
 	margin: 0px;
 	text-align: center;
 	display: flex;
@@ -505,7 +508,6 @@ ul.hamburger-menu {
 
 .banner {
 	max-width: 100%;
-	margin-bottom: 1rem;
 	height: 500px;
 	background-image: url(/images/banner.png);
 	background-position: center;
@@ -584,8 +586,8 @@ ul.hamburger-menu {
 	font-size: 2.2em;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
-	margin: 0px;
-	margin-top: 3px;
+	margin-top: .2em;
+	margin-bottom: 0px;
 	padding: 0px;
 
 }
@@ -720,8 +722,6 @@ ul.hamburger-menu {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: -10px;
 }
 
 @media only screen and (min-width: 1250px) {
@@ -782,6 +782,7 @@ ul.hamburger-menu {
 	.landing-page {
 		background-image: url(/images/landing2.jpg);
 		background-size: cover;
+		background-position: left;
 
 	}
 

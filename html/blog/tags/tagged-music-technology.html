@@ -15,14 +15,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+	rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
+<script defer src="../../../js/load-more.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="../../../js/portfolio.js"type="text/javascript" defer></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -38,21 +44,44 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
+		<div class="banner">
+			<h1>Blog</h1>
+		</div>
 
 	<article>
-		<h1>Tagged: Music Technology</h1>
+		<h1><i>Tagged: Music Technology</i></h1>
+		<hr>
 
 		<div class="full-row-blog">	
 
@@ -60,11 +89,12 @@
 		Fire Safety for the Home Studio
 		</h1>
 		
-		<hr>
+		
 		<p class="date"><i>Posted on March 27, 2022</i></p>
 		<img src="../../../images/blog/fire-safety/fire-safety-summary.jpeg" alt="Fire Safety Summary"  id="summary-image">	
 		<p>A fire <a href="https://amp.cnn.com/cnn/2022/03/24/us/denver-stadium-fire/index.html" target="_blank">broke out</a> at the Broncos stadium this past week, and just yesterday a wildfire sparked up and threatened to <a href="https://abcnews.go.com/amp/US/wireStory/wildfire-southwest-boulder-forces-1200-evacuations-83693090" target="_blank">destroy part of Boulder</a>. And as an unfortunate coincidence, I wanted to talk about fire safety today. So, instead of ruminating about how fires are now a year–round hazard in Colorado (on top of the seasonal hazards of floods, hail, lightning, and tornadoes), let’s talk about how to set up a home studio without burning your place down. <a href="../fire-safety/fire-safety.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -73,7 +103,6 @@
 		My Cymbal Bleed Saga
 		</h1>
 		
-		<hr>
 		<p class="date"><i>Posted on February 27, 2022</i></p>
 		<img src="../../../images/blog/cymbal-bleed/cymbal-bleed-summary.png" alt="Cymbal Bleed Summary"  id="summary-image">	
 		<p>It’s been a tough week to stay focused. Hell, the news <a href="https://www.nbcnews.com/news/world/putin-orders-nuclear-deterrent-forces-high-alert-tensions-build-ukrain-rcna17853" target="_blank">this morning alone</a> was pretty exhausting. The carnage in Ukraine is bad enough, but this whole conflict has really broken the brains of a lot of people in the political circles I’m in.</p>
@@ -82,12 +111,13 @@
 
 		<p>There’s nothing like using the enduring frustrations of recording live drums to take your mind off of things. <a href="../cymbal-bleed/cymbal-bleed.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
 
 		<h1 class="blog-header">The Enduring Confusion Around High Sample Rates</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on November 28, 2021</i></p>
 		<img src="../../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg" alt="High Sample Rates Summary" id="summary-image">	
 
@@ -102,12 +132,16 @@
 		<!--<a href="#" id="load">Load More</a> -->
 	</article>
 
-	<article>
-    <section class="full-row-bottom">
-    <p><a href="../../index.html">Home</a> | <a href="search.html">Search</a></p>
-    <p><span class="copyright"></span></p>
-    </section>
-    </article>
+	<footer>
+		<section class="full-row-bottom">
+			<p><a class="fa fa-home" href="../../../index.html"></a>
+				|
+				<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button"
+					type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			<p><span class="copyright"></span></p>
+		</section>
+	</footer>
 </div>
 
 </body>

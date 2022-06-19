@@ -15,14 +15,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+	rel="stylesheet">
+
+<script defer src="../../../js/hamburger-menu.js"></script>
+<script defer src="../../../js/search.js"></script>
+<script defer src="../../../js/load-more.js"></script>
 
 <link href="../../../css/portfolio.css" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="../../../js/portfolio.js"type="text/javascript" defer></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -38,21 +44,44 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="content">
 
-	<div class="img-text">
-	<header>
-		<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-		<div class="top-left">Benjamin <br> Waterson</div>
-	</header>
-	</div>
+		<header>
 
-	<div class="menu">
-		<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a href="../../main/transcription-archive.html">Transcription Archive</a>
-	</div>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
+		<div class="banner">
+			<h1>Blog</h1>
+		</div>
 
 	<article>
-		<h1>Tagged: Pink Floyd</h1>
+		<h1><i>Tagged: Pink Floyd</i></h1>
+		<hr>
 
 		<div class="full-row-blog">	
 
@@ -60,11 +89,11 @@
 		Transcription: The Nick Mason Fill Recipe
 		</h1>
 		
-		<hr>
 		<p class="date"><i>Posted on March 16, 2022</i></p>
 		<img src="../../../images/blog/nick-mason-fill-recipe/nick-mason-fill-recipe-summary.png" alt="Nick Mason Fill Summary" id="summary-image">	
 		<p>As I wrote <a href="../know-your-tempos-pink-floyd/know-your-tempos-pink-floyd.html" target="_blank">last week</a>, I’ve been listening to some Pink Floyd lately, as I often do at the start of the year. I regard Pink Floyd as one of the best bands out there, mainly because of their songwriting, vision, and ambition… but I’ve struggled to find a way to talk about them on the site. I don’t want to pick apart one of their tunes from a compositional perspective, since other (more knowledgable) people have <a href="https://youtu.be/K6HCykbHtBM" target="_blank">already done that </a>better than I could. And I don’t want to do a big transcription excerpt of the drumming on a Pink Floyd tune. <a href="../nick-mason-fill-recipe/nick-mason-fill-recipe.html"><i>Read More . . .</i></a>
 		</p>
+		<hr>
 		</div>
 
 		<div class="full-row-blog">	
@@ -73,7 +102,6 @@
 		Know Your Tempos: Pink Floyd
 		</h1>
 		
-		<hr>
 		<p class="date"><i>Posted on March 6, 2022</i></p>
 		<img src="../../../images/blog/know-your-tempos-pink-floyd/know-your-tempos-pink-floyd-summary.jpg" alt="Know Your Tempos: Pink Floyd Summary"  id="summary-image">	
 		<p>I’ve been perusing Pink Floyd’s discography as part of a more ambitious post for next week when I realized that I could kill two birds with one stone and whip up a “Know Your Tempos” post. Here’s my boilerplate explanation:</p>
@@ -90,12 +118,16 @@
 		<!--<a href="#" id="load">Load More</a> -->
 	</article>
 
-	<article>
-    <section class="full-row-bottom">
-    <p><a href="../../index.html">Home</a> | <a href="search.html">Search</a></p>
-    <p><span class="copyright"></span></p>
-    </section>
-    </article>
+	<footer>
+		<section class="full-row-bottom">
+			<p><a class="fa fa-home" href="../../../index.html"></a>
+				|
+				<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button"
+					type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			<p><span class="copyright"></span></p>
+		</section>
+	</footer>
 </div>
 
 </body>

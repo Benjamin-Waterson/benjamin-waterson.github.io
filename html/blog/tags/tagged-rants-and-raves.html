@@ -15,15 +15,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="robots" content="noindex">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+	<script src="https://kit.fontawesome.com/314f3b792a.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
 		rel="stylesheet">
 
+	<script defer src="../../../js/hamburger-menu.js"></script>
+	<script defer src="../../../js/search.js"></script>
+	<script defer src="../../../js/load-more.js"></script>
+
 	<link href="../../../css/portfolio.css" rel="stylesheet">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<script src="../../../js/portfolio.js" type="text/javascript" defer></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171694271-1"></script>
@@ -39,25 +44,45 @@
 
 <body>
 
-	<div id="wrapper">
+	<div id="content">
 
-		<div class="img-text">
-			<header>
-				<img src="../../../images/main/antero-hall-banner.jpg" alt="Antero Hall">
-				<div class="top-left">Benjamin <br> Waterson</div>
-			</header>
-		</div>
+		<header>
 
-		<div class="menu">
-			<a href="../../main/about-me.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
-				href="../../main/music-and-bands.html">Music & Bands</a> | <a href="../../main/drum-tracking.html">Drum
-				Tracking</a> | <a href="../../main/art-design.html">Art & Design</a> | <a
-				href="../../main/transcription-archive.html">Transcription Archive</a>
+			<div class="header-container">
+				<div class="top-left">
+					<img class="logo" src="../../../images/logo.png">
+					Benjamin Waterson
+				</div>
+				<nav class="menu">
+					<a href="../../main/about.html">About</a> | <a href="../../main/blog.html">Blog</a> | <a
+						href="../../main/music-and-bands.html">Music & Bands</a> | <a
+						href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> | <a
+						href="../../main/art-design.html">Art & Design</a> | <a
+						href="../../main/transcription-archive.html">Transcription Archive</a>
+				</nav>
+
+				<ul class="hamburger-menu">
+					<li><a href="../../main/about.html">About</a> </li>
+					<li><a href="../../main/blog.html">Blog</a> </li>
+					<li><a href="../../main/music-and-bands.html">Music & Bands</a> </li>
+					<li><a href="../../main/drum-tracking-and-recording.html">Drum Tracking & Recording</a> </li>
+					<li><a href="../../main/art-and-design.html">Art & Design</a> </li>
+					<li><a href="../../main/transcription-archive.html">Transcription Archive</a></li>
+				</ul>
+				<button class="hamburger">
+					<i class="menuIcon fa-solid fa-bars"></i>
+					<i class="closeIcon fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</header>
+		<div class="banner">
+			<h1>Blog</h1>
 		</div>
 
 		<article>
 
-			<h1>Tagged: Rant & Raves</h1>
+			<h1><i>Tagged: Rant & Raves</i></h1>
+			<hr>
 
 			<div class="full-row-blog">
 
@@ -65,7 +90,7 @@
 					Will I Ever Make Another YouTube Video?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 8, 2022</i></p>
 				<img src="../../../images/blog/youtube-videos/youtube-videos-summary.jpg" alt="YouTube Summary"
 					id="summary-image">
@@ -77,6 +102,7 @@
 					ever done. <a href="../youtube-videos/youtube-videos.html"><i>Read
 							More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -85,7 +111,7 @@
 					What’s the Deal With “Bonham Triplets”?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on April 17, 2022</i></p>
 				<img src="../../../images/blog/bonham-triplets/bonham-triplets-summary.png" alt="Bonham Triplets"
 					id="summary-image">
@@ -98,6 +124,7 @@
 					with one of Bonham’s signature licks — “The Bonham Triplet”. <a
 						href="../bonham-triplets/bonham-triplets.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -106,7 +133,7 @@
 					Drums Don’t Play Actual Pitches. And Even if They Could, Why Would You Want Them To?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 20, 2022</i></p>
 				<img src="../../../images/blog/drums-and-pitches/drums-and-pitches-summary.jpg"
 					alt="Drums and Pitches Summary" id="summary-image">
@@ -124,6 +151,7 @@
 					the thread and will expand upon my thoughts here. <a
 						href="../drums-and-pitches/drums-and-pitches.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -132,7 +160,7 @@
 					How To Get Started On The Drums
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 23, 2022</i></p>
 				<img src="../../../images/blog/getting-started/getting-started-summary.jpg"
 					alt="Getting Started Summary" id="summary-image">
@@ -144,6 +172,7 @@
 					stuff to talk about. So let’s go through some pointers. <a
 						href="../getting-started/getting-started.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -152,7 +181,7 @@
 					Do Drummers Worry Too Much About Chops? Or Do They Not Worry Enough?
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 9, 2022</i></p>
 				<img src="../../../images/blog/chops/chops-summary.jpeg" alt="Chops Summary" id="summary-image">
 				<p>Who wouldn’t want to kick off the new year with a rant and a rave?</p>
@@ -164,6 +193,7 @@
 					although some of Steve Gadd’s fills from the Chick Corea tune “Nite Sprite” would be another
 					possibility. <a href="../../blog/chops/chops.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 
@@ -173,7 +203,7 @@
 					Wrapping up 2021
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 2, 2022</i></p>
 				<img src="../../../images/blog/2021/2021-summary.jpeg" alt="2022 Summary" id="summary-image">
 				<p>
@@ -182,12 +212,13 @@
 					on how eventful my life is year to year. <a href="../../blog/2021/2021.html"><i>Read More . .
 							.</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">The Enduring Confusion Around High Sample Rates</h1>
-				<hr>
+
 				<p class="date"><i>Posted on November 28, 2021</i></p>
 				<img src="../../../images/blog/high-sample-rates/high-sample-rates-summary.jpeg"
 					alt="High Sample Rates Summary" id="summary-image">
@@ -202,12 +233,13 @@
 							. . .</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Unpopular Opinions (Part 2)</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 17, 2021</i></p>
 				<img src="../../../images/blog/unpopular-opinions-part-2/unpopular-opinions-part-2-summary.jpg"
 					alt="Unpopular Opinions Part 2 Summary" id="summary-image">
@@ -222,12 +254,13 @@
 							.</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Dealing With a Bit of Writer’s Block</h1>
-				<hr>
+
 				<p class="date"><i>Posted on October 8, 2021</i></p>
 				<img src="../../../images/blog/writers-block/writers-block-summary.png" alt="Writer’s Block Summary"
 					id="summary-image">
@@ -245,6 +278,7 @@
 					whole thing. <a href="../../blog/writers-block/writers-block.html"><i>Read More . . .</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -253,7 +287,7 @@
 					First EP — Lessons Learned
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 30, 2021</i></p>
 				<img src="../../../images/blog/first-ep-lessons-learned/first-ep-lessons-learned-summary.JPG"
 					alt="First EP Summary" id="summary-image">
@@ -274,6 +308,7 @@
 						href="../../blog/first-ep-lessons-learned/first-ep-lessons-learned.html"><i>Read More . .
 							.</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -282,7 +317,7 @@
 					An Honest Look at the Rudiments
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on May 16, 2021</i></p>
 				<img src="../../../images/blog/drum-rudiments/drum-rudiments-summary.jpg" alt="Rudiments Summary"
 					id="summary-image">
@@ -294,12 +329,13 @@
 					asking about what is and isn’t a rudiment (i.e. why is this lick a rudiment, but not that one). <a
 						href="../../blog/drum-rudiments/drum-rudiments.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<!-- <div class="full-row-blog">	
 
 		<h1 class="blog-header">This Week in Boulder</h1>
-		<hr>
+		
 		<p class="date"><i>Posted on March 24, 2021</i></p>
 
 		<img src="../../../images/blog/this-week-in-boulder/this-week-in-boulder-summary.jpg" alt="This Week in Boulder Summary" id="summary-image">	
@@ -311,7 +347,8 @@
 			It’s a bit chilling for me, since I used to go to that store all the time. <a href="../../blog/this-week-in-boulder/this-week-in-boulder.html"><i>Read More . . .</i></a>
 		</p>
 
-		</div>	 -->
+			 <hr>
+            </div>	 -->
 
 			<div class="full-row-blog">
 
@@ -319,7 +356,7 @@
 					Unpopular Opinions
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on February 7, 2021</i></p>
 				<img src="../../../images/blog/unpopular-opinions/unpopular-opinions-summary.jpg"
 					alt="Unpopular Opinions Summary" id="summary-image">
@@ -338,6 +375,7 @@
 						href="../../blog/unpopular-opinions/unpopular-opinions.html"><i>Read More . . .</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -346,7 +384,7 @@
 					Wrapping Up 2020
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on January 1, 2021</i></p>
 				<img src="../../../images/blog/2020/2020-summary.jpg" alt="2020 Summary" id="summary-image">
 				<p>
@@ -361,6 +399,7 @@
 							.</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -369,7 +408,7 @@
 					Rant: Thoughts on Buddy Rich
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on December 20, 2020</i></p>
 				<img src="../../../images/blog/buddy-rich/buddy-rich-summary.jpeg" alt="Buddy Rich Summary"
 					id="summary-image">
@@ -381,12 +420,13 @@
 					drummers I started noticing comments that were… a little dismissive. <a
 						href="../../blog/buddy-rich/buddy-rich.html"><i>Read More . . .</i></a>
 				</p>
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
 
 				<h1 class="blog-header">Rant: Drum Solos</h1>
-				<hr>
+
 				<p class="date"><i>Posted on December 13, 2020</i></p>
 
 				<img src="../../../images/blog/drum-solos/drum-solos-summary.jpg" alt="Song Summary" id="summary-image">
@@ -400,6 +440,7 @@
 							More . . .</i></a>
 				</p>
 
+				<hr>
 			</div>
 
 			<div class="full-row-blog">
@@ -408,9 +449,9 @@
 					Transcription: “Story” — Brian Evans with Chon + A rant about music theory
 				</h1>
 
-				<hr>
+
 				<p class="date"><i>Posted on October 4, 2020</i></p>
-				<img src="../../../images/blog/story/story-summary.png" alt="Story Summary">
+				<img src="../../../images/blog/story/story-summary.png" alt="Story Summary" id="summary-image">
 				<p>
 					This has been kicking around in my drafts folder for almost exactly one year — I guess now is as
 					good of a time as any to share it with the world. So, last October I saw a post over on <a
@@ -426,12 +467,16 @@
 			<a href="#" id="load">Load More</a>
 		</article>
 
-		<article>
+		<footer>
 			<section class="full-row-bottom">
-				<p><a href="../../../index.html">Home</a> | <a href="../../main/search.html">Search</a></p>
+				<p><a class="fa fa-home" href="../../../index.html"></a>
+					|
+					<input id="search-input" name="q" type="text" placeholder="Search..."><button id="search-button"
+						type="submit"><i class="fa fa-search"></i></button>
+					</form>
 				<p><span class="copyright"></span></p>
 			</section>
-		</article>
+		</footer>
 	</div>
 
 </body>
