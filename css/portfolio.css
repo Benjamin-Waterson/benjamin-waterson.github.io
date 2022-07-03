@@ -166,8 +166,8 @@ h4 {
 	font-size: 1.50rem;
 	color: black;
 	text-align: left;
-	margin-top: 1em;
-	margin-bottom: 0em;
+	margin-top: 0em;
+	margin-bottom: -.8em;
 	margin-left: 0px;
 	padding: 0px;
 	font-weight: 600;
@@ -175,7 +175,7 @@ h4 {
 
 h5 {
 	font-size: 1.50rem;
-	color: rgb(255, 252, 252);
+	color: black;
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
 	margin-top: 15px;
@@ -255,9 +255,14 @@ hr {
 	border: none;
 }
 
+ul{
+	margin-left: 3rem;
+	color: black;
+}
+
 li {
 	font-size: 1.3rem;
-	color: #DDDBDB;
+	color: black;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0%;
 	margin-top: .5em;
@@ -615,6 +620,10 @@ ul.hamburger-menu {
 	margin-left: 5%;
   }
 
+  .centered-text{
+	text-align: center;
+  }
+
 .hidden {
 	display: none;
 }
@@ -649,8 +658,6 @@ ul.hamburger-menu {
 }
 
 .embed-container {
-	margin-top: .8em;
-	margin-bottom: 0px;
 	overflow: hidden;
 	padding-bottom: 56.25%;
 	position: relative;
@@ -663,6 +670,7 @@ ul.hamburger-menu {
 	bottom: 0;
 	height: 100%;
 	width: 100%;
+	margin: auto;
 	position: absolute;
 }
 
@@ -672,6 +680,16 @@ ul.hamburger-menu {
 
 .word-wrap {
 	word-wrap: break-word;
+}
+
+.serif{
+	font-family: 'Spectral', serif;
+	/* font-size: 1.3rem; */
+	color: black;
+	/* margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 1.6; */
+
 }
 
 .gallery {
