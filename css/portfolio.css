@@ -138,8 +138,6 @@ h1 {
 	color: black;
 	margin-top: .5em;
 	margin-bottom: .5em;
-
-
 }
 
 h2 {
@@ -462,6 +460,7 @@ figure{
 	left: 0;
 	right: 0;
 	bottom: 0;
+	margin-left: 0px;
 	z-index: 99;
 	background: black;
 	color: white;
