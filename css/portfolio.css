@@ -3,6 +3,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	font-size: 14px;
+	background-color: black;
 
 }
 
@@ -13,6 +14,7 @@ body {
 }
 
 article {
+	background-color: white;
 	flex: 1;
 	max-width: 800px;
 	margin-left: auto;
@@ -287,6 +289,7 @@ figure{
   }
 
 #content {
+	background-color: white;
 	width: 100%;
 	margin-top: 0px;
 	margin-left: auto;
@@ -763,6 +766,10 @@ transition: 0.2s;
 .centered-image {
 	display: block;
 	margin-left: auto;
+	margin-right: auto;
+}
+
+.left-image{
 	margin-right: auto;
 }
 
